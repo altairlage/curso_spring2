@@ -53,6 +53,8 @@
 				<nav id="main-nav">
 					
 					<ul class="clearfix">
+					
+						<li><a href="${s:mvcUrl('PC#listar').build() }" rel="nofollow">Produtos</a></li>
 						<li><a href="/cart" rel="nofollow">Carrinho</a></li>
 
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">Sobre Nós</a></li>
