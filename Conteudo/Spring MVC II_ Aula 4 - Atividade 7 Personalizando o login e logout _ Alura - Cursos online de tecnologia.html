@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12251 -->
+<html lang="pt-BR" data-product="alura" class="gr__cursos_alura_com_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Spring MVC II: Aula 4 - Atividade 7 Personalizando o login e logout | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/nr-1059.min.js.download"></script><script type="text/javascript" async="" src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/base.7f0645a5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body data-gr-c-s-loaded="true">
+
+<section class="task" data-task-type="hqexplanation" data-task-id="12251" data-author-id="75042" data-course-code="springmvc-2-integracao-cache-seguranca-e-templates" data-section-number="4" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>07</small>
+					<span class="task-body-header-title-text"> Personalizando o login e logout</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12251/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/12251/question">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+		<div class="formattedText">
+			<h1>Personalizando Login e Logout</h1>
+<p>Já temos a listagem e cadastro de  produtos funcionando perfeitamente, mas note que não temos os links de acesso a estas páginas, na Home do projeto. Atualmente, a página inicial (<code>home.jsp</code>) encontra-se dessa forma:</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-home-atual.png" alt="pagina inicial do projeto"></p>
+<p>Vamos adicionar os links para as páginas de cadastro e listagem de produtos junto aos links de <code>Seu carrinho</code> e <code>Sobre nós</code>. No arquivo <code>home.jsp</code>, busque o seguinte trecho de código:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/cart"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Carrinho</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/sobre-a-casa-do-codigo"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Sobre Nós</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+<p>Vamos criar mais duas opções neste menu com os links que criamos na aula passada apontando para as páginas de listagem e cadastro de produtos da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#listar').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Listagem de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#form').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Cadastro de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/cart"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Carrinho</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/sobre-a-casa-do-codigo"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Sobre Nós</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+<p>E como resultado teremos os links sendo exibidos na página inicial da aplicação:</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-novos-items-menu.png" alt="pagina inicial com links administrativos"></p>
+<p>Vamos refletir sobre o que acabamos de fazer: com os links expostos desta maneira, possibilitamos que qualquer usuário possa cadastrar livros na Casa do Código. Imagine a Casa do Código recebendo pedidos de livros que não existem realmente. Precisamos ter um controle de acesso e somente pessoas autorizadas poderão entrar nas páginas de cadastro de livros, assim como na de listagem.</p>
+<p>Há várias estratégias que resolvem este tipo de problema. Poderíamos criar um filtro de requisições, um interceptador etc. Mas usaremos um recurso que o próprio <em>Spring</em> nos fornece. Um filtro já pronto, capaz de fazer o trabalho de verificar se o usuário tem ou não autorização de acessar determinadas páginas.</p>
+<p>Para utilizarmos este filtro, precisamos configura-lo no projeto de forma semelhante ao que fizemos quando criamos a classe <code>ServletSpringMVC</code>, ou seja, criar uma outra classe que herde da classe do filtro que já se encontra configurado.</p>
+<p>Para que sejamos capazes de utilizar os recursos de segurança do <em>Spring</em>, teremos que deixar estes recursos declarados nas depêndencias do nosso projeto. Sendo assim, devemos abrir o arquivo <code>pom.xml</code> e adicionar as seguintes linhas de dependência:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.springframework.security</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">spring-security-config</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.0.0.M2</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.springframework.security</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">spring-security-taglibs</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.0.0.M2</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.springframework.security</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">spring-security-web</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.1.1.RELEASE</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.springframework.security</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">spring-security-core</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.0.0.M2</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span></code></pre>
+<p>E fora da tag <code>dependencies</code> devemos adicionar o repositório de onde o <strong>Maven</strong> irá baixar estas bibliotecas.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;repositories&gt;</span><span class="pln">
+    </span><span class="tag">&lt;repository&gt;</span><span class="pln">
+        </span><span class="tag">&lt;id&gt;</span><span class="pln">spring-milestones</span><span class="tag">&lt;/id&gt;</span><span class="pln">
+        </span><span class="tag">&lt;name&gt;</span><span class="pln">Spring Milestones</span><span class="tag">&lt;/name&gt;</span><span class="pln">
+        </span><span class="tag">&lt;url&gt;</span><span class="pln">https://repo.spring.io/milestone/</span><span class="tag">&lt;/url&gt;</span><span class="pln">
+        </span><span class="tag">&lt;snapshots&gt;</span><span class="pln">
+            </span><span class="tag">&lt;enabled&gt;</span><span class="pln">false</span><span class="tag">&lt;/enabled&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/snapshots&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/repository&gt;</span><span class="pln">
+</span><span class="tag">&lt;/repositories&gt;</span></code></pre>
+<p><strong>Observação:</strong> Note que a biblioteca usada é da versão <strong>Milestone</strong>, por ser a que estava disponível durante a criação do curso. Caso encontre a biblioteca em sua versão final, use-a, a mesma deve funcionar sem problemas. Caso tenha problemas, use nosso forúm e tire suas dúvidas!</p>
+<p>Após as adições no arquivo <code>pom.xml</code> lembre-se de atualizar o projeto da seguinte forma:
+<img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-update-project.png" alt="atualizando projeto mavem"></p>
+<p>O próximo passo para começarmos a utilizar realmente os recursos de segurança do <em>Spring</em> é criar a classe responsável por inicializar o filtro de segurança. No pacote <code>br.com.casadocodigo.loja.conf</code>, criaremos a classe <code>SpringSecurityFilterConfiguration</code>, que faremos extender a classe <code>AbstractSecurityWebApplicationInitializer</code>.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SpringSecurityFilterConfiguration</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">AbstractSecurityWebApplicationInitializer</span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Apenas isto não será o suficiente. A classe da forma que está já funciona, mas ela apenas inicializa o filtro de segurança do <em>Spring</em>. Onde estão realmente as configurações de segurança? Em nenhum lugar! Para armazenar as configurações de segurança, criaremos uma nova classe chamada <code>SecurityConfiguration</code> no mesmo pacote, iremos anotá-la com <code>@EnableWebMvcSecurity</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@EnableWebMvcSecurity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SecurityConfiguration</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Desta forma, o <em>Spring</em> através da classe com esta anotação já configura alguns detalhes de segurança de forma automática. Mas para que isso funcione, o <em>Spring</em> precisa saber que a classe existe. Lembra qual classe que carrega todas as configurações de nossa aplicação? É a <code>ServletSpringMVC</code>. Nesta usamos o método <code>getServletConfigClasses</code> para carregar as configurações da aplicação e do <strong>JPA</strong> no primeiro módulo deste curso.</p>
+<p>Mas agora, o método que usaremos é o <code>getRootConfigClasses</code> que carrega configurações logo ao iniciar a aplicação. Este método simplesmente retorna um <strong>Array</strong> de classes do mesmo jeito que o método <code>getServletConfigClasses</code> faz. Assim faremos a classe <code>SecurityConfiguration</code> ser reconhecida pelo <em>Spring</em>:</p>
+<pre class="prettyprint"><code><span class="kwd">protected</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">&lt;?&gt;[]</span><span class="pln"> getRootConfigClasses</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">[]{</span><span class="typ">SecurityConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">};</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora poderemos fazer o teste! Mas ao reiniciarmos o servidor, teremos um erro indicando que nossas configurações não foram suficientes, veja:</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-error-web-adapter.png" alt="classe nao herdada em configuracoes"></p>
+<p>O erro explica que deve haver uma classe que herde da classe <code>WebsecurityConfigurerAdapter</code>. Se olharmos nossa classe de configuração (<code>SecurityConfiguration</code>), veremos que ela só habilita as configurações, mas não configura nada. Veja:</p>
+<pre class="prettyprint"><code><span class="lit">@EnableWebMvcSecurity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SecurityConfiguration</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>A anotação é bem clara. Ela simplesmente habilita o recurso de <strong>Web MVC Secutiry</strong> e quem configura o recurso é justamente a classe <code>WebSecurityConfigurerAdapter</code>. Então, para solucionar o erro, precisaremos fazer com que a classe <code>SecurityConfiguration</code> herde da classe <code>WebSecurityConfigurerAdapter</code> da seguinte maneira:</p>
+<pre class="prettyprint"><code><span class="lit">@EnableWebMvcSecurity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SecurityConfiguration</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">WebSecurityConfigurerAdapter</span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Se reiniciarmos o servidor agora, já poderemos ver que o erro foi resolvido e que o recurso de segurança já funciona. Ao abrirmos nossa aplicação em <code>localhost:8080/casadocodigo</code> teremos:  </p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-login-padrao.png" alt="Login padrao"></p>
+<p>Agora ao tentarmos acessar qualquer página no projeto, seremos redirecionados para esta tela de login e para realizar qualquer operação, teremos que nos autenticar. Isso não é interessante! Nós queremos que os usuários acessem os livros e os detalhes dos mesmos, o carrinho de compras e outras páginas sem impedimentos. Vamos voltar para o código e ver como podemos fazer este comportamento funcionar.</p>
+<p>A classe <code>SecurityConfiguration</code> herda um método chamado <code>configure</code> que em sua implementação padrão, bloqueia e redireciona todas as requisições não autenticadas. Veja o código deste método abaixo:
+<img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-codigo-spring.png" alt="codigo configure do Spring"></p>
+<p>O que podemos fazer é sobrescrever este método em nossa classe de configuração e descrever os padrões de <strong>URLs</strong> que queremos ou não bloquear. Estes padrões são definididos através do método <code>antMatchers</code> da classe <code>HttpSecurity</code>. Veja o código abaixo:</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    http</span><span class="pun">.</span><span class="pln">authorizeRequests</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/carrinho/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">anyRequest</span><span class="pun">().</span><span class="pln">authenticated</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">formLogin</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Perceba que montamos uma série de padrões de caminhos definindo onde será permitido o acesso com autenticação ou não. Estamos bloqueando o acesso a <code>/produtos/form</code> para todos que não são <strong>ADMIN</strong>, assim como requisições do tipo <strong>POST</strong> para o caminho <code>/produtos/form</code>. Estamos permitindo o acesso ao <strong>home</strong> da nossa aplicação através do <code>/</code> e também ao <strong>carrinho de compras</strong> através do <code>/carrinho/**</code>. Por último, estamos sinalizando que estas verificações devem ser feitas para todas as requisições e que as bloqueadas através do <code>hasRole</code> devem ser autenticadas.</p>
+<p>A cada requisição, a verificação é feita e caso uma das páginas bloqueadas tenha tentativas de acesso sem autenticação, estas serão redirecionadas para o formulário de login. Experimente testar quais páginas estão ou não bloqueadas agora. Lembre-se de reiniciar o servidor.</p>
+<p>Se verificarmos a página inicial novamente, veremos que os links para a listagem e cadastro de produtos continuam a ser exibidos apesar de sermos direcionados para o formulário de login ao clicá-los.</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-novos-items-menu.png" alt="pagina inicial com links administrativos"></p>
+<p>Vamos refletir sobre o <strong>login</strong>: ele precisa de usuários que possam se autenticar, caso contrário, os links administrativos da aplicação ficariam inacessíveis. Ainda não temos usuários no banco de dados - nem mesmo temos classes que representem usuários em nosso projeto. Falta criar estas classes!</p>
+<p>Criaremos primeiramente a classe <code>UsuarioDAO</code>, responsável por manipular os dados dos usuários no banco de dados. Criaremos esta classe no pacote <code>br.com.casadocodigo.loja.daos</code> e a anotaremos com <code>@Repository</code>. Definiremos também um atributo privado do tipo <code>EntityManager</code> que chamaremos de <code>manager</code> e o anotaremos com <code>PersistenceContext</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Repository</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">UsuarioDAO</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@PersistenceContext</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">EntityManager</span><span class="pln"> manager</span><span class="pun">;</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Em seguida, criaremos o método <code>find</code> que recebe um parâmetro do tipo <code>String</code> que será o <code>email</code> do usuário a ser buscado no banco de dados. Este método deve retornar um objeto do tipo <code>Usuario</code> e usar o objeto <code>manager</code> para criar uma consulta (<code>createQuery</code>) que busque os usuários no banco de dados e os armazene em uma lista de usuários.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> find</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> email</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Usuario</span><span class="pun">&gt;</span><span class="pln"> usuarios </span><span class="pun">=</span><span class="pln"> manager</span><span class="pun">.</span><span class="pln">createQuery</span><span class="pun">(</span><span class="str">"select u from Usuario u where u.email = :email"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+                </span><span class="pun">.</span><span class="pln">setParameter</span><span class="pun">(</span><span class="str">"email"</span><span class="pun">,</span><span class="pln"> email</span><span class="pun">)</span><span class="pln">
+                </span><span class="pun">.</span><span class="pln">getResultList</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Após receber o resultado da consulta ao banco de dados, precisaremos verificar se algum usuário foi encontrado, isto é, verificar se a lista está vazia (<code>isEmpty</code>) e caso esteja, lançaremos uma exceção informando que o usuário com o email enviado não foi encontrado. Caso a lista não esteja vazia, retornaremos o primeiro item da lista.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> find</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> email</span><span class="pun">){</span><span class="pln">
+    </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Usuario</span><span class="pun">&gt;</span><span class="pln"> usuarios </span><span class="pun">=</span><span class="pln"> manager</span><span class="pun">.</span><span class="pln">createQuery</span><span class="pun">(</span><span class="str">"select u from Usuario u where u.email = :email"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">setParameter</span><span class="pun">(</span><span class="str">"email"</span><span class="pun">,</span><span class="pln"> email</span><span class="pun">)</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">getResultList</span><span class="pun">();</span><span class="pln">
+
+    </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">usuarios</span><span class="pun">.</span><span class="pln">isEmpty</span><span class="pun">()){</span><span class="pln">
+        </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RuntimeException</span><span class="pun">(</span><span class="str">"O usuário "</span><span class="pun">+</span><span class="pln"> email </span><span class="pun">+</span><span class="str">" não foi encontrado"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> usuarios</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Note que o <em>Eclipse</em> a todo momento reclama do nosso código, marcando de vermelho algumas partes. Isto acontece, porque nesta nova classe estamos referenciando uma outra classe que ainda não existe - a classe <code>Usuario</code>, que criaremos adiante.</p>
+<p>A classe usuário por hora apenas terá alguns atributos e será anotada com <code>@Entity</code>, estes atributos serão o <code>email</code>, <code>senha</code>, <code>nome</code>, e uma lista que chamaremos de <code>roles</code> que guardará objetos do tipo <code>Role</code>. Usaremos o <code>email</code> como identificador único para cada usuário, sendo assim, o marcaremos com a anotação <code>@Id</code>. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> roles </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;();</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Lembre-se que a classe usuário deve ser criada no pacote <code>br.com.casadocodigo.loja.models</code>. Criaremos também a classe <code>Role</code> que representará permissões do usuário. Esta classe apenas terá um atributo do tipo <code>String</code> que será o <code>nome</code> da permissão que será anotada com <code>@Id</code>. A classe também será anotada com <code>@Entity</code> e ficará no mesmo pacote da classe <code>Usuario</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Role</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Com os atributos das classes <code>Usuario</code> e <code>Role</code> privados, não podemos acessá-los, por isso devemos gerar os <em>Getters and Setters</em> para estas classes. Por fim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> roles </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;();</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getEmail</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setEmail</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> email</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">email </span><span class="pun">=</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getNome</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setNome</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">nome </span><span class="pun">=</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getSenha</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setSenha</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> senha</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">senha </span><span class="pun">=</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> getRoles</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> roles</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setRoles</span><span class="pun">(</span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> roles</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">roles </span><span class="pun">=</span><span class="pln"> roles</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Role</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getNome</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setNome</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">nome </span><span class="pun">=</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>As regras para um usuário se autenticar em nossa aplicação já estão prontas, porém, precisamos fazer algumas configurações para que o <em>Spring</em> consiga utilizar a classe <code>UsuarioDAO</code>. Esta configuração se dá pelo uso do <code>UserDetailsService</code> que é uma interface do <em>Spring</em> que realmente trabalha com as configurações de autenticação.</p>
+<p>O primeiro passo é sobrescrever o método <code>configure</code> na classe <code>SecurityConfiguration</code>, que recebe um objeto do tipo <code>AuthenticationManagerBuilder</code> chamado de <code>auth</code> e usar o método <code>userDetailsService</code> passando para este método um objeto do tipo <code>UsuarioDAO</code>. Criaremos o objeto como um atributo da classe <code>SecurityConfiguration</code> e o anotaremos com <code>@Autowired</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@EnableWebMvcSecurity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SecurityConfiguration</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">WebSecurityConfigurerAdapter</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Autowired</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">UsuarioDAO</span><span class="pln"> usuarioDao</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="pun">[...]</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">AuthenticationManagerBuilder</span><span class="pln"> auth</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        auth</span><span class="pun">.</span><span class="pln">userDetailsService</span><span class="pun">(</span><span class="pln">usuarioDao</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Isso apenas não é suficiente para configurar a autenticação dos usuários. Aconteque que o método <code>userDetailsService</code> espera receber um objeto que implemente uma interface com este mesmo nome. Faremos então classe <code>UsuarioDAO</code> implementar a interface e adicionar à classe os método que precisam ser implementados.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">UsuarioDAO</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">UserDetailsService</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@PersistenceContext</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">EntityManager</span><span class="pln"> manager</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> find</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> email</span><span class="pun">){</span><span class="pln">
+        </span><span class="pun">[...]</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">UserDetails</span><span class="pln"> loadUserByUsername</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> arg0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">UsernameNotFoundException</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Para que não implementemos todo o método <code>loadUserByUsername</code>, simplesmente iremos trocar o nome do método <code>find</code> para <code>loadUserByUsername</code> e trocar o lançamento do <code>RuntimeException</code> para o <code>UsernameNotFoundException</code> com a mesma mensagem. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Repository</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">UsuarioDAO</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">UserDetailsService</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@PersistenceContext</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">EntityManager</span><span class="pln"> manager</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">UserDetails</span><span class="pln"> loadUserByUsername</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> email</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Usuario</span><span class="pun">&gt;</span><span class="pln"> usuarios </span><span class="pun">=</span><span class="pln"> manager</span><span class="pun">.</span><span class="pln">createQuery</span><span class="pun">(</span><span class="str">"select u from Usuario u where u.email = :email"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+                </span><span class="pun">.</span><span class="pln">setParameter</span><span class="pun">(</span><span class="str">"email"</span><span class="pun">,</span><span class="pln"> email</span><span class="pun">).</span><span class="pln">getResultList</span><span class="pun">();</span><span class="pln">
+
+        </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">usuarios</span><span class="pun">.</span><span class="pln">isEmpty</span><span class="pun">())</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">UsernameNotFoundException</span><span class="pun">(</span><span class="str">"O usuário "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> email </span><span class="pun">+</span><span class="pln"> </span><span class="str">" não foi encontrado"</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="kwd">return</span><span class="pln"> usuarios</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>É importante notar que o retorno do método também mudou. O mesmo não retorna mais um objeto do tipo <code>Usuario</code>, mas sim do tipo <code>UserDetails</code>. Sendo assim, teremos que fazer com que a classe <code>Usuario</code> implemente esta interface e adicione seus métodos.</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">UserDetails</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> permissoes </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;();</span><span class="pln">
+
+    </span><span class="com">// getters and setters</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Collection</span><span class="pun">&lt;?</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">GrantedAuthority</span><span class="pun">&gt;</span><span class="pln"> getAuthorities</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getPassword</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getUsername</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isAccountNonExpired</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isAccountNonLocked</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isCredentialsNonExpired</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isEnabled</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="com">// TODO Auto-generated method stub</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Para os métodos <code>isAccountNonExpired</code>, <code>isAccountNonLocked</code>, <code>isCredentialsNonExpired</code> e <code>isEnabled</code> retornaremos <code>true</code>, por não termos nenhum controle para expiração, bloqueio de contas ou expiração de credenciais dos usuários e queremos que os mesmos sempre esteja ativos.</p>
+<p>Para os métodos <code>getUsername</code>, <code>getPassword</code> e <code>getAuthorities</code> retornaremos respectivamente o <code>email</code>, <code>senha</code> e <code>roles</code>. Com a série de mudanças, a classe <code>Usuario</code> ficará da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">UserDetails</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> roles </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;();</span><span class="pln">
+
+    </span><span class="com">// getters and setters</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Collection</span><span class="pun">&lt;?</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">GrantedAuthority</span><span class="pun">&gt;</span><span class="pln"> getAuthorities</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">roles</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getPassword</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">senha</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getUsername</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">email</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isAccountNonExpired</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isAccountNonLocked</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isCredentialsNonExpired</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isEnabled</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Por algum motivo o método <code>getAuthorities</code> está com erros. Se analisarmos a assinatura deste método, veremos que este retorna uma coleção de objetos do tipo <code>GrantedAuthority</code>. Para resolvermos o problema, basta fazer com que a classe <code>Role</code> implemente a interface e adicione seus métodos. Esta interface tem apenas um método chamado <code>getAuthority</code>, no qual retornaremos o atributo <code>nome</code> da classe <code>Role</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Role</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">GrantedAuthority</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="com">// getters and setters</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getAuthority</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>O <em>Eclipse</em> agora marca as classes <code>Usuario</code> e <code>Role</code> de amarelo recomendando que estas tenham um atributo do tipo <code>SerialVersionId</code>. Adicionaremos os mesmos com a ajuda do <em>Eclipse</em>. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Role</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">GrantedAuthority</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">long</span><span class="pln"> serialVersionUID </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1L</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">[...]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E na classe <code>usuario</code>:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">UserDetails</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">long</span><span class="pln"> serialVersionUID </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1L</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">[...]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E por último passo, precisaremos da configuração de codificação das senhas dos usuários. Usaremos uma criptografia chamada <strong>BCrypt</strong> e faremos isto utilizando a classe <code>BCryptPasswordEncoder</code>. Em seguida, vamos usar o método <code>passwordEncoder</code> do objeto <code>auth</code>, no método <code>configure</code> da classe <code>SecurityConfiguration</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@EnableWebMvcSecurity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SecurityConfiguration</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">WebSecurityConfigurerAdapter</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Autowired</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">UsuarioDAO</span><span class="pln"> usuarioDao</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="pun">[...]</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">AuthenticationManagerBuilder</span><span class="pln"> auth</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        auth</span><span class="pun">.</span><span class="pln">userDetailsService</span><span class="pun">(</span><span class="pln">usuarioDao</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">.</span><span class="pln">passwordEncoder</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BCryptPasswordEncoder</span><span class="pun">());</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Uma observação deve ser feita antes que tentemos testar as funcionalidades de autenticação de usuários: as configurações de segurança estão iniciando no método <code>getRootConfigClasses</code> da classe <code>ServletSpringMVC</code> e estas requerem as configurações do <em>DAO</em>, carregadas em outro momento pelo método <code>getServletConfigClasses</code>. Isto deve gerar erros ao tentarmos inicializar a aplicação. Para resolvermos,colocaremos todas as configurações para inicializar no método <code>getRootConfigClasses</code>. A classe <code>ServletSpringMVC</code> deve ficar da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ServletSpringMVC</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">AbstractAnnotationConfigDispatcherServletInitializer</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">&lt;?&gt;[]</span><span class="pln"> getRootConfigClasses</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">[]{</span><span class="typ">SecurityConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">AppWebConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">};</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">&lt;?&gt;[]</span><span class="pln"> getServletConfigClasses</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">{};</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">[...]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Temos ainda um segundo problema: nós não fizemos o mapeamento das classes <code>Usuario</code> com a classe <code>Role</code>. O mapeamento será de um usuário para muitas permissões, no caso <code>roles</code>. Queremos também  que ao carregar o usuário, as permissões sejam carregadas por meio do <code>fetch=FetchType.EAGER</code>. A classe <code>Usuario</code> ficará assim:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">UserDetails</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">long</span><span class="pln"> serialVersionUID </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1L</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@Id</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> email</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> senha</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@OneToMany</span><span class="pun">(</span><span class="pln">fetch</span><span class="pun">=</span><span class="typ">FetchType</span><span class="pun">.</span><span class="pln">EAGER</span><span class="pun">)</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> roles </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;();</span><span class="pln">
+
+    </span><span class="pun">[...]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora sim! Após estes ajustes, podemos testar nossa aplicação sem esperar por erros, considerando que nos adiantamos sobre alguns pontos. Ao iniciarmos a aplicação, veremos que tudo funciona perfeitamente, as páginas que bloqueamos requerem autenticação e as outras estão exibindo as informações de forma normal. Mas podemos testar se o login está realmente funcionando? Perceba que não temos usuários cadastrados no banco de dados. Precisaremos fazer isso manualmente.</p>
+<p>Vamos abrir o console, selecionar o banco de dados e executar as seguintes consultas.</p>
+<p>Cadastrar um <em>Role</em> de <strong>ADMIN</strong>.</p>
+<pre class="prettyprint"><code><span class="pln">insert </span><span class="kwd">into</span><span class="pln"> </span><span class="typ">Role</span><span class="pln"> values </span><span class="pun">(</span><span class="str">'ROLE_ADMIN'</span><span class="pun">);</span></code></pre>
+<p>Note que o nome do <em>Role</em> segue um padrão: <strong>ROLE_ALGUMACOISA</strong>. Isso porque o método <code>hasRole</code> que usamos nas verificações segue o mesmo padrão. Agora precisamos cadastrar um usuário.</p>
+<pre class="prettyprint"><code><span class="pln">insert </span><span class="kwd">into</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> </span><span class="pun">(</span><span class="pln">email</span><span class="pun">,</span><span class="pln"> nome</span><span class="pun">,</span><span class="pln"> senha</span><span class="pun">)</span><span class="pln"> values </span><span class="pun">(</span><span class="str">'admin@casadocodigo.com.br'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'Administrador'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'$2a$04$qP517gz1KNVEJUTCkUQCY.JzEoXzHFjLAhPQjrg5iP6Z/UmWjvUhq'</span><span class="pun">)</span></code></pre>
+<p>Aqui o único ponto que merece uma observação é a senha. Esse código esquisito nada mais é o resultado da criptografia BCrypt dos carecteres <strong>123456</strong>. Pode-se gerar esses códigos com algumas ferramentas ou linguagens de programação. uma das ferramentas é o <a href="https://www.dailycred.com/article/bcrypt-calculator" rel="nofollow"><strong>BCrypt Calculator</strong></a>.</p>
+<p>Por último, precisamos relacionar o usuário com a <em>role</em> da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="pln">insert </span><span class="kwd">into</span><span class="pln"> </span><span class="typ">Usuario_Role</span><span class="pun">(</span><span class="typ">Usuario_email</span><span class="pun">,</span><span class="pln"> roles_nome</span><span class="pun">)</span><span class="pln"> values </span><span class="pun">(</span><span class="str">'admin@casadocodigo.com.br'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'ROLE_ADMIN'</span><span class="pun">)</span></code></pre>
+<p>Já podemos testar, sem precisar reiniciar o servidor, pois a modificação foi simplesmente no banco de dados. Agora ao sermos redirecionados para o formulário de Login, podemos usar como usuário o email: <strong>admin@casadocodigo.com.br</strong> e como senha: <strong>123456</strong>. Após autenticar o usuário seremos redirecionados para a página que antes estava bloqueada.</p>
+<h3>Restringindo Conteúdo</h3>
+<p>Na página inicial da nossa aplicação, os links para listagem e cadastro de produtos ainda é visível para quem não está logado, ou seja, estão públicos e isso não é bom. Devemos esconde-los e somente exibi-los se o usuário estiver logado.</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-novos-items-menu.png" alt="pagina inicial com links administrativos"></p>
+<p>O <em>Spring</em> nos fornece uma <em>Taglib</em> que faz exatamente o que queremos fazer. Esta que pode ser importada na página <code>home.jsp</code> da seguinte maneira:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/security/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"security"</span><span class="pln"> %&gt;</span></code></pre>
+<p>Ao importar a <em>Taglib</em>, podemos fazer uso da tag <code>&lt;security:authorize&gt;</code> que tem o atributo <code>access</code> no qual podemos usar o método <code>isAuthenticated</code> também fornecido pela própria <em>Tablib</em> do <em>Spring</em>. Assim devemos encontrar o seguinte trecho de código:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"header-content"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"main-nav"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#listar').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Listagem de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#form').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Cadastro de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/cart"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Carrinho</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/sobre-a-casa-do-codigo"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Sobre Nós</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/nav&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<p>E esconder os links de listagem e cadastro de produtos da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;security:authorize</span><span class="pln"> </span><span class="atn">access</span><span class="pun">=</span><span class="atv">"isAuthenticated()"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#listar').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Listagem de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#form').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Cadastro de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/security:authorize&gt;</span></code></pre>
+<p>O menu completo da página <code>home.jsp</code> ficará da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"header-content"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"main-nav"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;security:authorize</span><span class="pln"> </span><span class="atn">access</span><span class="pun">=</span><span class="atv">"isAuthenticated()"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#listar').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Listagem de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#form').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Cadastro de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/security:authorize&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/cart"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Carrinho</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/sobre-a-casa-do-codigo"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Sobre Nós</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/nav&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<p>Mas ao atualizarmos a página, não teremos nenhum resultado visual já que estamos logados e não implementamos nenhuma forma de deslogar da aplicação ainda. Como faremos para verificar se os links realmente não aparecem para os usuários não logados? A forma mais simples é apagando o <strong>Cookie</strong> de sessão do <em>Spring</em>.</p>
+<p>Abrindo as ferramentas do desenvolvedor do navegador, podemos navegar até a sessão <code>resourses -&gt; cookies -&gt; localhost</code> e apagar o <em>Cookie</em> com o nome <code>JSESSIONID</code>. Assim, ao atualizarmos a página não veremos mais os links que ocultamos anteriormente.</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-delete-cookie-auth.png" alt="deletando cookie jsessionid"></p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-links-ocultos.png" alt="links de admin ocultos"></p>
+<h3>Mostrando dados do usuário logado.</h3>
+<p>Uma caracteristica interessante para adicionarmos na nossa aplicação será mostrar qual usuário está logado no momento. O lugar em que o nome do usuário costuma ser exibido nas aplicações é dentro do painel de administração. No caso, pode ser a página de listagem dos produtos, no canto superior, do lado direito do menu principal.</p>
+<p>Para exibirmos dados do usuário logado, as tags de segurança do <em>Spring</em> nos ajudam de uma forma bastante simples. Existe uma tag chamada <code>security:authentication</code>, na qual através do atributo <code>property</code> podemos usar o valor <code>principal</code> para recuperar dados do usuário atualmente logado.</p>
+<p>Vamos abrir a página <code>lista.jsp</code> e encontrar o seguinte treco de código:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"collapse navbar-collapse"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"bs-example-navbar-collapse-1"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav navbar-nav"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#listar').build() }"</span><span class="tag">&gt;</span><span class="pln">Lista de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#form').build() }"</span><span class="tag">&gt;</span><span class="pln">Cadastro de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+</span><span class="tag">&lt;/div&gt;</span></code></pre>
+<p>Logo abaixo da tag <code>ul</code> criaremos uma nova <code>ul</code> com as classes padrões do bootstrap para criação de um menu alinhado à direita da barra de menu.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav navbar-nav navbar-right"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">NOME DO USUÁRIO</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+<p>Neste novo trecho de código, substituiremos <code>NOME DO USUÁRIO</code> pela tag <code>security:authentication</code>. Usaremos o atributo <code>property</code> e através do valor <code>principal</code>, vamos recuperar o <code>username</code> atual do usuário, da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav navbar-nav navbar-right"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;&lt;security:authentication</span><span class="pln"> </span><span class="atn">property</span><span class="pun">=</span><span class="atv">"principal.username"</span><span class="tag">/&gt;&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+<p>Visualmente, já podereamos verificar o resultado após logar na aplicação.</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-usuario-logado.png" alt="nome de usuário sendo exibido em listagem"></p>
+<p>Uma variação do código anterior é usar outra variável para guardar os dados do usuário. Podemos fazer isto da seguinte forma para alcançar o mesmo resultado:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"nav navbar-nav navbar-right"</span><span class="tag">&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;security:authentication</span><span class="pln"> </span><span class="atn">property</span><span class="pun">=</span><span class="atv">"principal"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"usuario"</span><span class="tag">/&gt;</span><span class="pln">
+        Usuário: ${usuario.username}
+    </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-usuario-logado-2.png" alt="nome de usuário sendo exibido em listagem"></p>
+<p>Outra variação de código que pode ser usada para exibir (ou não) informações nas páginas <code>jsps</code> é o uso do <code>hasRole</code> na tag <code>security:authorize</code>, passando a <em>role</em> requerida para o acesso. No caso de ocultar os links da página <code>home.jsp</code>, como fizemos antes, podemos fazer dessa maneira:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;security:authorize</span><span class="pln"> </span><span class="atn">access</span><span class="pun">=</span><span class="atv">"hasRole('ROLE_ADMIN')"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#listar').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Listagem de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#form').build() }"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Cadastro de Produtos</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/security:authorize&gt;</span></code></pre>
+<p>Neste caso o uso do paramêtro para o <code>hasRole</code> precisa ser prefixado com o <strong>ROLE_</strong>.</p>
+<h2>Cross Site Request Forgery</h2>
+<p>A aplicação aparenta estar funcionando normalmente, mas o que acontece se tentarmos realizar uma compra ou tentarmos pelo menos adicionar um produto ao carrinho?</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-erro_crsf.png" alt="crsf error"></p>
+<p>O que antes funcionava, agora não funciona. Adicionar os componentes de segurança do <em>Spring</em> fez com que o formulário de adição de produtos no carrinho parasse de funcionar por algum motivo. O que será esse <strong>CSRF</strong>?</p>
+<p><strong>CSRF</strong> é uma sigla que representa a frase <strong>Cross Site Request Forgery</strong>, uma técnica de ataque a sites muito comum na web. A técnica representa o cenário de que um outro site está enviando dados para nossa aplicação, em vez do usuário diretamente. Geralmente, acontece com páginas clonadas, uma página falsa é apresentada ao usuário e este sem saber submete seus dados que por sua vez podem ser enviados ao servidor original ou podem ser feitas cópias em um servidor falso para posteriormente ter o uso indevido.</p>
+<p>Por ser uma técnica de ataque muito comum e também muito perigosa, diversos frameworks de várias plataformas, já possume recursos prontos para que usemos afim de evitar tais ocorrências. Com o <em>Spring</em> não é diferente.</p>
+<p>A solução mais simples é criar um novo <code>input</code> no formulário com o valor <code>${_csrf.parameterName}</code> no atributo <code>name</code> e <code>${_csrf.token}</code>. Em nossa página de <code>detalhes.jsp</code> teriamos:</p>
+<pre class="prettyprint"><code><span class="pln">&lt;form action="</span><span class="tag">&lt;c:url</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">'/carrinho/add'</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">" method="post" class="container"&gt;
+    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"variants"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"hidden"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"produtoId"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${produto.id}"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        </span><span class="tag">&lt;c:forEach</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"${produto.precos}"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"preco"</span><span class="tag">&gt;</span><span class="pln">
+          </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"buy-option"</span><span class="tag">&gt;</span><span class="pln">
+           [...]
+          </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/c:forEach&gt;</span><span class="pln">           
+    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"submit-image icon-basket-alt"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Compre Agora"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Compre Agora${produto.titulo}"</span><span class="tag">&gt;&lt;/button&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"hidden"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"${_csrf.parameterName }"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${_csrf.token }"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;/form&gt;</span></code></pre>
+<p>Com este código, o <em>Spring</em> irá gerar o <code>name</code> e o <code>value</code> de forma que ele saiba se o <strong>POST</strong> veio do formulário da página ou de algum outro lugar. O <code>_csrf.token</code> nada mais gera do que uma sequência de números verificadores que se alterados tornam-se inválidos gerando o seguinte erro:</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-crsf_invalid.png" alt="crsf invalid"></p>
+<p>Mas convenhamos de que podemos facilmente esquecer de criar o <code>input</code> de <em>token</em> manualmente toda vez que precisarmos criar um formulário em nossa aplicação. Para que evitemos esses casos de esquecimento, podemos usar uma segunda forma de criação de formulários que já vem com este campo configurado. Usando as tags de formulários do próprio <em>Spring</em>. Assim só precisamos alterar a tag <code>form</code> do formulário de compras da página <code>detalhes.jsp</code>.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;form:form</span><span class="pln"> </span><span class="atn">servletRelativeAction</span><span class="pun">=</span><span class="atv">"/carrinho/add"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="pln"> </span><span class="atn">cssClass</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"variants"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"hidden"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"produtoId"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${produto.id}"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        </span><span class="tag">&lt;c:forEach</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"${produto.precos}"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"preco"</span><span class="tag">&gt;</span><span class="pln">
+          [...]
+        </span><span class="tag">&lt;/c:forEach&gt;</span><span class="pln">           
+    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+    </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"submit-image icon-basket-alt"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Compre Agora"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Compre Agora ${produto.titulo}"</span><span class="tag">&gt;&lt;/button&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/form:form&gt;</span></code></pre>
+<p>Dessa forma não precisamos nos preocupar em criar um campo <em>CSRF</em> manualmente toda vez que formos adicionar um formulário em alguma página, o <em>Spring</em> já fará isso automaticamente. Perceba que utilizamos uma forma alternativa de criar o <code>action</code> do formulário através do <code>servletRelativeAction</code> ao invés do <code>mvcUrl</code>.</p>
+<h2>Personalizando login e logout</h2>
+<p>Não foi comentado anteriormente mas é curioso. De onde veio o formulário de login que utilizamos para testar e autenticar usuários em nossa aplicação? Do próprio <em>Spring</em>! Este que apesar de funcionar, não é o ideal. Queremos nosso próprio formulário com os estilos da casa do código. Vamos criar então uma nova página chamada <code>loginForm</code> dentro da pasta <code>webapp/WEB_INF/views</code> e dentro deste novo <em>JSP</em> usaremos o seguinte código:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://java.sun.com/jsp/jstl/core"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"c"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags/form"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"form"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;
+
+
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"UTF-8"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Livros de Java, Android, iPhone, Ruby, PHP e muito mais - Casa do Código</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+    </span><span class="tag">&lt;c:url</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"/resources/css"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"cssPath"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${cssPath}/bootstrap.min.css"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${cssPath}/bootstrap-theme.min.css"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;style</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="tag">&gt;</span><span class="pln">
+        body</span><span class="pun">{</span><span class="pln">
+            padding</span><span class="pun">:</span><span class="pln"> </span><span class="lit">60px</span><span class="pln"> </span><span class="lit">0px</span><span class="pun">;</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h1&gt;</span><span class="pln">Login Casa do Código</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+        </span><span class="tag">&lt;form:form</span><span class="pln"> </span><span class="atn">servletRelativeAction</span><span class="pun">=</span><span class="atv">"/login"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;label&gt;</span><span class="pln">Nome</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"username"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-group"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;label&gt;</span><span class="pln">Senha</span><span class="tag">&lt;/label&gt;</span><span class="pln">
+                </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"password"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-control"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+            </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"btn btn-primary"</span><span class="tag">&gt;</span><span class="pln">Logar</span><span class="tag">&lt;/button&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/form:form&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>E para que possamos utilizar essa nova <strong>View</strong>, devemos criar um novo <strong>Controller</strong> que chamaremos de <code>LoginController</code> que será anotado com <code>@Controller</code> e terá o método <code>loginForm</code> que retorna apenas o nome da <em>view</em> do login e será mapeado para <code>/login</code> aceitando apenas requisições do tipo <strong>GET</strong>.</p>
+<pre class="prettyprint"><code><span class="lit">@Controller</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">LoginController</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="pln">value</span><span class="pun">=</span><span class="str">"/login"</span><span class="pun">,</span><span class="pln"> method</span><span class="pun">=</span><span class="typ">RequestMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">)</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> loginForm</span><span class="pun">(){</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"loginForm"</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Fazer isso ainda não é o suficiente, precisamos de alguma forma informar o <em>Spring</em> de que ele deve usar a nossa página e não a página padrão dele. Para isso, precisamos fazer mais configurações. Na classe <code>SecurityConfiguration</code> no método <code>configure</code> que recebe o <code>HttpSecurity</code> temos o seguinte código.</p>
+<pre class="prettyprint"><code><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    http</span><span class="pun">.</span><span class="pln">authorizeRequests</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/carrinho/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">anyRequest</span><span class="pun">().</span><span class="pln">authenticated</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">formLogin</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>O objeto <code>HttpSecurity</code> tem um método chamado <code>loginPage</code> no qual passamos o caminho que será atendido pelo <code>LoginController</code> que no caso é <code>/login</code>. E neste caso precisaremos usar o <code>permitAll</code> para que o <em>Spring</em> não bloqueie a página, já que esta não está inclusa nos métodos <code>Matchers</code>. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    http</span><span class="pun">.</span><span class="pln">authorizeRequests</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/carrinho/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">anyRequest</span><span class="pun">().</span><span class="pln">authenticated</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">formLogin</span><span class="pun">().</span><span class="pln">loginPage</span><span class="pun">(</span><span class="str">"/login"</span><span class="pun">).</span><span class="pln">parmitAll</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Já podemos reiniciar o servidor e tentar acessar uma das páginas bloqueadas, como por exemplo <code>localhost:8080/casadocodigo/produtos/</code> e seremos levados a nossa página de login personalizada.</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-login-cdc.png" alt="pagina de login da CDC"></p>
+<p>Mas ao tentarmos usar o usuário e senha que cadastramos no banco de dados, percebmos que funciona, mas há algo estranho, o código do <strong>Bootstrap</strong> foi impresso na página ao invés de sermos direcionados para a listagem de produtos. Mas porque?</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-login-carregando-bootstrap.png" alt="redirecionados para css do bootstrap"></p>
+<p>Isso acontece porque o <em>Spring</em> redireciona para a última página ou recurso em que o acesso foi bloqueado e por incrível que pareça, deixamos as configurações do <strong>Spring Security</strong> bloqueando os arquivos de <strong>CSS</strong> e <strong>JS</strong> do <em>Bootstrap</em>. Precisamos usar o método <code>Matchers</code> com o valor <code>/resources/**</code> para desbloquear estes arquivos na classe <code>SecurityConfiguration</code>. Então teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    http</span><span class="pun">.</span><span class="pln">authorizeRequests</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/carrinho/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/resources/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">anyRequest</span><span class="pun">().</span><span class="pln">authenticated</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">formLogin</span><span class="pun">().</span><span class="pln">loginPage</span><span class="pun">(</span><span class="str">"/login"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Após esta alteração e reinicialização do servidor, já podemos ver visualmente alguma diferença no formulário de login.</p>
+<p><img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula4-login-cdc-bonito.png" alt="login da cdc bonito com bootstrap"></p>
+<p>O que falta fazermos agora para que o login funcione completamente é sua segunda parte, o <strong>logout</strong>. Acontece que o <em>logout</em> já está pronto, porém, por padrão, o <em>Spring</em> só aceita requisições do tipo <strong>POST</strong> para o <em>logout</em> que pode ser feito no <strong>path</strong> <code>/logout</code>.</p>
+<p>Para deixarmos o logout um pouco mais simples, faremos com que o mesmo possa ser feito através de requisições do tipo <strong>GET</strong>. Assim, precisaremos apenas de mais algumas configurações na classe  <code>SecurityConfiguration</code>.</p>
+<p>No objeto <code>HttpSecurity</code> precisaremos apenas usar o método <code>and</code> para adicionamos mais uma informação na cadeia de chamadas de métodos, este que por sua vez será seguido pela chamadas dos métodos <code>logout</code> e <code>logoutRequestMatcher</code> que receberá um objeto do tipo <code>AntPathRequestMatcher</code> indicando qual o caminho no qual o <em>Spring</em> ao receber uma requisisção, deverá fazer logout do usuário corrente. O método <code>configure</code> da classe <code>SecurityConfiguration</code> deve ficar da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    http</span><span class="pun">.</span><span class="pln">authorizeRequests</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/carrinho/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/resources/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">anyRequest</span><span class="pun">().</span><span class="pln">authenticated</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">formLogin</span><span class="pun">().</span><span class="pln">loginPage</span><span class="pun">(</span><span class="str">"/login"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">logout</span><span class="pun">().</span><span class="pln">logoutRequestMatcher</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">AntPathRequestMatcher</span><span class="pun">(</span><span class="str">"/logout"</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Assim ao logarmos podemos ver todos os links antes ocultos e cadastrar novos produtos normalmente e para sairmos da aplicação pasta digitar <code>logout</code> na barra de endereços do navegador, sendo que o caminho completo deve ficar da seguinte forma: <code>localhost:8080/casadocodigo/logout</code>.</p>
+<h2>Recapitulando</h2>
+<p>Nesta aula, vimos como restringir partes da aplicação para usuários autenticados, como fazer o login e logout,  particularidades sobre segurança e até aprendemos como evitar ataques como o <em>CSRF</em>. Fizemos também o <em>Spring</em> validar os usuários e criamos as <em>roles</em> que representam as permissões dos usuários. Aprendemos a usar algumas das tags da <em>security taglib</em>  do <em>Spring</em> e vamos aprender muito mais sobre <em>Spring</em> nas próximas aulas.</p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-personalizando-o-login-e-logout/12251/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;springmvc-2-integracao-cache-seguranca-e-templates&quot;,&quot;task-id&quot;:&quot;12251&quot;,&quot;task-kind&quot;:&quot;Explicação&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12251/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed;">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates" title="Ir para página do curso">
+				<img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/springmvc-2-integracao-cache-seguranca-e-templates.svg" alt="ícone Spring MVC II: Integração, cache, segurança e templates" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Spring MVC II: Integração, cache, segurança e templates</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">67%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 67%, transparent 67%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>04</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Personalizando o login e logout
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>7 de 10</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12245" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">12min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12246" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">10min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12247" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 3">
+							Vídeo 3
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">21min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12248" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 4">
+							Vídeo 4
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12249" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 5">
+							Vídeo 5
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">13min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12250" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 6">
+							Vídeo 6
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">14min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12251" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Personalizando o login e logout">
+							Personalizando o login e logout
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12252" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Atividade sem Resposta do Aluno concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Adicionando o spring security ao nosso projeto">
+							Adicionando o spring security ao nosso projeto
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12253" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Exercício Aberto concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Habilitando o spring security">
+							Habilitando o spring security
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12254" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Liberando o acesso de algumas páginas">
+							Liberando o acesso de algumas páginas
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/springmvc-2-integracao-cache-seguranca-e-templates/section/&#39;+this.value;">
+			
+				<option value="1">01. Melhorando a home </option>
+			
+				<option value="2">02. Retornando no formato JSON</option>
+			
+				<option value="3">03. Usando o Bootstrap</option>
+			
+				<option value="4" selected="">04. Personalizando o login e logout</option>
+			
+				<option value="5">05. Trabalhando com Templates</option>
+			
+				<option value="6">06. Mudando o locale dinamicamente</option>
+			
+				<option value="7">07. Testando a aplicação</option>
+			
+				<option value="8">08. Realizando Ajustes Finais no Projeto</option>
+			
+				<option value="9">09. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/846d7bad034e3c292bc8e433e11b4683.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						41.3k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.download"></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.download"></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/markdownEditor.f940de44.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/classPage.85152a83.js.download"></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/aria.a0feb01e.js.download"></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.download"></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.download"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/partitura.977fb5b2.js.download"></script>
+	<script src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.download"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="./Spring MVC II_ Aula 4 - Atividade 7 Personalizando o login e logout _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.download"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"12251","task-kind":"Explicação"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":46,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>

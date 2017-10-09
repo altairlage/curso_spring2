@@ -3,6 +3,7 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ taglib  uri="http://www.springframework.org/tags" prefix="s"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+    <%@ taglib  uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +21,7 @@
 	
 	<a href="/carrinho" rel="unfollow"> Seu carrinho (${carrinhoCompras.quantidade })</a>
 	
-	<form action='<c:url value="/carrinho/add"/>' method="post">
+	<form:form servletRelativeAction="/carrinho/add" method="post" cssClass="container">
 		<ul>
 			<input type="hidden" value="${produto.id }" name="produtoId"> 
 			<c:forEach items="${produto.precos }" var="preco">
@@ -33,7 +34,7 @@
 		</ul>
 		
 		<button type="submit" title="Compre agora'${produto.titulo }'!">Comprar</button>
-	</form>
+	</form:form>
 	
 	<section>
 		<h2>Dados do livro:</h2>

@@ -3,6 +3,7 @@
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ taglib  uri="http://www.springframework.org/tags/form" prefix="form"%>
     <%@ taglib  uri="http://www.springframework.org/tags" prefix="s"%>
+    <%@ taglib  uri="http://www.springframework.org/security/tags" prefix="security"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +55,10 @@
 					
 					<ul class="clearfix">
 					
+						<security:authorize access="hasRole('ROLE_ADMIN')">
 						<li><a href="${s:mvcUrl('PC#listar').build() }" rel="nofollow">Produtos</a></li>
+						<li><a href="${s:mvcUrl('PC#form').build() }" rel="nofollow">Cadastro de produtos</a></li>
+						</security:authorize>
 						<li><a href="/cart" rel="nofollow">Carrinho</a></li>
 
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">Sobre Nós</a></li>
