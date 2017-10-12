@@ -25,7 +25,6 @@ public class Usuario  implements UserDetails{
 	@OneToMany(fetch=FetchType.EAGER)
 	private List<Role> roles = new ArrayList<Role>();
 	
-	
 	public String getEmail() {
 		return email;
 	}

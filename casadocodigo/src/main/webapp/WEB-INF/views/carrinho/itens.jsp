@@ -3,13 +3,11 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ taglib  uri="http://www.springframework.org/tags/form" prefix="form"%>
     <%@ taglib  uri="http://www.springframework.org/tags" prefix="s"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+    <%@ taglib  uri="http://www.springframework.org/security/tags" prefix="security"%>
+
+<%@include file="/WEB-INF/views/cabecalho.jsp" %>
+
+<div class="container">
 	<a href="${s:mvcUrl('CCC#itens').build() }">Carrinho de compras - QTD (${carrinhoCompras.quantidade })</a>
 	<table>
 		<tr>
@@ -43,5 +41,6 @@
 			</td>
 		</tr>
 	</table>
-</body>
-</html>
+</div>
+
+<%@include file="/WEB-INF/views/rodape.jsp" %>

@@ -4,22 +4,16 @@
     <%@ taglib  uri="http://www.springframework.org/tags" prefix="s"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
     <%@ taglib  uri="http://www.springframework.org/tags/form" prefix="form"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>${produto.titulo } - Casa do codigo</title>
-</head>
+
+<%@include file="/WEB-INF/views/cabecalho.jsp" %>
+
 <body class="produto">
 	<h1>${produto.titulo }</h1>
-	<a href="/carrinho" rel="nofollow"> Se carrinho</a>
 	
 	<article id="${produto.id }">
 		<h2>${produto.titulo }</h2>
 		<p>${produto.descricao }</p>
 	</article>
-	
-	<a href="/carrinho" rel="unfollow"> Seu carrinho (${carrinhoCompras.quantidade })</a>
 	
 	<form:form servletRelativeAction="/carrinho/add" method="post" cssClass="container">
 		<ul>
@@ -42,5 +36,6 @@
 		<p>Data de publicação: <span ><fmt:formatDate pattern="dd/MM/yyyy" value="${produto.dataLancamento.time }"/></span></p>
 	</section>
 	
-</body>
-</html>
+	
+	
+<%@include file="/WEB-INF/views/rodape.jsp" %>
