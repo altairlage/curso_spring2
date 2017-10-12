@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/18989 -->
+<html lang="pt-BR" data-product="alura" class="gr__cursos_alura_com_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Spring MVC II: Aula 5 - Atividade 4 Explicação | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/nr-1059.min.js.download"></script><script type="text/javascript" async="" src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/base.7f0645a5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body data-gr-c-s-loaded="true">
+
+<section class="task" data-task-type="hqexplanation" data-task-id="18989" data-author-id="75042" data-course-code="springmvc-2-integracao-cache-seguranca-e-templates" data-section-number="5" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>04</small>
+					<span class="task-body-header-title-text"> Explicação</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/18989/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/18989/question">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+		<div class="formattedText">
+			<p>Ao iniciarmos nosso projeto, podemos verificar a seguinte situação. Na página inicial, vemos que a opção carrinho do menu superior, aparece sem nenhum indicador de quantidade de produtos no carrinho de compras. Mas na página de detalhes de um determinado produto, esse indicador aparece, mesmo sendo zero. Vejamos:  </p>
+<p>Na página inicial temos:  </p>
+<p><img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-home.png" alt="home sem mostrar quantidade de produtos no carrinho"></p>
+<p>E na página de detalhes temos:  </p>
+<p><img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-detalhe.png" alt="pagina de detalhes mostrando quantidade de itens no carrinho"></p>
+<p>Isso acontece porque temos duas páginas totalmente diferentes nos dois casos. São trechos de código que se repetem nas duas páginas e que estão com diferenças. E se precisarmos alterar alguma coisa no cabeçalho de uma das páginas, precisaríamos replicar essa mudança em todas as páginas. Isso não é bom.</p>
+<p>É muito comum que os códigos de cabeçalho e rodapé dos sites sejam os mesmos em todas as páginas. Precisamos fazer com que isto aconteça em nossa aplicação, tornar os códigos de cabeçalho e rodapé comum a todas as páginas. </p>
+<p>Vamos criar um novo arquivo <strong>JSP</strong> chamado <code>cabecalho.jsp</code> dentro da pasta <code>views</code> e moveremos para este arquivo todo o código do cabeçalho da página <code>detalhe.jsp</code> para este arquivo.</p>
+<p>O trecho de códido referente ao cabeçalho começa com a declaração do <code>doctype</code> do <em>HTML</em> e se estende até o fechamento da tag <code>nav</code> a qual envolve todo o menu do site. Ou seja, tudo que está compreendido deste a tag <code>&lt;!DOCTYPE html&gt;</code> até <code>&lt;/nav&gt;</code>.</p>
+<p>E antes de continuarmos, devemos verificar se estamos usando alguma <strong>taglib</strong> neste trecho de código e fazer o devido <strong>import</strong>. Neste caso, estamos usando algumas tags do <strong>Spring</strong> que devemos importar com a deretiva a seguir:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;</span></code></pre>
+<p>Até este passo, teremos o <code>cabecalho.jsp</code> dessa forma:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">${produto.titulo} - Casa do Código</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"X-UA-Compatible"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"IE=edge,chrome=1"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1, maximum-scale=1"</span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://plus.googlecom/108540024862647200608"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"publisher"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/cssbase-min.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">'http://fonts.googleapis.com/css?family=Droid+Sans:400,700'</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">'stylesheet'</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fonts.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fontello-ie7.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fontello-embedded.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fontello.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/layout-colors.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/responsive-style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/guia-do-programador-style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/produtos.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">    
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/book-collection.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/checkout-style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">    
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;header</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"layout-header"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix container"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('HC#index').build()}"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"logo"</span><span class="tag">&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/imagens/cdc-logo.svg"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"header-content"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"main-nav"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;li&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('CCC#itens').build()}"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln"> 
+                            Carrinho ( ${carrinhoCompras.quantidade} )
+                        </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/sobre-a-casa-do-codigo"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Sobre Nós</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/perguntas-frequentes"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Perguntas Frequentes</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/nav&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/header&gt;</span><span class="pln">
+</span><span class="tag">&lt;nav</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"categories-nav"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.casadocodigo.com.br"</span><span class="tag">&gt;</span><span class="pln">Home</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-agile"</span><span class="tag">&gt;</span><span class="pln">
+                Agile </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-front-end"</span><span class="tag">&gt;</span><span class="pln">
+                Front End </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-games"</span><span class="tag">&gt;</span><span class="pln">
+                Games </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-java"</span><span class="tag">&gt;</span><span class="pln">
+                Java </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-mobile"</span><span class="tag">&gt;</span><span class="pln">
+                Mobile </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln">
+            </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-desenvolvimento-web"</span><span class="tag">&gt;</span><span class="pln"> Web </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"category"</span><span class="tag">&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/outros"</span><span class="tag">&gt;</span><span class="pln"> Outros </span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+</span><span class="tag">&lt;/nav&gt;</span></code></pre>
+<p>Agora precisamos fazer com que a página de detalhes consiga imcorporar o código que está no arquivo <code>cabecalho.jsp</code>. Existe um recurso da <em>JSP</em> que faz exatamente isso. A diretiva <code>import</code>. Veja como podemos utiliza-la:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;</span></code></pre>
+<p>Agora, se atualizarmos a página de detalhes não teremos nenhuma mudança visual, mas o código do arquivo <code>detalhe.jsp</code> estará bem menor. Devemos fazer o mesmo procedimento com o arquivo <code>home.jsp</code>. Remover todo o código de cabeçalho e fazer o simples importe do <code>cabecalho.jsp</code>. como foi feito na página <code>detalhe.jsp</code>.</p>
+<p>E visualmente, a página inicial que antes estava assim:<img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-home.png" alt="home sem mostrar quantidade de produtos no carrinho"></p>
+<p>Passará a ficar assim:<img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-home-novo-cabecalho.png" alt="novo cabecalho da pagina inicial"></p>
+<p>Com esta parte pronta, podemos fazer o mesmo processo para a parte de rodapé do site - a parte inferior da página. Podemos visualizá-lo na imagem abaixo:
+<img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-rodape.png" alt="rodape da casa do codigo"></p>
+<p>Logo, criaremos um novo arquivo <em>JSP</em> chamado <code>rodape.jsp</code>, dentro da pasta <code>views</code> e moveremos o código parte inferior da página <code>detalhe.jsp</code>. O trecho de código a ser movido é todo aquele que estiver a partir da tag <code>footer</code>:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;footer</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"layout-footer"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix container"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"collections-footer"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="com">&lt;!-- cdc-footer --&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-title"</span><span class="tag">&gt;</span><span class="pln">Coleções de Programação</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-text-links"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-java"</span><span class="tag">&gt;</span><span class="pln">Java</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-desenvolvimento-web"</span><span class="tag">&gt;</span><span class="pln">Desenvolvimento
+                        Web</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-mobile"</span><span class="tag">&gt;</span><span class="pln">Mobile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/games"</span><span class="tag">&gt;</span><span class="pln">Games</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-front-end"</span><span class="tag">&gt;</span><span class="pln">Front End</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-title"</span><span class="tag">&gt;</span><span class="pln">Outros Assuntos</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-text-links"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/livros-de-agile"</span><span class="tag">&gt;</span><span class="pln">Agile</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/collections/outros"</span><span class="tag">&gt;</span><span class="pln">e outros...</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"social-footer"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="com">&lt;!-- books-footer --&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-title"</span><span class="tag">&gt;</span><span class="pln">Links da Casa do Código</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-text-links"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://livros.casadocodigo.com.br"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Meus
+                        E-books</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/sobre-a-casa-do-codigo"</span><span class="tag">&gt;</span><span class="pln">Sobre a Casa
+                        do Código</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/pages/perguntas-frequentes"</span><span class="tag">&gt;</span><span class="pln">Perguntas
+                        Frequentes</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://www.caelum.com.br"</span><span class="tag">&gt;</span><span class="pln">Caelum - Ensino e
+                        Inovação</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.codecrushing.com/"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Code
+                        Crushing</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li&gt;&lt;a</span><span class="pln">
+                    </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.casadocodigo.com.br/pages/politica-de-privacidade"</span><span class="pln">
+                    </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Política de Privacidade</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-title"</span><span class="tag">&gt;</span><span class="pln">Redes Sociais</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+                </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"social-links"</span><span class="tag">&gt;&lt;a</span><span class="pln">
+                    </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.twitter.com/casadocodigo"</span><span class="pln"> </span><span class="atn">target</span><span class="pun">=</span><span class="atv">"_blank"</span><span class="pln">
+                    </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"twitter"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Facebook</span><span class="tag">&lt;/a&gt;</span><span class="pln"> </span><span class="tag">&lt;a</span><span class="pln">
+                    </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.facebook.com/casadocodigo"</span><span class="pln"> </span><span class="atn">target</span><span class="pun">=</span><span class="atv">"_blank"</span><span class="pln">
+                    </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"facebook"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Twitter</span><span class="tag">&lt;/a&gt;&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"newsletter-footer"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="com">&lt;!-- social-footer --&gt;</span><span class="pln">
+            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-title"</span><span class="tag">&gt;</span><span class="pln">Receba as Novidades e Lançamentos</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"form-newsletter"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"POST"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"ss-form"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"form-newsletter"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;li&gt;&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"hidden"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"pageNumber"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"0"</span><span class="tag">/&gt;&lt;input</span><span class="pln">
+                            </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"hidden"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"backupCache"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="tag">/&gt;&lt;input</span><span class="pln">
+                            </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"email"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"entry.0.single"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"ss-q-short"</span><span class="pln">
+                            </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"entry_0"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"seu@email.com"</span><span class="tag">/&gt;&lt;/li&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;li&gt;&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln">
+                            </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Quero Receber!"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"submit-newsletter"</span><span class="tag">/&gt;&lt;/li&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/form&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"ie8"</span><span class="tag">&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">""</span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln">Receba as Novidades e Lançamentos</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+                </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"footer-payments"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;li&gt;&lt;/li&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;li&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+</span><span class="tag">&lt;/footer&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Fazer o devido importe com a diretiva <code>include</code>:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;</span></code></pre>
+<p>E então, remover o trecho de código da <code>home.jsp</code> referente ao rodapé e fazer o devido importe novamente. Apesar de nenhuma mundança visual ser percebida no rodapé da página, nota-se que apagamos uma boa parte de código que se repetia nas duas páginas que alteramos. Agora, caso precisemos de alguma mudança no cabeçalho ou no rodapé, podemos alterar um único arquivo e ter a mudança em todas as páginas.</p>
+<p>Um bom exemplo disto é a opção do menu do carrinho, que ao clicarmos, não nos leva para a página de itens do carrinho. O código deste menu está no <code>cabecalho.jsp</code>.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/carrinho"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln"> 
+        Carrinho ( ${carrinhoCompras.quantidade} )
+    </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+</span><span class="tag">&lt;/li&gt;</span></code></pre>
+<p>Podemos consertar o link usando a tag de <code>mvcUrl</code> do <em>Spring</em> da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;li&gt;</span><span class="pln">
+    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('CCC#itens').build()}"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"nofollow"</span><span class="tag">&gt;</span><span class="pln"> 
+        Carrinho ( ${carrinhoCompras.quantidade} )
+    </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+</span><span class="tag">&lt;/li&gt;</span></code></pre>
+<p>Feito isso, o link deve funcionar em todas as páginas em que o arquivo <code>cabecalho.jsp</code> for incluso.</p>
+<p>Apesar de termos reduzido bastante o problema de códigos repetidos entre as páginas da aplicação, estamos com um novo problema. Agora precisamos lembrar de fazer os includes do cabeçalho e do rodapé em todas as páginas. O ideal era que pudessemos usar alguma espécie de <strong>Template</strong>. Mas o que é <strong>Template</strong>?</p>
+<p><em>Templates</em> são modelos em que uma estrutura base já se encontra pronta e apenas o conteúdo que difere entre as páginas é alterado de forma dinâmica.</p>
+<p>Desta forma, ao invés de incluirmos o cabeçalho e o rodapé em todas as páginas, incluiremos estes apenas no <em>Template</em> e nas demais páginas apenas indicamos que queremos usar tal <em>Template</em>. É um processo inverso do que estamos atualmente fazendo. O conteúdo das páginas é que será incluso no <em>template</em>, e não o contrário.</p>
+<p>Podemos criar <em>templates</em> através de <em>tags</em> da <em>JSP</em>. E para que possamos criar <em>tags JSP</em>, devemos primeiro criar uma nova pasta chamada <code>tags</code> dentro de <code>WEB-INF</code> (<em>isso de acordo com a especificação</em>) e após isso, dentro desta pasta, criar um novo arquivo do tipo <code>JSP Tag</code> que chamaremos <code>pageTemplate.tag</code>. Este arquivo tem a seguinte estrutura inicial:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;</span></code></pre>
+<p>Como já comentamos, faremos com que nosso <em>template</em> já inclua o cabeçalho e o rodapé das páginas. Então teremos:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;
+
+</span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;
+
+</span><span class="com">&lt;!-- conteudo da pagina  --&gt;</span><span class="pln">
+
+</span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;</span></code></pre>
+<p>E entre o cabeçalho e o rodapé queremos que o conteúdo da página seja exibido. Para isso, a <em>JSP</em> provê uma tag que permite que no corpo da tag, quando usado, seja incorporado o conteúdo envolvido pela mesma. Esta tag se chama <code>jsp:doBody</code>. </p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;
+
+</span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;jsp:doBody</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+</span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;</span></code></pre>
+<p>Antes de continuarmos, vamos melhorar um pouco o cabeçalho e o rodapé de nossas páginas. Se observarmos, veremos que o título da página na tag <code>title</code> do cabeçalho depende de um valor dinâmico:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;title&gt;</span><span class="pln">${produto.titulo} - Casa do Código</span><span class="tag">&lt;/title&gt;</span></code></pre>
+<p>Não temos este valor presente em todas as paginas da aplicação, desta forma, em uma página o título pode aparecer corretamente e em outra não. Precisamos resolver isso. Uma solução possível é que utilizemos paramêtros para definir este valor em nosso <code>template</code> através da diretiva <code>attribute</code>.</p>
+<p>Para conseguirmos fazer isso de maneira elegante sem invalidar o código HTML. Devemos mover todo o código de configuração da página HTML para o template. O Código de configuração da página HTML é todo o código que escrito até a tag <code>body</code> e todo código escrito após o fechamento da tag <code>footer</code>. Estes são geralmente códigos de importe de estilos e scripts. Com isto, o arquivo <code>pageTemplate</code> passa a ficar com o seguinte código:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"X-UA-Compatible"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"IE=edge,chrome=1"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1, maximum-scale=1"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">${produto.titulo} - Casa do Código</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://plus.googlecom/108540024862647200608"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"publisher"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/cssbase-min.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">'http://fonts.googleapis.com/css?family=Droid+Sans:400,700'</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">'stylesheet'</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fonts.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fontello-ie7.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fontello-embedded.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/fontello.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/layout-colors.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/responsive-style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/guia-do-programador-style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/produtos.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">    
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/book-collection.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://cdn.rawgit.com/alura-cursos/spring-mvc-i-criando-aplicacoes-web-master/master/src/main/webapp/resources/css/checkout-style.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/css"</span><span class="pln">  </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"all"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">    
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;
+
+    </span><span class="tag">&lt;jsp:doBody</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>Agora, podemos transformar o título da página um atributo obrigatório da página com a diretiva <code>attribute</code> e o atributo <code>required</code> da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;
+
+</span><span class="pun">&lt;%@</span><span class="pln"> attribute name</span><span class="pun">=</span><span class="str">"titulo"</span><span class="pln"> required</span><span class="pun">=</span><span class="str">"true"</span><span class="pln"> %&gt;
+
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"X-UA-Compatible"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"IE=edge,chrome=1"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1, maximum-scale=1"</span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">${titulo} - Casa do Código</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- imports de css aqui --&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;
+
+    </span><span class="tag">&lt;jsp:doBody</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>E podemos permitir também que o atributo <code>class</code> da tag <code>body</code> também seja modificado dinamicamente da mesma forma:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;
+
+</span><span class="pun">&lt;%@</span><span class="pln"> attribute name</span><span class="pun">=</span><span class="str">"titulo"</span><span class="pln"> required</span><span class="pun">=</span><span class="str">"true"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> attribute name</span><span class="pun">=</span><span class="str">"bodyClass"</span><span class="pln"> required</span><span class="pun">=</span><span class="str">"false"</span><span class="pln"> %&gt;
+
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"X-UA-Compatible"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"IE=edge,chrome=1"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1, maximum-scale=1"</span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">${titulo} - Casa do Código</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- imports de css aqui --&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"${bodyClass}"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;
+
+    </span><span class="tag">&lt;jsp:doBody</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>E antes de testarmos, um último detalhe. Diretivas <em>JSP</em> devem ser utilizadas no inicio das páginas e os arquivos de cabeçalho e rodapé já não são inclusos no inicio de páginas, mas sim, ao dentro delas. Por isso, devemos remover  o seguinte código dos dois arquivos:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;</span></code></pre>
+<p>Agora para utilizarmos e vermos nosso <code>pageTemplate</code> funcionando, precisamos fazer o import e uso da tag de forma semelhante ao uso das outras tags que já usamos. Veja:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> taglib tagdir</span><span class="pun">=</span><span class="str">"/WEB-INF/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"tags"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"Livros de Java, Android, IOs, Mobile e muito mais..."</span><span class="tag">&gt;</span><span class="pln">
+     </span><span class="com">&lt;!-- Conteúdo da página --&gt;</span><span class="pln">    
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>O atributo <code>tagdir</code> da diretiva <code>taglib</code> serve para indicar que o arquivo de tags a ser encontrado está em um diretório local e não remoto como é feito com o atributo mais comum, o <code>uri</code>. Usando esta tag no <code>home.jsp</code> teremos:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://java.sun.com/jsp/jstl/core"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"c"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/security/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"security"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib tagdir</span><span class="pun">=</span><span class="str">"/WEB-INF/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"tags"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"Livros de Java, Android, iOS, Mobile e muito mais..."</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"index-section"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container middle"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h1</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"cdc-call"</span><span class="tag">&gt;</span><span class="pln">Últimos dias com os preços promocionais. Aproveite!</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix book-collection"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;c:forEach</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"${produtos}"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"produto"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#detalhe').arg(0, produto.id).build()}"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"block clearfix"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;h2</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"product-title"</span><span class="tag">&gt;</span><span class="pln">${produto.titulo}</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"143"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"202"</span><span class="pln">
+                        </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://cdn.shopify.com/s/files/1/0155/7645/products/java8-featured_large.png?v=1411490181"</span><span class="pln">
+                        </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Java 8 Prático"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Java 8 Prático"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;small</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"buy-button"</span><span class="tag">&gt;</span><span class="pln">Compre</span><span class="tag">&lt;/small&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/c:forEach&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+
+        </span><span class="tag">&lt;h2</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"cdc-call"</span><span class="tag">&gt;</span><span class="pln">Diferenciais da Casa do Código</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cdc-diferenciais"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-left"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h3&gt;</span><span class="pln">E-books sem DRM. Leia onde quiser</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sprite"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"sprite-drm"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> 
+                    Nossos e-books não possuem DRM, ou seja, você pode ler em qualquer computador, tablet e smartphone.
+                </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-right"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h3&gt;</span><span class="pln">Autores de renome na comunidade</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sprite"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"sprite-renome"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> 
+                    Autores que participam ativamente na comunidade com Open Source, listas de discussão, grupos e mais.
+                </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-left"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h3&gt;</span><span class="pln">Receba atualizações dos e-books</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sprite"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"sprite-atualizacoes"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> 
+                    Quando você    compra um e-book, automaticamente tem direito às atualizações e correções dele.
+                </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-right"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h3&gt;</span><span class="pln">Livros com curadoria da Caelum</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sprite"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"sprite-caelum"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln"> 
+                    Desenvolvedores    experientes que avaliam e revisam os livros constantemente.
+                </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>E na pagina de detalhes, teremos: </p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://java.sun.com/jsp/jstl/core"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"c"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags/form"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"form"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://java.sun.com/jsp/jstl/fmt"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"fmt"</span><span class="pln">%&gt;
+
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib tagdir</span><span class="pun">=</span><span class="str">"/WEB-INF/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"tags"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"${produto.titulo}"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;article</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"${produto.id}"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;header</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"product-highlight"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"product-overview"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"280px"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"395px"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://cdn.shopify.com/s/files/1/0155/7645/products/css-eficiente-featured_large.png?v=1435245145"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"product-featured-image"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h1</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"product-title"</span><span class="tag">&gt;</span><span class="pln">${produto.titulo}</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"product-author"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"product-author-link"</span><span class="tag">&gt;&lt;/span&gt;</span><span class="pln">
+                  </span><span class="tag">&lt;/p&gt;</span><span class="pln">    
+                </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"book-description"</span><span class="tag">&gt;</span><span class="pln"> ${produto.descricao}</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/header&gt;</span><span class="pln">
+        </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"buy-options clearfix"</span><span class="tag">&gt;</span><span class="pln">  
+            </span><span class="tag">&lt;form:form</span><span class="pln"> </span><span class="atn">servletRelativeAction</span><span class="pun">=</span><span class="atv">"/carrinho/add"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="pln"> </span><span class="atn">cssClass</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"variants"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"clearfix"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"hidden"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"produtoId"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${produto.id}"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;c:forEach</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"${produto.precos}"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"preco"</span><span class="tag">&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"buy-option"</span><span class="tag">&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"tipoPreco"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"variant-radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tipo"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${preco.tipo}"</span><span class="pln">  </span><span class="atn">checked</span><span class="pun">=</span><span class="atv">"checked"</span><span class="pln">  </span><span class="tag">/&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;label</span><span class="pln">  </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"variant-label"</span><span class="tag">&gt;</span><span class="pln"> ${preco.tipo} </span><span class="tag">&lt;/label&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;small</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"compare-at-price"</span><span class="tag">&gt;</span><span class="pln">R$ 39,90</span><span class="tag">&lt;/small&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"variant-price"</span><span class="tag">&gt;</span><span class="pln">${preco.valor}</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+                          </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/c:forEach&gt;</span><span class="pln">           
+                </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+                </span><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"submit-image icon-basket-alt"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Compre Agora"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Compre Agora ${produto.titulo}"</span><span class="tag">&gt;&lt;/button&gt;</span><span class="pln">
+              </span><span class="tag">&lt;/form:form&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span><span class="pln">
+              </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"summary"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+                      </span><span class="tag">&lt;li&gt;&lt;h3&gt;</span><span class="pln">E muito mais... </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">'/pages/sumario-java8'</span><span class="tag">&gt;</span><span class="pln">veja o sumário</span><span class="tag">&lt;/a&gt;</span><span class="pln">.</span><span class="tag">&lt;/h3&gt;&lt;/li&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+              </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+              </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"data product-detail"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;h2</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"section-title"</span><span class="tag">&gt;</span><span class="pln">Dados do livro:</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">Número de páginas: </span><span class="tag">&lt;span&gt;</span><span class="pln">${produto.paginas }</span><span class="tag">&lt;/span&gt;&lt;/p&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;&lt;/p&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">Data de publicação: </span><span class="tag">&lt;fmt:formatDate</span><span class="pln"> </span><span class="atn">pattern</span><span class="pun">=</span><span class="atv">"dd/MM/yyyy"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${produto.dataLancamento.time }"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"> </span><span class="tag">&lt;/p&gt;</span><span class="pln">
+                </span><span class="tag">&lt;p&gt;</span><span class="pln">Encontrou um erro? </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">'/submissao-errata'</span><span class="pln"> </span><span class="atn">target</span><span class="pun">=</span><span class="atv">'_blank'</span><span class="tag">&gt;</span><span class="pln">Submeta uma errata</span><span class="tag">&lt;/a&gt;&lt;/p&gt;</span><span class="pln">
+              </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/article&gt;</span><span class="pln">    
+
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>Apesar de não termos comentado antes, a página de itens do carrinho, também tem o mesmo problema e ainda está com o código antigo. Faremos com que ela também use o <code>pageTemplate</code> que acabamos de criar. Vejamos como fica a página de itens do carrinho após uso do <code>pageTemplate</code>:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://java.sun.com/jsp/jstl/core"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"c"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib tagdir</span><span class="pun">=</span><span class="str">"/WEB-INF/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"tags"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"Livros de Java, Android, IOs, Mobile e muito mais..."</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container middle"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h2</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cart-title"</span><span class="tag">&gt;</span><span class="pln">Seu carrinho de compras</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+        </span><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"cart-table"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;colgroup&gt;</span><span class="pln">
+                </span><span class="tag">&lt;col</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"item-col"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;col</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"item-price-col"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;col</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"item-quantity-col"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;col</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"line-price-col"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;col</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"delete-col"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/colgroup&gt;</span><span class="pln">
+            </span><span class="tag">&lt;thead&gt;</span><span class="pln">
+                </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"cart-img-col"</span><span class="tag">&gt;&lt;/th&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"65%"</span><span class="tag">&gt;</span><span class="pln">Item</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"10%"</span><span class="tag">&gt;</span><span class="pln">Preço</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"10%"</span><span class="tag">&gt;</span><span class="pln">Quantidade</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"10%"</span><span class="tag">&gt;</span><span class="pln">Total</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;th</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"5%"</span><span class="tag">&gt;&lt;/th&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/thead&gt;</span><span class="pln">
+            </span><span class="tag">&lt;tbody&gt;</span><span class="pln">
+                </span><span class="tag">&lt;c:forEach</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"${carrinhoCompras.itens }"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"item"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"cart-img-col"</span><span class="tag">&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://cdn.shopify.com/s/files/1/0155/7645/products/css-eficiente-featured_large.png?v=1435245145"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"71px"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"100px"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"item-title"</span><span class="tag">&gt;</span><span class="pln">${item.produto.titulo}</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"numeric-cell"</span><span class="tag">&gt;</span><span class="pln">${item.preco}</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"quantity-input-cell"</span><span class="tag">&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"number"</span><span class="pln"> </span><span class="atn">min</span><span class="pun">=</span><span class="atv">"0"</span><span class="pln"> </span><span class="atn">readonly</span><span class="pun">=</span><span class="atv">"readonly"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"quantidade"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"quantidade"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"${carrinhoCompras.getQuantidade(item) }"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"numeric-cell"</span><span class="tag">&gt;</span><span class="pln">${carrinhoCompras.getTotal(item)}</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"remove-item"</span><span class="tag">&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1, item.tipoPreco).build() }"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="tag">&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"image"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"/excluir.png"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Excluir"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Excluir"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;/form&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/c:forEach&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/tbody&gt;</span><span class="pln">
+            </span><span class="tag">&lt;tfoot&gt;</span><span class="pln">
+                </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">colspan</span><span class="pun">=</span><span class="atv">"4"</span><span class="tag">&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#finalizar').build()}"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="tag">&gt;</span><span class="pln">
+                            </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkout"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"checkout"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Finalizar compra"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;/form&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"numeric-cell"</span><span class="tag">&gt;</span><span class="pln">${carrinhoCompras.total}</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;td&gt;&lt;/td&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/tfoot&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/table&gt;</span><span class="pln">
+
+        </span><span class="tag">&lt;h2&gt;</span><span class="pln">Você já conhece os outros livros da Casa do Código?</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+        </span><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"collection"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"related-books"</span><span class="tag">&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"col-left"</span><span class="tag">&gt;</span><span class="pln">
+                </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"/products/livro-plsql"</span><span class="pln">    </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"block clearfix book-suggest"</span><span class="pln"> </span><span class="atn">data-book</span><span class="pun">=</span><span class="atv">"PL/SQL: Domine a linguagem do banco de dados Oracle"</span><span class="tag">&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"113px"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"160px"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http:////cdn.shopify.com/s/files/1/0155/7645/products/plsql-featured_compact.png?v=1434740236"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"PL/SQL: Domine a linguagem do banco de dados Oracle"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/a&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/li&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h2&gt;</span><span class="pln">
+            </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.casadocodigo.com.br"</span><span class="tag">&gt;</span><span class="pln">Veja todos os livros que publicamos!</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>E tudo funciona perfeitamente, podemos adicionar produtos ao carrinho, ver a página de detalhes de cada produto, mas ao tentar finalizar uma compra, teremos um erro:</p>
+<p><img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-csrf.png" alt="erro de csrf ao finalizar compra"></p>
+<p>Isso acontece porque não atualizamos os formulários da página do carrinho depois de termos adicionado o <strong>Spring Security</strong> em nosso projeto. Para resolver o problema, basta fazer o import da <code>taglib</code> de formulário do <em>Spring</em>  e substituir a tag <code>form</code> do HTML pela tag <code>form:form</code> do <em>Spring</em>.</p>
+<p>fazendo o import da <code>taglib</code> na página <code>itens.jsp</code></p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags/form"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"form"</span><span class="pln"> %&gt;</span></code></pre>
+<p>Alterando as tags de formulários da página <code>itens.jsp</code>. No forumário de remover produtos do carrinho.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;form:form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1, item.tipoPreco).build() }"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"image"</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"/excluir.png"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"Excluir"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Excluir"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/form:form&gt;</span></code></pre>
+<p>E também no de finalização da compra</p>
+<pre class="prettyprint"><code><span class="tag">&lt;form:form</span><span class="pln"> </span><span class="atn">action</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#finalizar').build()}"</span><span class="pln"> </span><span class="atn">method</span><span class="pun">=</span><span class="atv">"post"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkout"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"checkout"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Finalizar compra"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="tag">&lt;/form:form&gt;</span></code></pre>
+<h2>Trabalhando com Fragments JSP</h2>
+<p>Uma necessidade comum em alguns projetos web é que determinados <code>scripts</code> sejam executados em apenas algumas páginas. Imaginenos que ao entrar na página de finalização da compra de um produto, queremos que um determinado <code>script</code> seja executado. Como fariamos?</p>
+<p>A especificação <em>JSP</em> determina para estes casos, um recurso chamado de <strong>fragment</strong>, onde dentro de uma <em>tag</em> podemos incluir um outro trecho de código que é fornecido pela própria página.</p>
+<p>Para efeito de exemplo, imprimiremos no console do navegador a seguinte mensagem: <code>Finalização de compra de X itens</code>. Onde o <code>X</code> será o total de itens no carrinho.</p>
+<p>O uso de <em>fragments</em> no nosso <code>pageTemplate</code> será feito através da tag <code>jsp:invoke</code> onde por meio do atributo <code>fragment</code> definimos o nome do mesmo. Além disso precisamos definir um atributo em nosso template de mesmo nome do <em>fragment</em> e configurar o <code>fragment</code> deste como <code>true</code>. </p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> tag language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"ISO-8859-1"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> attribute name</span><span class="pun">=</span><span class="str">"titulo"</span><span class="pln"> required</span><span class="pun">=</span><span class="str">"true"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> attribute name</span><span class="pun">=</span><span class="str">"bodyClass"</span><span class="pln"> required</span><span class="pun">=</span><span class="str">"false"</span><span class="pln"> %&gt;
+
+</span><span class="pun">&lt;%@</span><span class="pln"> attribute name</span><span class="pun">=</span><span class="str">"extraScripts"</span><span class="pln"> fragment</span><span class="pun">=</span><span class="str">"true"</span><span class="pln"> %&gt;
+
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"X-UA-Compatible"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"IE=edge,chrome=1"</span><span class="tag">/&gt;</span><span class="pln">
+    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1, maximum-scale=1"</span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">${titulo} - Casa do Código</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- imports de css aqui --&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"${bodyClass}"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/cabecalho.jsp"</span><span class="pln"> %&gt;
+
+    </span><span class="tag">&lt;jsp:doBody</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;jsp:invoke</span><span class="pln"> </span><span class="atn">fragment</span><span class="pun">=</span><span class="atv">"extraScripts"</span><span class="tag">&gt;&lt;/jsp:invoke&gt;</span><span class="pln">
+
+    </span><span class="pun">&lt;%@</span><span class="pln"> include file</span><span class="pun">=</span><span class="str">"/WEB-INF/views/rodape.jsp"</span><span class="pln"> %&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>A partir do momento em que fizemos isso, todas as páginas da nossa aplicação podem ter fragmentos de código especificos. Mas para utilizar este recurso, precisa-se seguir algumas regras.</p>
+<p>1 - As páginas que usarão <em>fragments</em> precisarão envolver o conteúdo das mesmas com a tag <code>jsp:body</code>.
+2 - O fragmento de código a ser exibido/executado na página deverá estar envolvido pela tag <code>jsp:attribute</code> indicando o nome do <em>fragment</em> e deve ainda ser declarado antes da tag <code>jsp:body</code>.</p>
+<p>Seguindo estas regras na página de itens do carrinho e adiciando o código referente a mensagem que queremos exibir, teremos:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://java.sun.com/jsp/jstl/core"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"c"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"s"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib uri</span><span class="pun">=</span><span class="str">"http://www.springframework.org/tags/form"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"form"</span><span class="pln"> %&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib tagdir</span><span class="pun">=</span><span class="str">"/WEB-INF/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"tags"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"Seu carrinho de compras"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;jsp:attribute</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"extraScripts"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;script&gt;</span><span class="pln"> console</span><span class="pun">.</span><span class="pln">log</span><span class="pun">(</span><span class="str">"Finalização de compra de ${carrinhoCompras.quantidade} itens"</span><span class="pun">);</span><span class="pln"> </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/jsp:attribute&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;jsp:body&gt;</span><span class="pln">
+       </span><span class="com">&lt;!-- todo o conteudo da pagina aqui --&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/jsp:body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>E agora, apenas na página de carrinho de compras, o script é executado. Caso verifiquemos no console do navegador, veremos algo como:</p>
+<p><img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula5-mensagem.png" alt="mensagem no console na pagina do carrinho"></p>
+<h2>Considerações Finais</h2>
+<p>Não vimos nada de especifico do <em>Spring</em> nesta aula. Porém aprendemos bastante sobre alguns problemas comuns que aparecem no dia a dia do desenvolver uma aplicação e mais, vimos recursos e detalhes importantissimos da especificação <em>JSP</em>. Agora chegou a hora de fazer alguns exerícios!</p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-explicacao/18989/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;springmvc-2-integracao-cache-seguranca-e-templates&quot;,&quot;task-id&quot;:&quot;18989&quot;,&quot;task-kind&quot;:&quot;Explicação&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/18989/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed;">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates" title="Ir para página do curso">
+				<img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/springmvc-2-integracao-cache-seguranca-e-templates.svg" alt="ícone Spring MVC II: Integração, cache, segurança e templates" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Spring MVC II: Integração, cache, segurança e templates</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">69%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 69%, transparent 69%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>05</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Trabalhando com Templates
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>4 de 7</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12255" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">09min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12256" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">14min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12257" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 3">
+							Vídeo 3
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">15min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/18989" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Explicação">
+							Explicação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12259" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Usando o include">
+							Usando o include
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12260" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vantagem e desvantagem do include">
+							Vantagem e desvantagem do include
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12261" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Isolando o cabeçalho e o rodapé">
+							Isolando o cabeçalho e o rodapé
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/springmvc-2-integracao-cache-seguranca-e-templates/section/&#39;+this.value;">
+			
+				<option value="1">01. Melhorando a home </option>
+			
+				<option value="2">02. Retornando no formato JSON</option>
+			
+				<option value="3">03. Usando o Bootstrap</option>
+			
+				<option value="4">04. Personalizando o login e logout</option>
+			
+				<option value="5" selected="">05. Trabalhando com Templates</option>
+			
+				<option value="6">06. Mudando o locale dinamicamente</option>
+			
+				<option value="7">07. Testando a aplicação</option>
+			
+				<option value="8">08. Realizando Ajustes Finais no Projeto</option>
+			
+				<option value="9">09. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/846d7bad034e3c292bc8e433e11b4683.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						41.4k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.download"></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.download"></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/markdownEditor.f940de44.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/classPage.85152a83.js.download"></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/aria.a0feb01e.js.download"></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.download"></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.download"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/partitura.977fb5b2.js.download"></script>
+	<script src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.download"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="./Spring MVC II_ Aula 5 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.download"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"18989","task-kind":"Explicação"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":51,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
