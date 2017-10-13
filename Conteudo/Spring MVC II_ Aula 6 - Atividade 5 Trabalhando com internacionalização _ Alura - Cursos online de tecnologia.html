@@ -1,0 +1,579 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR" data-product="alura">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Spring MVC II: Aula 6 - Atividade 5 Trabalhando com internacionalização | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="/images/alura/favicon.ico">
+	
+	<link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Open+Sans:400,300,600,700,800|Source+Serif+Pro' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	
+	<link rel="stylesheet" href="/style/lib/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="/style/lib/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="/style/lib/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="/style/gnarus/base.7f0645a5.css">
+	<link rel="stylesheet" href="/style/gnarus/block/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/container.d7849dcf.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/classPage.21eeda42.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/markdown.19173ffa.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/openquestion.811813bb.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/video.45bb70c3.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/music.324695f6.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/repetition.0dac6920.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="/style/gnarus/page/classPage/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="/style/gnarus/block/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="/style/gnarus/block/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body>
+
+<section class='task' data-task-type="openquestion" data-task-id="12266" data-author-id="75042" data-course-code="springmvc-2-integracao-cache-seguranca-e-templates" data-section-number="6" data-domain="cursos.alura.com.br" data-hasFeedbackAnswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class='openMenu-button task-body-button '></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Exercício Aberto">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION" />
+					</svg>
+					<small>05</small>
+					<span class="task-body-header-title-text"> Trabalhando com internacionalização</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12266/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="true">
+			
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+<section id="task-content" class="openQuestion">
+	<div class="container">
+		
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/12266/question">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+		<div class="formattedText">
+			<p>Ao acessar o site da casa do código no rodapé encontramos uma opção para mostrar o site completamente em inglês. Porém isso significa que temos que alterar diversas frases/palavras no nosso sistema. Como você resolveria isso ? Por que ?</p>
+
+		</div>
+		<h3 class="openQuestion-answer-title">Responda</h3>
+		
+
+
+
+
+
+
+
+
+
+<div class="markdownEditor" id="markdownEditor-12266">
+	<!-- START: changes on this HTML should be replied on MarkDown.java -->
+		<div class="markdownEditor-buttons ">
+			<button class="markdownEditor-button markdownEditor-button-code " type="button">
+				Inserir código
+			</button>
+		<div class="markdownEditor-buttons-options">
+			<button class="markdownEditor-button markdownEditor-button-preview" type="button" data-js-toggle="#markdownEditor-12266">
+				Expandir
+			</button>
+			<button class="markdownEditor-button markdownEditor-button-format" type="button" data-js-toggle="#markdownEditor-12266 .markdownEditor-help">
+				Formatação
+			</button>
+		</div>
+	</div>
+
+	<div class="markdownEditor-area">
+		<textarea  class="markdownEditor-source markdownEditor-textArea" name="fieldName" maxlength="5000" id="markdownEditor-12266-ta"></textarea>
+
+		<output class="markdownEditor-preview formattedText markdownEditor-textArea" for="markdownEditor-12266-ta"></output>
+
+		<aside class="markdownEditor-help formattedText">
+			
+				<h2>Como formatar códigos</h2>
+				<ul>
+				<li>É possível criar blocos de código adicionando três backticks (```) antes e depois do código</li>
+				<li>Para escapar a formatação, utilize crases `dessa _forma_`</li>
+					<li>Serão exibidas apenas tags HTML e XML que estiverem entre `<crases>`</li></ul>
+			
+			<h2>Formatação básica</h2>
+			<ul>
+			<li>**negrito**</li>
+			<li>*itálico*</li>
+			</ul>
+
+			<h2>Como formatar links</h2>
+			<ul>
+			<li>&lthttp://google.com&gt</li>
+			<li>[Google](http://google.com)</li>
+			<li>&lta href="http://google.com"&gtGoogle&lt/a&gt</li></ul>
+		</aside>
+
+	</div>
+	<!-- END: changes on this HTML should be replied on MarkDown.java -->
+</div>
+		<div class="task-actions">
+			
+
+
+
+
+
+<a href="/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-trabalhando-com-internacionalizacao/12266/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit='{"name":"help-needed","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"12266","task-kind":"Exercício Aberto"}'>Tirar Dúvida</a>
+			<button class="task-body-actions-button task-actions-button task-actions-button-answer" data-submittable="true" data-amplitude='{"name":"task-answered","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"12266","task-kind":"Exercício Aberto"}'>Responder</button>
+		</div>
+		
+			
+
+
+
+
+<section id="task-feedback" class="task-feedback" aria-hidden="true">
+	<section class="task-feedback-banner">
+		<div class="container">
+			<h3 class="task-feedback-banner-title">
+				Opinião do Instrutor
+			</h3>
+		</div>
+		
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/12266/opinion">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+	</section>
+	
+				<div class="formattedText">
+					<p>Veja que podemos ter um arquivo que isolamos todas as palavras utilizadas, assim traduzir para outro idioma significa traduzir apenas um arquivo o que torna mais fácil manter mais de um idioma.</p>
+
+				</div>
+			
+</section>
+		
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-trabalhando-com-internacionalizacao/12266/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit='{"name":"help-needed","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"12266","task-kind":"Exercício Aberto"}'>Tirar Dúvida</a><!--
+		 --><a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12266/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class='openMenu-button task-menu-button '></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="/course/springmvc-2-integracao-cache-seguranca-e-templates" title="Ir para página do curso">
+				<img src="https://www.alura.com.br/assets/api/cursos/springmvc-2-integracao-cache-seguranca-e-templates.svg" alt="ícone Spring MVC II: Integração, cache, segurança e templates" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px"/>
+				<h2 class="task-menu-header-info-title-text">Spring MVC II: Integração, cache, segurança e templates</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">73%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 73%, transparent 73%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>06</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Mudando o locale dinamicamente
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>5 de 7</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item ">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12262" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO" />
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">09min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12263" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO" />
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">09min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12264" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO" />
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Vídeo 3">
+							Vídeo 3
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/18990" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION" />
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Explicação">
+							Explicação
+						</span>
+						
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12266" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION" />
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Trabalhando com internacionalização">
+							Trabalhando com internacionalização
+						</span>
+						
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12267" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION" />
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Separando os idiomas">
+							Separando os idiomas
+						</span>
+						
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12268" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION" />
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text" >
+						<span class="task-menu-nav-item-title" title="Alterando locale dinamicamente">
+							Alterando locale dinamicamente
+						</span>
+						
+					</a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href='/course/springmvc-2-integracao-cache-seguranca-e-templates/section/'+this.value;">
+			
+				<option value="1" >01. Melhorando a home </option>
+			
+				<option value="2" >02. Retornando no formato JSON</option>
+			
+				<option value="3" >03. Usando o Bootstrap</option>
+			
+				<option value="4" >04. Personalizando o login e logout</option>
+			
+				<option value="5" >05. Trabalhando com Templates</option>
+			
+				<option value="6" selected>06. Mudando o locale dinamicamente</option>
+			
+				<option value="7" >07. Testando a aplicação</option>
+			
+				<option value="8" >08. Realizando Ajustes Finais no Projeto</option>
+			
+				<option value="9" >09. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="https://www.gravatar.com/avatar/846d7bad034e3c292bc8e433e11b4683.png?r=PG&size=60x60&d=https%3A%2F%2Fcursos.alura.com.br%2Fimages%2Fforum%2Favatar_a.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px"/>
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						41.7k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="" />
+			<input type="hidden" value="" />
+		</a>
+		<a href="/dashboard" class="task-menu-footer-logo">
+			<img src="/images/gnarus/classPage/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal" />
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="/script/lib/jquery2/jquery-2.1.3.min.32015dd4.js"></script>
+	<script src="/script/gnarus/block/buttonToggle.83185c05.js" async></script>
+	<script src="/script/gnarus/block/sectionMenu.ba849510.js" async></script>
+
+	<script src="/script/lib/marked.98ce0051.js"></script>
+	<script src="/script/gnarus/block/markdownEditor.f940de44.js" async></script>
+	<script src="/script/gnarus/block/caret.637d95c2.js" async></script>
+	<script src="/js/gnarus/keydownWatchers.67f33811.js" async></script>
+	<script src="/js/prettify.4992e3fe.js" async></script>
+
+	<script src="/script/gnarus/block/preventsDoubleClick.0a7a943f.js" async></script>
+	<script src="/script/gnarus/block/assessment.050f656f.js" async></script>
+	<script src="/script/gnarus/block/login-form.1730703f.js" async></script>
+	<script src="/script/gnarus/classPage/classPage.85152a83.js"></script>
+	<script src="/script/gnarus/classPage/aria.a0feb01e.js"></script>
+	<script src="/script/gnarus/classPage/phrase.80dcd2b8.js"></script>
+	<script src="/script/gnarus/classPage/feedback.2d335882.js"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="/script/musicdot/partitura.977fb5b2.js"></script>
+	<script src="/script/gnarus/classPage/audioProgress.6f445a1c.js"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="/js/amplitude.f1f6e4b7.js"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"12266","task-kind":"Exercício Aberto"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":45,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script></body>
+</html>

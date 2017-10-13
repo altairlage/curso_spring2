@@ -1,5 +1,6 @@
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <%@ taglib  uri="http://www.springframework.org/tags" prefix="s"%>
+    <%@ taglib  uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +38,23 @@
 	      	<!--  <security:authorize access="hasRole('ROLE_ADMIN')"> -->
 	        <li><a href="${s:mvcUrl('PC#form').build() }">Cadastro de Produtos</a></li>
 			<!-- </security:authorize>-->
-	        <li><a href="${s:mvcUrl('CCC#itens').build() }" rel="unfollow"> Seu carrinho (${carrinhoCompras.quantidade })</a></li>
+	        <li>
+	        	<a href="${s:mvcUrl('CCC#itens').build() }" rel="unfollow"> 
+	        		<fmt:message key="menu.carrinho">
+	        			<fmt:param value="${carrinhoCompras.quantidade }"/>
+	        		</fmt:message>
+	        		</a>
+	        </li>
+	        <li>
+	        	<a href="?locale=en_US" rel="unfollow">
+	        		<s:message code="menu.en"/>
+	        	</a>
+	        </li>
+	        <li>
+	        	<a href="?locale=pt" rel="unfollow">
+	        		<s:message code="menu.pt"/>
+	        	</a>
+	        </li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	      	<li><a href="#">
