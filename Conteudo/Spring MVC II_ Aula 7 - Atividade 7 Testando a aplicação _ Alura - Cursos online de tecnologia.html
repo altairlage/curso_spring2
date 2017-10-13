@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19587 -->
+<html lang="pt-BR" data-product="alura" class="gr__cursos_alura_com_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Spring MVC II: Aula 7 - Atividade 7 Testando a aplicação | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/nr-1059.min.js.download"></script><script type="text/javascript" async="" src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/base.7f0645a5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body data-gr-c-s-loaded="true">
+
+<section class="task" data-task-type="hqexplanation" data-task-id="19587" data-author-id="75042" data-course-code="springmvc-2-integracao-cache-seguranca-e-templates" data-section-number="7" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>07</small>
+					<span class="task-body-header-title-text"> Testando a aplicação</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19587/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/19587/question">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+		<div class="formattedText">
+			<h2>Testando a aplicação</h2>
+<p>Imagine que agora o nosso gestor quer que ao entrar na parte administrativa do nosso sistema, este consiga de alguma forma ver algo como um relatório que exibem o valor total de todos os produtos separados por tipo de preço (<em>Ebook</em>, <em>Impresso</em> e <em>Combo</em>).</p>
+<p>O primeiro passo para conseguirmos fazer com que isso seja possível é pedir ao banco de dados a soma do valor de todos os produtos por tipo de preço. Na classe <code>ProdutoDAO</code> criaremos um novo método chamado <code>somaPrecosPorTipo</code> que retornará um objeto do tipo <code>BigDecimal</code>.</p>
+<p>Este método deve receber o tipo de preço por parametro, realizar a consulta ao banco de dados e retornar o resultado, isso através do objeto <code>manager</code>, como já feito anteriormente.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pln"> somaPrecosPorTipo</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pln"> tipoPreco</span><span class="pun">){</span><span class="pln">
+    </span><span class="typ">TypedQuery</span><span class="pun">&lt;</span><span class="typ">BigDecimal</span><span class="pun">&gt;</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> manager</span><span class="pun">.</span><span class="pln">createQuery</span><span class="pun">(</span><span class="str">"select sum(preco.valor) from Produto p join p.precos preco where preco.tipo = :tipoPreco"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">);</span><span class="pln">
+    query</span><span class="pun">.</span><span class="pln">setParameter</span><span class="pun">(</span><span class="str">"tipoPreco"</span><span class="pun">,</span><span class="pln"> tipoPreco</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> query</span><span class="pun">.</span><span class="pln">getSingleResult</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Mas quem garante que este código funciona e que o resultado do mesmo esteja correto? No mínimo, teríamos que criar uma nova página de relatórios e verificar manualmente o resultado e assim validar se o código funciona como esperado ou não.</p>
+<p>Para validar o funcionamento de determinado código,  precisamos de testes. Existem duas formas básicas de se testar código, uma delas foi comentarada anteriormente e é conhecida como teste manual, onde precisamos de alguém para verificar manualmente os resultados gerados pelo código em algum lugar.</p>
+<p>A segunda forma, mais prática é que sempre funcionará por meio de testes automatizados. Falando de forma mais objetiva, escreveremos um código que testa se o nosso código funciona corretamente usando a comparação de resultados esperado.</p>
+<p><strong>Observação:</strong> Na Alura, há diversos cursos de testes em diversas tecnologias, basta usar a busca e encontrará vários destes cursos ou basta <a href="https://cursos.alura.com.br/search?q=testes" rel="nofollow">clicar aqui para ver a lista de cursos de testes</a></p>
+<p>Projetos <strong>Maven</strong> sempre contam com um <strong>Source Folder</strong> especifico para testes, localizado em: <code>src/tests/java</code>. Para criação dos testes para nossa aplicação, dentro deste <em>Source Folder</em> criaremos as classes de testes usando os mesmos pacotes das classes de <em>produção</em>.</p>
+<p>Criaremos então a classe <code>ProdutoDAOTest</code> que conterá os testes relacionados a classe <code>ProdutoDAO</code>. Esta classe estará no <em>source folder</em> de testes e terá o mesmo pacote da <code>ProdutoDAO</code>: <code>br.com.casadocodigo.loja.daos</code>.</p>
+<p>Esta classe terá um método que testa se a soma dos preços dos produtos encontrados no banco é igual a um valor esperado por nós. O método responsável por esta verificação se chamará <code>deveSomarTodosOsPrecosPorTipoLivro</code> e não terá retorno.</p>
+<p>Este método usará a classe <code>ProdutoDAO</code> para salvar uma determinada quantidade de produtos que criaremos para cada tipo de preço. A criação dos produtos será feita com a ajuda de uma classe auxiliadora chamada <code>ProdutoBuilder</code>, o código desta classe se encontra abaixo. Copiaremos esta classe para o pacote <code>br.com.casadocodigo.loja.builders</code> dentro do <em>source folder tests</em>.</p>
+<pre class="prettyprint"><code><span class="kwd">package</span><span class="pln"> br</span><span class="pun">.</span><span class="pln">com</span><span class="pun">.</span><span class="pln">casadocodigo</span><span class="pun">.</span><span class="pln">loja</span><span class="pun">.</span><span class="pln">builders</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">math</span><span class="pun">.</span><span class="typ">BigDecimal</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">ArrayList</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Calendar</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">List</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">import</span><span class="pln"> br</span><span class="pun">.</span><span class="pln">com</span><span class="pun">.</span><span class="pln">casadocodigo</span><span class="pun">.</span><span class="pln">loja</span><span class="pun">.</span><span class="pln">models</span><span class="pun">.</span><span class="typ">Preco</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> br</span><span class="pun">.</span><span class="pln">com</span><span class="pun">.</span><span class="pln">casadocodigo</span><span class="pun">.</span><span class="pln">loja</span><span class="pun">.</span><span class="pln">models</span><span class="pun">.</span><span class="typ">Produto</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> br</span><span class="pun">.</span><span class="pln">com</span><span class="pun">.</span><span class="pln">casadocodigo</span><span class="pun">.</span><span class="pln">loja</span><span class="pun">.</span><span class="pln">models</span><span class="pun">.</span><span class="typ">TipoPreco</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> produtos </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;&gt;();</span><span class="pln">
+
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">(</span><span class="typ">Produto</span><span class="pln"> produto</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        produtos</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="pln">produto</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pln"> newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pln"> tipoPreco</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pln"> valor</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Produto</span><span class="pln"> livro </span><span class="pun">=</span><span class="pln"> create</span><span class="pun">(</span><span class="str">"livro 1"</span><span class="pun">,</span><span class="pln"> tipoPreco</span><span class="pun">,</span><span class="pln"> valor</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">(</span><span class="pln">livro</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pln"> newProduto</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Produto</span><span class="pln"> livro </span><span class="pun">=</span><span class="pln"> create</span><span class="pun">(</span><span class="str">"livro 1"</span><span class="pun">,</span><span class="pln"> </span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">COMBO</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">(</span><span class="pln">livro</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">Produto</span><span class="pln"> create</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> nomeLivro</span><span class="pun">,</span><span class="pln"> </span><span class="typ">TipoPreco</span><span class="pln"> tipoPreco</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pln"> valor</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Produto</span><span class="pln"> livro </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Produto</span><span class="pun">();</span><span class="pln">
+        livro</span><span class="pun">.</span><span class="pln">setTitulo</span><span class="pun">(</span><span class="pln">nomeLivro</span><span class="pun">);</span><span class="pln">
+        livro</span><span class="pun">.</span><span class="pln">setDataLancamento</span><span class="pun">(</span><span class="typ">Calendar</span><span class="pun">.</span><span class="pln">getInstance</span><span class="pun">());</span><span class="pln">
+        livro</span><span class="pun">.</span><span class="pln">setPaginas</span><span class="pun">(</span><span class="lit">150</span><span class="pun">);</span><span class="pln">
+        livro</span><span class="pun">.</span><span class="pln">setDescricao</span><span class="pun">(</span><span class="str">"Livro top sobre testes"</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Preco</span><span class="pln"> preco </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Preco</span><span class="pun">();</span><span class="pln">
+        preco</span><span class="pun">.</span><span class="pln">setTipo</span><span class="pun">(</span><span class="pln">tipoPreco</span><span class="pun">);</span><span class="pln">
+        preco</span><span class="pun">.</span><span class="pln">setValor</span><span class="pun">(</span><span class="pln">valor</span><span class="pun">);</span><span class="pln">
+        livro</span><span class="pun">.</span><span class="pln">getPrecos</span><span class="pun">().</span><span class="pln">add</span><span class="pun">(</span><span class="pln">preco</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> livro</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pln"> more</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> number</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Produto</span><span class="pln"> </span><span class="kwd">base</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> produtos</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Preco</span><span class="pln"> preco </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">base</span><span class="pun">.</span><span class="pln">getPrecos</span><span class="pun">().</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> number</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            produtos</span><span class="pun">.</span><span class="pln">add</span><span class="pun">(</span><span class="pln">create</span><span class="pun">(</span><span class="str">"Book "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> preco</span><span class="pun">.</span><span class="pln">getTipo</span><span class="pun">(),</span><span class="pln"> preco</span><span class="pun">.</span><span class="pln">getValor</span><span class="pun">()));</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Produto</span><span class="pln"> buildOne</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> produtos</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> buildAll</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> produtos</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Note que o há um método que se chama <code>newProduto</code> que recebe um objeto <code>TipoPreco</code> e o valor do produto em si. Outro método a ser utilizado é o método <code>more</code> que recebe um número que indica quandos produtos queremos criar e o método <code>buildAll</code> que nos retorna a lista de produtos criados.</p>
+<p>Dessa forma podemos fazer algo como:</p>
+<pre class="prettyprint"><code><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosImpressos </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">IMPRESSO</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span></code></pre>
+<p>Assim teremos uma lista com três produtos do tipo impresso, com o preço 10 em mãos. Podemos fazer o mesmo processo para a criação dos produtos do tipo <code>EBOOK</code> da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosEbook </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span></code></pre>
+<p>Agora, podemos usar um laço para percorrer cada uma das listas e salvar cada um dos produtos no banco de dados com o objeto da classe <code>ProdutoDAO</code>. Usando <code>streams</code> do Java 8, teremos o seguinte resultado.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> deveSomarTodosOsPrecosPorTipoLivro</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">ProdutoDAO</span><span class="pln"> produtoDAO </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ProdutoDAO</span><span class="pun">();</span><span class="pln">
+
+    </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosImpressos </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">IMPRESSO</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosEbook </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span><span class="pln">
+
+    livrosImpressos</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">().</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">produtoDAO</span><span class="pun">::</span><span class="pln">gravar</span><span class="pun">);</span><span class="pln">
+    livrosEbook</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">().</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">produtoDAO</span><span class="pun">::</span><span class="pln">gravar</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p><strong>Observação</strong>: Caso não tenha entendido bem o <code>forEach</code> feito através do <code>stream</code>, saiba que estes são recursos do Java 8 e que você pode aprende-los no curso de <a href="https://cursos.alura.com.br/course/java8-lambdas" rel="nofollow">Java 8: Tire proveito dos novos recursos da linguagem</a> disponível aqui na Alura.</p>
+<p>Agora, para que possamos realmente testar a aplicação, precisamos adicionar uma nova dependência no arquivo <code>pom.xml</code>. Esta se trata do <em>framework</em> de testes <strong>JUnit</strong>.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">junit</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">junit</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.12</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+    </span><span class="tag">&lt;scope&gt;</span><span class="pln">test</span><span class="tag">&lt;/scope&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span></code></pre>
+<p>E ao final do métoto usar a classe <code>Assert</code> do <em>JUnit</em> para verificar se o valor retornado do banco de dados é igual ao valor da soma dos produtos que temos no código. Primeiro precisamos recuperar este valor, claro!</p>
+<pre class="prettyprint"><code><span class="typ">BigDecimal</span><span class="pln"> valor </span><span class="pun">=</span><span class="pln"> produtoDAO</span><span class="pun">.</span><span class="pln">somaPrecosPorTipo</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">);</span><span class="pln">
+</span><span class="typ">Assert</span><span class="pun">.</span><span class="pln">assertEquals</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">(</span><span class="lit">40</span><span class="pun">).</span><span class="pln">setScale</span><span class="pun">(</span><span class="lit">2</span><span class="pun">),</span><span class="pln"> valor</span><span class="pun">);</span></code></pre>
+<p>Note que estamos usando o método <code>somaPrecosPorTipo</code> da classe <code>ProdutoDAO</code> para recuperar o valor da soma dos preços dos produtos do tipo <code>EBOOK</code>. Comparando com o valor que esperamos de acordo com a lista de produtos que foi criada a partir do <code>ProdutoBuilder</code>. O <code>setScale(2)</code> simplesmente adiciona duas casas decimais ao valor <code>40</code>. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Test</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> deveSomarTodosOsPrecosPorTipoLivro</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">ProdutoDAO</span><span class="pln"> produtoDAO </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ProdutoDAO</span><span class="pun">();</span><span class="pln">
+
+    </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosImpressos </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">IMPRESSO</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosEbook </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span><span class="pln">
+
+    livrosImpressos</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">().</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">produtoDAO</span><span class="pun">::</span><span class="pln">gravar</span><span class="pun">);</span><span class="pln">
+    livrosEbook</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">().</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">produtoDAO</span><span class="pun">::</span><span class="pln">gravar</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">BigDecimal</span><span class="pln"> valor </span><span class="pun">=</span><span class="pln"> produtoDAO</span><span class="pun">.</span><span class="pln">somaPrecosPorTipo</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Assert</span><span class="pun">.</span><span class="pln">assertEquals</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">(</span><span class="lit">40</span><span class="pun">).</span><span class="pln">setScale</span><span class="pun">(</span><span class="lit">2</span><span class="pun">),</span><span class="pln"> valor</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p><strong>Observação</strong>: Lembre-se de marcar o método com a anotação <code>@Test</code> para que o <em>JUnit</em> saiba que este método é um teste a ser executado.</p>
+<p>Ao executarmos o códico com o <em>JUnit Test</em>, receberemos um erro mostrando que o teste falhou por causa de um <code>NullPointerException</code>.<img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula7-jnut-nullpointerexception.png" alt="nullpointerexception em teste junit"></p>
+<p>Este erro acontece por que a classe <code>ProdutoDAO</code> usa o objeto <code>manager</code> para fazer consultas no banco de dados. Mas o objeto <code>manager</code> só é criado pelo <em>Spring</em> e dentro do contexto do <em>Spring</em>. Para solucionar o problema, teriamos que capturar o contexto do <em>Spring</em> de alguma forma, criar o objeto <code>manager</code> para só depois podermos realizar o teste. Complicado, certo? Vamos ver como faremos.</p>
+<p>Para que o <em>JUnit</em> possa reconhecer o texto dos objetos do <em>Spring</em>, precisamos adicionar uma nova biblioteca em nosso projeto, sendo esta a <em>Spring Test</em> por meio da declaração da mesma no arquivo <code>pom.xml</code></p>
+<pre class="prettyprint"><code><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.springframework</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">spring-test</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.1.0.RELEASE</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+    </span><span class="tag">&lt;scope&gt;</span><span class="pln">test</span><span class="tag">&lt;/scope&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span></code></pre>
+<p>Mas apenas isso não é o suficiente. Precisamos dizer agora que o <em>JUnit</em> deverá carregar configurações do <em>Spring Test</em> para poder executar os testes e fazemos isso realizando duas configurações por anotação, são elas:</p>
+<pre class="prettyprint"><code><span class="lit">@RunWith</span><span class="pun">(</span><span class="typ">SpringJUnit4ClassRunner</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="typ">ProdutoDAO</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span></code></pre>
+<p>A anotação <code>@RunWith</code> do próprio <em>JUnit</em> nos permite dizer que classe irá executar os testes encontrados na nossa suite de testes. Já a anotação <code>@ContextConfiguration</code> nos permite configurar quais são as classes de configurações para execução dos testes. Como estamos usando conexão com o banco de dados, precisamos da classe que configura a <em>JPA</em> e o <code>ProdutoDAO</code> neste caso.</p>
+<p>Após este passo, podemos transformar o objeto <code>produtoDAO</code> em um atributo da classe <code>ProdutoDAOTest</code>, anota-lo com <code>@Autowired</code> e renomea-lo para <code>produtoDao</code> para que fique mais claro a mudança. Por último, precisamos que o método seja anotado com <code>@Transactional</code> porque o mesmo precisa de uma transação com o banco de dados para que tudo funcione corretamente. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@RunWith</span><span class="pun">(</span><span class="typ">SpringJUnit4ClassRunner</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="typ">ProdutoDAO</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutoDAOTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Autowired</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">ProdutoDAO</span><span class="pln"> produtoDao</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@Test</span><span class="pln">
+    </span><span class="lit">@Transactional</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> deveSomarTodosOsPrecosPorTipoLivro</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+        </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosImpressos </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">IMPRESSO</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> livrosEbook </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ProdutoBuilder</span><span class="pun">.</span><span class="pln">newProduto</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">,</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">.</span><span class="pln">TEN</span><span class="pun">).</span><span class="pln">more</span><span class="pun">(</span><span class="lit">3</span><span class="pun">).</span><span class="pln">buildAll</span><span class="pun">();</span><span class="pln">
+
+        livrosImpressos</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">().</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">produtoDao</span><span class="pun">::</span><span class="pln">gravar</span><span class="pun">);</span><span class="pln">
+        livrosEbook</span><span class="pun">.</span><span class="pln">stream</span><span class="pun">().</span><span class="pln">forEach</span><span class="pun">(</span><span class="pln">produtoDao</span><span class="pun">::</span><span class="pln">gravar</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">BigDecimal</span><span class="pln"> valor </span><span class="pun">=</span><span class="pln"> produtoDao</span><span class="pun">.</span><span class="pln">somaPrecosPorTipo</span><span class="pun">(</span><span class="typ">TipoPreco</span><span class="pun">.</span><span class="pln">EBOOK</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Assert</span><span class="pun">.</span><span class="pln">assertEquals</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BigDecimal</span><span class="pun">(</span><span class="lit">40</span><span class="pun">).</span><span class="pln">setScale</span><span class="pun">(</span><span class="lit">2</span><span class="pun">),</span><span class="pln"> valor</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Outros dois problemas que podem acontecer é o <em>Spring Test</em> não conseguir instanciar o objeto <code>precos</code> na classe <code>Produto</code>. Para garantir que não tenhamos tal problema, alteraremos a declaração deste objeto instanciando um objeto do tipo <code>ArrayList</code>, assim teremos na classe produto o seguinte:</p>
+<pre class="prettyprint"><code><span class="lit">@Entity</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Produto</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// [...]</span><span class="pln">
+
+    </span><span class="lit">@ElementCollection</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Preco</span><span class="pun">&gt;</span><span class="pln"> precos </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;&gt;();</span><span class="pln">
+
+    </span><span class="com">// [...]</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Ao tentarmos executar o teste novamente, vemos que funciona, embora o mesmo não tenha passado. Nosso teste espera que o valor retornado seja 40, mas 127 foi o valor retornado do banco de dados.</p>
+<p><img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula7-jnut-test-fail.png" alt="teste junit falha"></p>
+<p>Isto acontece porque já tinhamos os produtos cadastrados no banco de dados. Na soma dos valores, ele considera os produtos cadastrados no momento do teste e os que já estavam lá.</p>
+<p>Isso pode se tornar ainda mais problemático quando o projeto for compartilhado para ser desenvolvido em equipe, um teste pode passar para um desenvolvedor e falhar para outro por causa das diferenças entre os bancos de dados de cada um. Como podemos resolver isso?</p>
+<p>Podemos criar um banco de dados diferente. Este será usado somente para testes. Criaremos um novo banco de dados chamado <code>casadocodigo_test</code>. Usando os comandos: <code>mysql -uroot</code> para entrar no gerenciador de banco de dados e <code>create database casadocodigo_test</code> para criar o banco de dados.</p>
+<p>Temos um novo banco de dados e um novo problema surge. Como faremos para que os testes usem o banco de dados destes e a aplicação naturalmente use o que não é para ser testado - também conhecido como banco em produção?</p>
+<p>Podiamos trocar o banco na configuração da <code>JPA</code>, mas esta não é uma boa idéia já que precisaríamos ficar trocando a todo momento a configuração.</p>
+<p>O que podemos fazer é dividir as configurações da aplicação por meio de <strong>Profiles</strong>, que é um recurso no qual podemos agrupar configurações para determinadas partes da aplicação. A anotação <code>@ActiveProfiles</code> nos ajuda com esta tarefa. Marcaremos então a classe <code>ProdutoDAOTest</code> com esta anotação passando o valor <code>test</code>.</p>
+<pre class="prettyprint"><code><span class="pln">
+</span><span class="lit">@RunWith</span><span class="pun">(</span><span class="typ">SpringJUnit4ClassRunner</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="typ">ProdutoDAO</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span><span class="pln">
+</span><span class="lit">@ActiveProfiles</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutoDAOTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// restante do codigo</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Prisaremos também criar uma nova classe de configuração para definir qual o banco de dados será usado para testes em nossa aplicação.  A classe receberá o nome de <code>DataSourceConfigurationTest</code> e terá apenas um método chamado <code>dataSource</code>, que retornará um objeto <code>DataSource</code> que descreve os dados de acesso ao banco.</p>
+<p>Este método precisa ser anotado com <code>@Bean</code> para que o <em>Spring</em> consiga manipulá-lo e com <code>@Profile("test")</code> para que o mesmo consiga relacionar os <em>Profiles</em> de testes da aplicação.</p>
+<p>Esta classe deve estar no <em>Source Folder</em> de testes e no pacote <code>br.com.casadocodigo.loja.confs</code></p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">DataSourceConfigurationTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Bean</span><span class="pln">
+    </span><span class="lit">@Profile</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306/casadocodigo_test"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">");
+        return dataSource;
+    }
+
+}</span></code></pre>
+<p>Esta configuração é a mesma da classe <code>JPAConfiguration</code>, muda apenas o nome do banco de dados. Para que os <em>Profiles</em> fiquem bem divididos, vamos fazer algumas melhorias na classe <code>JPAConfiguration</code>. Os passos serão descritos abaixo.</p>
+<p>Veja como está o método <code>LocalContainerEntityManagerFactoryBean</code> da classe <code>JPAConfiguration</code>:</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> entityManagerFactory</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> factoryBean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">JpaVendorAdapter</span><span class="pln"> vendorAdapter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HibernateJpaVendorAdapter</span><span class="pun">();</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaVendorAdapter</span><span class="pun">(</span><span class="pln">vendorAdapter</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306/casadocodigo"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setDataSource</span><span class="pun">(</span><span class="pln">dataSource</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.dialect"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"org.hibernate.dialect.MySQL5Dialect"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.show_sql"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.hbm2ddl.auto"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"update"</span><span class="pun">);</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaProperties</span><span class="pun">(</span><span class="pln">props</span><span class="pun">);</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setPackagesToScan</span><span class="pun">(</span><span class="str">"br.com.casadocodigo.loja.models"</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> factoryBean</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Este método está enorme, com muitas responsabilidades. Vamos refatorá-lo para separar algumas partes deste código em outros métodos. Primeiro vamos remover a criação do objeto <code>dataSource</code> para um outro método e recebê-lo por parâmetro no método <code>LocalContainerEntityManagerFactoryBean</code>.</p>
+<p>O método <code>dataSource</code> terá:</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">(){</span><span class="pln">
+    </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306/casadocodigo"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> dataSource</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E o método <code>LocalContainerEntityManagerFactoryBean</code> ficará mais simples:</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> entityManagerFactory</span><span class="pun">(</span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> factoryBean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">JpaVendorAdapter</span><span class="pln"> vendorAdapter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HibernateJpaVendorAdapter</span><span class="pun">();</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaVendorAdapter</span><span class="pun">(</span><span class="pln">vendorAdapter</span><span class="pun">);</span><span class="pln">
+
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setDataSource</span><span class="pun">(</span><span class="pln">dataSource</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.dialect"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"org.hibernate.dialect.MySQL5Dialect"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.show_sql"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.hbm2ddl.auto"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"update"</span><span class="pun">);</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaProperties</span><span class="pun">(</span><span class="pln">props</span><span class="pun">);</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setPackagesToScan</span><span class="pun">(</span><span class="str">"br.com.casadocodigo.loja.models"</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> factoryBean</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Extrairemos também o trecho de código que configura as propriedades do <strong>Hibernate</strong> para um outro método chamado <code>AditionalProperties</code>.</p>
+<pre class="prettyprint"><code><span class="kwd">private</span><span class="pln"> </span><span class="typ">Properties</span><span class="pln"> aditionalProperties</span><span class="pun">(){</span><span class="pln">
+    </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.dialect"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"org.hibernate.dialect.MySQL5Dialect"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.show_sql"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.hbm2ddl.auto"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"update"</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> props</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E refletir no método <code>LocalContainerEntityManagerFactoryBean</code> estas mudanças.</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> entityManagerFactory</span><span class="pun">(</span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> factoryBean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pun">();</span><span class="pln">
+    </span><span class="typ">JpaVendorAdapter</span><span class="pln"> vendorAdapter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HibernateJpaVendorAdapter</span><span class="pun">();</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaVendorAdapter</span><span class="pun">(</span><span class="pln">vendorAdapter</span><span class="pun">);</span><span class="pln">
+    factoryBean</span><span class="pun">.</span><span class="pln">setDataSource</span><span class="pun">(</span><span class="pln">dataSource</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> aditionalProperties</span><span class="pun">();</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaProperties</span><span class="pun">(</span><span class="pln">props</span><span class="pun">);</span><span class="pln">
+    factoryBean</span><span class="pun">.</span><span class="pln">setPackagesToScan</span><span class="pun">(</span><span class="str">"br.com.casadocodigo.loja.models"</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> factoryBean</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Perceba que recebemos o <code>dataSouce</code> por parâmetro mas o <code>props</code> não. O <code>dataSource</code> precisa ser feito desta forma porque só assim o <em>Spring</em> conseguirá diferenciar este objeto do <code>dataSource</code> de testes. Agora podemos definir o <code>Profile</code> da classe <code>JPAConfiguration</code> com o valor <code>dev</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="lit">@Profile</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">(){</span><span class="pln">
+    </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306/casadocodigo"</span><span class="pun">);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> dataSource</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>A classe <code>JPAConfiguration</code> agora está mais organizada e mais simples. Veja o código desta classe por completo:</p>
+<pre class="prettyprint"><code><span class="lit">@EnableTransactionManagement</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JPAConfiguration</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Bean</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> entityManagerFactory</span><span class="pun">(</span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> factoryBean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">JpaVendorAdapter</span><span class="pln"> vendorAdapter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HibernateJpaVendorAdapter</span><span class="pun">();</span><span class="pln">
+
+        factoryBean</span><span class="pun">.</span><span class="pln">setJpaVendorAdapter</span><span class="pun">(</span><span class="pln">vendorAdapter</span><span class="pun">);</span><span class="pln">
+        factoryBean</span><span class="pun">.</span><span class="pln">setDataSource</span><span class="pun">(</span><span class="pln">dataSource</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> aditionalProperties</span><span class="pun">();</span><span class="pln">
+
+        factoryBean</span><span class="pun">.</span><span class="pln">setJpaProperties</span><span class="pun">(</span><span class="pln">props</span><span class="pun">);</span><span class="pln">
+        factoryBean</span><span class="pun">.</span><span class="pln">setPackagesToScan</span><span class="pun">(</span><span class="str">"br.com.casadocodigo.loja.models"</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="kwd">return</span><span class="pln"> factoryBean</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Bean</span><span class="pln">
+    </span><span class="lit">@Profile</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306/casadocodigo"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> dataSource</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">Properties</span><span class="pln"> aditionalProperties</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+        props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.dialect"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"org.hibernate.dialect.MySQL5Dialect"</span><span class="pun">);</span><span class="pln">
+        props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.show_sql"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">);</span><span class="pln">
+        props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.hbm2ddl.auto"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"update"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> props</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Bean</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">JpaTransactionManager</span><span class="pln"> transactionManager</span><span class="pun">(</span><span class="typ">EntityManagerFactory</span><span class="pln"> emf</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JpaTransactionManager</span><span class="pun">(</span><span class="pln">emf</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>E como último passo de configuração para que este teste funcione, precisamos apenas adicionar a classe <code>DataSourceConfigurationTest</code> a lista de classes de configuração na <code>ProdutoDAOTest</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@RunWith</span><span class="pun">(</span><span class="typ">SpringJUnit4ClassRunner</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="typ">ProdutoDAO</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">DataSourceConfigurationTest</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span><span class="pln">
+</span><span class="lit">@ActiveProfiles</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutoDAOTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// restante do codigo</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora, ao executar novamente o teste com o <em>JUnit</em>, devemos ver o sinal verde, indicando que o teste foi executado e passou com sucesso.</p>
+<p><img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula7-junit-test-pass.png" alt="teste passando no JUnit"></p>
+<p><strong>Observação</strong>: Se verificarmos o banco de dados de testes após a execução de qualquer teste, não teremos dados neste, o banco estará em branco, somente com as tabelas criadas. Isso acontece por que o <em>Spring Test</em> limpa todos os dados do banco para que um teste não seja prejudicado com dados deixados por outros testes.</p>
+<p>Agora o que acontece se tentarmos iniciar o servidor para ver a aplicação no navegador? O esperado é que a aplicação funcione sem nenhum problema, certo? Não! Ao tentarmos isso teremos um erro com a seguinte mensagem:</p>
+<pre class="prettyprint"><code><span class="typ">Error</span><span class="pln"> creating bean </span><span class="kwd">with</span><span class="pln"> name </span><span class="str">'entityManagerFactory'</span><span class="pln"> </span><span class="kwd">defined</span></code></pre>
+<p>Como separamos as configurações de <em>Data Source</em> da aplicação com <em>Profiles</em>, o <em>Spring</em> não consegue saber qual configuração usar e assim, não usa nenhuma, causando o erro.</p>
+<p>Para que possamos definir qual configuração de <em>Data Source</em> o <em>Spring</em> deve usar ao inicializar a aplicação, precisaremos de um ouvinte de contexto, que ao perceber a inicialização da aplicação, defina que o <em>profile</em> a ser utilizado será o de <code>dev</code>.</p>
+<p>Para isso usaremos um novo método na classe <code>ServletSpringMVC</code> que faz a inicilização do <em>Spring</em>. Este método se chama <code>onStartup</code> e recebe um objeto do tipo <code>ServletContext</code> com o qual, através do método <code>addListeners</code> adicionaremos um ouvinte de contexto de requisição, objeto da classe <code>RequestContextListener</code> e por meio do método <code>setInitParameter</code> definiremos o parametro que define o <em>Profile</em> da aplicação com o valor <code>dev</code> da seguinte forma:</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> onStartup</span><span class="pun">(</span><span class="typ">ServletContext</span><span class="pln"> servletContext</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">ServletException</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">onStartup</span><span class="pun">(</span><span class="pln">servletContext</span><span class="pun">);</span><span class="pln">
+    servletContext</span><span class="pun">.</span><span class="pln">addListener</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RequestContextListener</span><span class="pun">());</span><span class="pln">
+    servletContext</span><span class="pun">.</span><span class="pln">setInitParameter</span><span class="pun">(</span><span class="str">"spring.profiles.active"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"dev"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora sim, podemos iniciar a aplicação sem nenhum problema.</p>
+<h2>Testando controllers</h2>
+<p>Perceba que sempre que  adicionamos um recurso na aplicação, sempre vamos até o navegador e verificamos se esta se comporta da forma que esperamos. Este é um processo natural no devenvolvimento web, mas e se quisessemos realizar este tesde dentro do próprio <em>Eclipse</em>, como faríamos?</p>
+<p>Por exemplo, como podemos garantir que o <code>HomeController</code> em seu método <code>index</code> realmente esta retornando como resposta a <em>view</em> <code>home.jsp</code>? E como podemos garantir que os produtos estão sendo carregados para esta página? A resposta é simples! Por meio dos testes automatizados!</p>
+<p><em>Atenção:</em> Caso não tenha conhecimentos sobre testes de software, não se preocupe. Neste curso, veremos apenas alguns pontos sobre isso, apesar de não ser o foco deste curso. Por isso, recomendamos que faça os <a href="https://cursos.alura.com.br/category/programacao" rel="nofollow">cursos de testes em Java</a> disponíveis aqui na Alura.</p>
+<p>Da mesma forma que fizemos os testes do <code>ProdutoDAO</code>, criando a classe <code>ProdutoDAOTest</code>. Criaremos testes para a classe <code>ProdutosController</code> com a classe <code>ProdutosControllerTest</code> no <em>Source Folder</em> de testes e no pacote de <em>controllers</em>.</p>
+<p>O primeiro teste será fazer uma requisição para a página inicial da nossa aplicação e verificar se a <em>view</em> <code>home.jsp</code> está realmente sendo retornada. O primeiro passo ao criar a classe é fazer as devidas configurações, bem parecidas com as da classe <code>ProdutoDAOTest</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@WebAppConfiguration</span><span class="pln">
+</span><span class="lit">@RunWith</span><span class="pun">(</span><span class="typ">SpringJUnit4ClassRunner</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">WebAppConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">DataSourceConfigurationTest</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span><span class="pln">
+</span><span class="lit">@ActiveProfiles</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutosControllerTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>As únicas diferenças são que na anotação <code>@ContextConfiguration</code> em vez de carregarmos a classe <code>ProdutoDAO</code>, carregamos a classe que tem todas as configurações de <em>MVC</em> da aplicação, <code>AppWebConfiguration</code>. A outra diferença é a presença da anotação <code>@WebAppConfiguration</code> que faz o carregamento das demais configurações de <em>MVC</em> do <em>Spring</em>.</p>
+<p>Para que possamos fazer requisições sem o uso de um navegador, precisamos de um objeto capaz de simular este procedimento. Estes objetos que simulam comportamentos são conhecidos como <strong>Mock</strong> s. E para a criação de um <em>mock</em> no <em>Spring</em>, precisaremos definir um contexto. Por isso, criaremos mais dois atributos na classe <code>ProdutosControllerTest</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Autowired</span><span class="pln">
+</span><span class="kwd">private</span><span class="pln"> </span><span class="typ">WebApplicationContext</span><span class="pln"> wac</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">private</span><span class="pln"> </span><span class="typ">MockMvc</span><span class="pln"> mockMvc</span><span class="pun">;</span></code></pre>
+<p>O <em>Spring</em> já conhece o contexto da aplicação, por isso o atributo <code>WebApplicationContext</code> é anotado com <code>@Autowired</code>. O Objeto <code>MockMvc</code> será o objeto que fará as requisições para os <em>controllers</em> da nossa aplicação.</p>
+<p>Apesar do <em>Spring</em> criar o objeto de contexto da aplicação de forma automática. Este não cria o objeto <em>Mock</em>, mas facilita essa tarefa através de classes auxiliadoras. Para a criação do objeto <code>MockMvc</code>, definiremos um método que será executado antes dos testes e instanciaremos o objeto usando a classe <code>MockMvcBuilders</code>. Iremos fornecer para o método, que se chamará <code>setup</code>, o contexto <code>webAppContextSetup</code>. </p>
+<pre class="prettyprint"><code><span class="lit">@Before</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setup</span><span class="pun">(){</span><span class="pln">
+    mockMvc </span><span class="pun">=</span><span class="pln"> </span><span class="typ">MockMvcBuilders</span><span class="pun">.</span><span class="pln">webAppContextSetup</span><span class="pun">(</span><span class="pln">wac</span><span class="pun">).</span><span class="pln">build</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>A anotação <code>@Before</code> é quem faz com que o método seja chamado antes que qualquer teste seja executado. Métodos de <em>setup</em> são muito comuns para carregamento de recursos e definição de configurações que devem ser executadas antes de qualquer teste. A classe <code>ProdutosControllerTest</code> até então se encontra com o seguinte código:</p>
+<pre class="prettyprint"><code><span class="lit">@WebAppConfiguration</span><span class="pln">
+</span><span class="lit">@RunWith</span><span class="pun">(</span><span class="typ">SpringJUnit4ClassRunner</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">AppWebConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">DataSourceConfigurationTest</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span><span class="pln">
+</span><span class="lit">@ActiveProfiles</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutosControllerTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Autowired</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">WebApplicationContext</span><span class="pln"> wac</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">MockMvc</span><span class="pln"> mockMvc</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@Before</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setup</span><span class="pun">(){</span><span class="pln">
+        mockMvc </span><span class="pun">=</span><span class="pln"> </span><span class="typ">MockMvcBuilders</span><span class="pun">.</span><span class="pln">webAppContextSetup</span><span class="pun">(</span><span class="pln">wac</span><span class="pun">).</span><span class="pln">build</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Com tudo configurado, faremos o primeiro teste! Para esta tarefa, definiremos um novo método que se chamará <code>deveRetornarParaHomeComOsLivros</code> que usará o método <code>perform</code> do objeto <code>mockMvc</code> para simular uma requisição. Mas para tal, precisaremos de algum outro objeto que construa um <em>Request</em>, objeto de requisição. Este objeto será fornecido pela classe <code>MockMvcRequestBuilders</code>por meio do método <code>get</code> para o qual será passado o caminho da requisição.</p>
+<pre class="prettyprint"><code><span class="lit">@Test</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> deveRetornarParaHomeComOsLivros</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    mockMvc</span><span class="pun">.</span><span class="pln">perform</span><span class="pun">(</span><span class="typ">MockMvcRequestBuilders</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">))</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Com a requisição feita, nos resta verificar o resultado da mesma por meio do método <code>andExpect</code> do objeto <code>mockMvc</code> que receberá o resultado do método <code>forwardedUrl</code> da classe <code>MockMvcResultMatchers</code> no qual verificará se foi feito um redirecionamento no servidor para a <em>view</em> localizada em <code>WEB-INF/views/home.jsp</code>. Assim teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Test</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> deveRetornarParaHomeComOsLivros</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pun">{</span><span class="pln">
+    mockMvc</span><span class="pun">.</span><span class="pln">perform</span><span class="pun">(</span><span class="typ">MockMvcRequestBuilders</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">))</span><span class="pln">
+           </span><span class="pun">.</span><span class="pln">andExpect</span><span class="pun">(</span><span class="typ">MockMvcResultMatchers</span><span class="pun">.</span><span class="pln">forwardedUrl</span><span class="pun">(</span><span class="str">"/WEB-INF/views/home.jsp"</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora, ao executarmos o teste, veremos que o mesmo passa!</p>
+<p><img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula7-junit-test-controller-pass.PNG" alt="Teste verifica home e passa"></p>
+<p>E para verificarmos a presença dos produtos na resposta da requisição? Faremos praticamente a mesma coisa que já fizemos: usaremos o <code>andExpect</code> novamente e também a classe <code>MockMvcResultMatchers</code>, mas com a pequena diferença que, desta vez, usaremos o método <code>model</code> para que consigamos obter informações sobre o objeto retornado pela requisição e neste objeto, verificaremos a existencia do atributo <code>produtos</code> utilizando o método <code>attributeExists</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Test</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> deveRetornarParaHomeComOsLivros</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pun">{</span><span class="pln">
+    mockMvc</span><span class="pun">.</span><span class="pln">perform</span><span class="pun">(</span><span class="typ">MockMvcRequestBuilders</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">))</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">andExpect</span><span class="pun">(</span><span class="typ">MockMvcResultMatchers</span><span class="pun">.</span><span class="pln">model</span><span class="pun">().</span><span class="pln">attributeExists</span><span class="pun">(</span><span class="str">"produtos"</span><span class="pun">))</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">andExpect</span><span class="pun">(</span><span class="typ">MockMvcResultMatchers</span><span class="pun">.</span><span class="pln">forwardedUrl</span><span class="pun">(</span><span class="str">"/WEB-INF/views/home.jsp"</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Outro teste interessante de ser feito é verificar se a página de cadastro de produto em <code>/produtos/form</code> é realmente acessada apenas pelos administradores. Para tal tipo, é necessário configurar uma nova dependência no arquivo <code>pom.xml</code>. Esta dependência torna possível realizar testes no contexto do <em>Spring Security</em>. Adicinaremos a seguinte dependência em nosso projeto.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.springframework.security</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">spring-security-test</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">4.0.0.RELEASE</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+    </span><span class="tag">&lt;scope&gt;</span><span class="pln">test</span><span class="tag">&lt;/scope&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span></code></pre>
+<p>Após isso, podemos voltar para a classe <code>ProdutosControllerTest</code> e criar um novo método chamado <code>somenteAdminDeveAcessarProdutosForm</code> no qual realizaremos um novo <em>request</em> para o caminho <code>/produtos/form</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Test</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> somenteAdminDeveAcessarProdutosForm</span><span class="pun">(){</span><span class="pln">
+    mockMvc</span><span class="pun">.</span><span class="pln">perform</span><span class="pun">(</span><span class="typ">MockMvcRequestBuilders</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Mas o teste não se resume a fazer uma requisição. Neste caso é necessário fazer uma tentativa de autenticação, assim, poderemos verificar se usuários diferentes dos administradores são redirecionados para outra página, que é a de login, neste caso.</p>
+<p>Para testar uma tentativa de autenticação, precisamos que o <em>Mock MVC</em> faça a requisição um <em>Post Processor</em>. Ou seja, um processo de <em>POST</em> antes de executar o <em>GET</em> da página, passando neste <em>Post Processor</em> os dados de autenticação do usuário. Observe o código abaixo:</p>
+<pre class="prettyprint"><code><span class="lit">@Test</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> somenteAdminDeveAcessarProdutosForm</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pun">{</span><span class="pln">
+    mockMvc</span><span class="pun">.</span><span class="pln">perform</span><span class="pun">(</span><span class="typ">MockMvcRequestBuilders</span><span class="pun">.</span><span class="kwd">get</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">)</span><span class="pln">
+            </span><span class="pun">.</span><span class="kwd">with</span><span class="pun">(</span><span class="typ">SecurityMockMvcRequestPostProcessors</span><span class="pln">
+                </span><span class="pun">.</span><span class="pln">user</span><span class="pun">(</span><span class="str">"user@casadocodigo.com.br"</span><span class="pun">).</span><span class="pln">password</span><span class="pun">(</span><span class="str">"123456"</span><span class="pun">)</span><span class="pln">
+                </span><span class="pun">.</span><span class="pln">roles</span><span class="pun">(</span><span class="str">"USUARIO"</span><span class="pun">)))</span><span class="pln">
+            </span><span class="pun">.</span><span class="pln">andExpect</span><span class="pun">(</span><span class="typ">MockMvcResultMatchers</span><span class="pun">.</span><span class="pln">status</span><span class="pun">().</span><span class="kwd">is</span><span class="pun">(</span><span class="lit">403</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Note que para podermos usar o <em>Post Processor</em>, precisaremos fazer uso do método <code>with</code> que adiciona dados adicionais à requisição. A classe <code>SecurityMockMvcRequestPostProcessors</code> do <em>Spring Security Test</em> nos permite simular os dados de um usuário, com senha e <em>Role</em> configurados para a requisição. Por último, verificamos na resposta da requisição se o <em>status</em> da mesma foi um código <strong>403</strong> que significa um redirecionamento.</p>
+<p><strong>Observação:</strong> Caso o <code>roles</code> recebesse o valor <code>ADMIN</code> o teste falharia, pois usuários com este valor de <em>role</em> podem acessar o formulário de produtos. Para resolver este caso, o código de <em>status</em> da resposta, deveria ser posto com o valor <strong>200</strong>.</p>
+<p>Mas algo estranho acontece ao tentar executar os testes. O teste de autenticação de usuários falha.</p>
+<p><img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula7-junit-test-fail-user-auth.PNG" alt="teste de autenticacao de usuário falha"></p>
+<p>O esperado que era o código <strong>403</strong> não foi coorespondido. O sistema retornou o código <strong>200</strong>. O que aconteceu? Parece estranho, mas na verdade, cometemos um pequeno deslize.</p>
+<p>Acontece que nas configurações da classe de testes, não especificamos as classes de configurações do <em>Spring Security</em>, desta forma, sem que este seja carregado, fica impossível de realizar os testes de segurança. Vamos resolver isso fazendo os seguintes passos.</p>
+<p>Na anotação <code>@ContextConfiguration</code> da classe <code>ProdutosControllerTest</code> adicionaremos a classe de configuração do <em>Spring Security</em> <code>SecurityConfiguration.class</code>. Criaremos um noto atributo do tipo <code>Filter</code> que chamaremos de <code>springSecurityFilterChain</code> anotado com <code>@Autowired</code> e por fim, adicionaremos este filtro ao <code>mockMvc</code> através do método <code>AddFilter</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@ContextConfiguration</span><span class="pun">(</span><span class="pln">classes </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">AppWebConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">DataSourceConfigurationTest</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">SecurityConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">})</span><span class="pln">
+</span><span class="lit">@ActiveProfiles</span><span class="pun">(</span><span class="str">"test"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ProdutosControllerTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="com">// codigo suprimido</span><span class="pln">
+
+    </span><span class="lit">@Autowired</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">Filter</span><span class="pln"> springSecurityFilterChain</span><span class="pun">;</span><span class="pln">
+
+    </span><span class="lit">@Before</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setup</span><span class="pun">(){</span><span class="pln">
+        mockMvc </span><span class="pun">=</span><span class="pln"> </span><span class="typ">MockMvcBuilders</span><span class="pun">.</span><span class="pln">webAppContextSetup</span><span class="pun">(</span><span class="pln">wac</span><span class="pun">).</span><span class="pln">addFilter</span><span class="pun">(</span><span class="pln">springSecurityFilterChain</span><span class="pun">).</span><span class="pln">build</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+  </span><span class="com">// codigo suprimido</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Agora, ao executarmos o teste novamente, este passa. Significando que o <em>Spring Security</em> foi carregado e fez a verificação de autenticação do usuário.</p>
+<p><img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula7-junit-test-pass-user-auth.PNG" alt="Teste de autenticação de usuário passa"></p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-testando-a-aplicacao/19587/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;springmvc-2-integracao-cache-seguranca-e-templates&quot;,&quot;task-id&quot;:&quot;19587&quot;,&quot;task-kind&quot;:&quot;Explicação&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19587/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-549.156px);">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates" title="Ir para página do curso">
+				<img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/springmvc-2-integracao-cache-seguranca-e-templates.svg" alt="ícone Spring MVC II: Integração, cache, segurança e templates" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Spring MVC II: Integração, cache, segurança e templates</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">78%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 78%, transparent 78%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>07</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Testando a aplicação
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>7 de 10</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12269" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">18min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12270" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">10min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12271" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 3">
+							Vídeo 3
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">13min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12272" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 4">
+							Vídeo 4
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">04min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12273" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 5">
+							Vídeo 5
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">12min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12274" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 6">
+							Vídeo 6
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">11min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19587" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Testando a aplicação">
+							Testando a aplicação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12276" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Testando as nossas classes">
+							Testando as nossas classes
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12277" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Atividade sem Resposta do Aluno concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Adicionando o junit ao projeto">
+							Adicionando o junit ao projeto
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/12278" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Escrevendo testes">
+							Escrevendo testes
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/springmvc-2-integracao-cache-seguranca-e-templates/section/&#39;+this.value;">
+			
+				<option value="1">01. Melhorando a home </option>
+			
+				<option value="2">02. Retornando no formato JSON</option>
+			
+				<option value="3">03. Usando o Bootstrap</option>
+			
+				<option value="4">04. Personalizando o login e logout</option>
+			
+				<option value="5">05. Trabalhando com Templates</option>
+			
+				<option value="6">06. Mudando o locale dinamicamente</option>
+			
+				<option value="7" selected="">07. Testando a aplicação</option>
+			
+				<option value="8">08. Realizando Ajustes Finais no Projeto</option>
+			
+				<option value="9">09. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/846d7bad034e3c292bc8e433e11b4683.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						42.1k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.download"></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.download"></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/markdownEditor.f940de44.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/classPage.85152a83.js.download"></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/aria.a0feb01e.js.download"></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.download"></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.download"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/partitura.977fb5b2.js.download"></script>
+	<script src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.download"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="./Spring MVC II_ Aula 7 - Atividade 7 Testando a aplicação _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.download"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"19587","task-kind":"Explicação"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":49,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
