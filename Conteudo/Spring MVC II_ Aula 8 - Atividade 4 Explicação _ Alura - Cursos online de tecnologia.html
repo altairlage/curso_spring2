@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19589 -->
+<html lang="pt-BR" data-product="alura" class="gr__cursos_alura_com_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Spring MVC II: Aula 8 - Atividade 4 Explicação | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/nr-1059.min.js.download"></script><script type="text/javascript" async="" src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/base.7f0645a5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body data-gr-c-s-loaded="true">
+
+<section class="task" data-task-type="hqexplanation" data-task-id="19589" data-author-id="75042" data-course-code="springmvc-2-integracao-cache-seguranca-e-templates" data-section-number="8" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>04</small>
+					<span class="task-body-header-title-text"> Explicação</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19589/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/19589/question">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+		<div class="formattedText">
+			<p>Uma prática muito comum nas lojas online é o envio de email para o usuário, notificando-o que sua compra foi realizada com sucesso. Note que nossa aplicação apesar de fazer o processamento dos itens no carrinho de compras e exibir uma mensagem de sucesso, ela não envia emails. É o que faremos nesta aula, evoluir um pouco mais nossa aplicação.</p>
+<h2>Enviando Emails</h2>
+<p>Nós processamos os itens do carrinho e redirecionamos o usuário para página de produtos com o método <code>finalizar</code> da classe <code>PagamentoController</code>. Faremos agora com que antes do redirecionamento, seja chamado um método <code>enviaEmailCompraProduto</code> que será privado e o criaremos logo a seguir. </p>
+<pre class="prettyprint"><code><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="pln">value</span><span class="pun">=</span><span class="str">"/finalizar"</span><span class="pun">,</span><span class="pln"> method</span><span class="pun">=</span><span class="typ">RequestMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Callable</span><span class="pun">&lt;</span><span class="typ">ModelAndView</span><span class="pun">&gt;</span><span class="pln"> finalizar</span><span class="pun">(</span><span class="typ">RedirectAttributes</span><span class="pln"> model</span><span class="pun">){</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">String</span><span class="pln"> uri </span><span class="pun">=</span><span class="pln"> </span><span class="str">"http://book-payment.herokuapp.com/payment"</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> response </span><span class="pun">=</span><span class="pln"> restTemplate</span><span class="pun">.</span><span class="pln">postForObject</span><span class="pun">(</span><span class="pln">uri</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DadosPagamento</span><span class="pun">(</span><span class="pln">carrinho</span><span class="pun">.</span><span class="pln">getTotal</span><span class="pun">()),</span><span class="pln"> </span><span class="typ">String</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">);</span><span class="pln">
+      </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">response</span><span class="pun">);</span><span class="pln">
+
+      </span><span class="com">// envia email para o usuário        </span><span class="pln">
+      enviaEmailCompraProduto</span><span class="pun">();</span><span class="pln">   
+
+      model</span><span class="pun">.</span><span class="pln">addFlashAttribute</span><span class="pun">(</span><span class="str">"sucesso"</span><span class="pun">,</span><span class="pln"> response</span><span class="pun">);</span><span class="pln">
+
+            </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"redirect:/produtos"</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">HttpClientErrorException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+      model</span><span class="pun">.</span><span class="pln">addFlashAttribute</span><span class="pun">(</span><span class="str">"falha"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Valor maior que o permitido"</span><span class="pun">);</span><span class="pln">
+      </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"redirect:/produtos"</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">};</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Note que estamos querendo enviar um email para o usuário que fez a compra e não estamos capturando este usuário de lugar algum. O método <code>enviaEmailCompraProduto</code> precisa saber para quem o email será enviado.</p>
+<p>O <em>Spring Security</em> consegue nos passar este usuário com a anotação <code>@AuthenticationPrincipal</code>. Desta forma, podemos adicionar um novo parâmetro (<code>Usuario</code>) no método <code>finalizar</code> anotado com esta anotação, e após isso, passar este usuário para o método <code>enviaEmailCompraProduto</code>.</p>
+<p>A assinatura do método então muda para:</p>
+<pre class="prettyprint"><code><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="pln">value</span><span class="pun">=</span><span class="str">"/finalizar"</span><span class="pun">,</span><span class="pln"> method</span><span class="pun">=</span><span class="typ">RequestMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Callable</span><span class="pun">&lt;</span><span class="typ">ModelAndView</span><span class="pun">&gt;</span><span class="pln"> finalizar</span><span class="pun">(</span><span class="lit">@AuthenticationPrincipal</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> usuario</span><span class="pun">,</span><span class="pln"> </span><span class="typ">RedirectAttributes</span><span class="pln"> model</span><span class="pun">)</span></code></pre>
+<p>E a chamada do método que envia o email agora passa a receber o usuário obtido através do <em>Spring Security</em></p>
+<pre class="prettyprint"><code><span class="com">//envia email para o usuário</span><span class="pln">
+enviaEmailCompraProduto</span><span class="pun">(</span><span class="pln">usuario</span><span class="pun">);</span></code></pre>
+<p>Para a criação de emails, o próprio Java facilita esta tarefa por meio da classe <code>SimpleMailMessage</code> da qual, usando de uma instância, podemos fazer uso dos métodos <code>setSubject</code>, <code>setTo</code>, <code>setText</code> e <code>setFrom</code> que nos permite configurar o assunto, o destinatário, a mensagem e o remetente do email respectivamente. Veja como ficará nosso exemplo:</p>
+<pre class="prettyprint"><code><span class="kwd">private</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> enviaEmailCompraProduto</span><span class="pun">(</span><span class="typ">Usuario</span><span class="pln"> usuario</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">SimpleMailMessage</span><span class="pln"> email </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleMailMessage</span><span class="pun">();</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setSubject</span><span class="pun">(</span><span class="str">"Compra finalizada com sucesso"</span><span class="pun">);</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setTo</span><span class="pun">(</span><span class="pln">usuario</span><span class="pun">.</span><span class="pln">getEmail</span><span class="pun">());</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setText</span><span class="pun">(</span><span class="str">"Compra aprovada com sucesso no valor de "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> carrinho</span><span class="pun">.</span><span class="pln">getTotal</span><span class="pun">());</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setFrom</span><span class="pun">(</span><span class="str">"compras@casadocodigo.com.br"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Perceba que estamos apenas enviando para o usuário uma mensagem de que sua compra foi realizada com sucesso e junto com esta estamos enviando o valor total da compra.</p>
+<p>Com o email pronto, nos falta apenas envia-lo! Para isto, usaremos um "enviador de emails" do <em>Spring</em>: o <strong>EmailSender</strong>. Assim, criaremos um novo atributo do tipo <code>EmailSender</code>, anotaremos este com <code>@Autowired</code> e o chamaremos de <code>sender</code>. Ao final do método <code>enviaEmailCompraProduto</code> usaremos este objeto para enviar o email com o método <code>send</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="str">"/pagamento"</span><span class="pun">)</span><span class="pln">
+</span><span class="lit">@Controller</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">PagamentoController</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+  </span><span class="lit">@Autowired</span><span class="pln">
+  </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">CarrinhoCompras</span><span class="pln"> carrinho</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="lit">@Autowired</span><span class="pln">
+  </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">RestTemplate</span><span class="pln"> restTemplate</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="lit">@Autowired</span><span class="pln">
+  </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">MailSender</span><span class="pln"> sender</span><span class="pun">;</span><span class="pln">
+
+  </span><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="pln">value</span><span class="pun">=</span><span class="str">"/finalizar"</span><span class="pun">,</span><span class="pln"> method</span><span class="pun">=</span><span class="typ">RequestMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">)</span><span class="pln">
+  </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Callable</span><span class="pun">&lt;</span><span class="typ">ModelAndView</span><span class="pun">&gt;</span><span class="pln"> finalizar</span><span class="pun">(</span><span class="lit">@AuthenticationPrincipal</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pln"> usuario</span><span class="pun">,</span><span class="pln"> 
+      </span><span class="typ">RedirectAttributes</span><span class="pln"> model</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">-&gt;</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="typ">String</span><span class="pln"> uri </span><span class="pun">=</span><span class="pln"> </span><span class="str">"http://book-payment.herokuapp.com/payment"</span><span class="pun">;</span><span class="pln">
+
+      </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> response </span><span class="pun">=</span><span class="pln"> restTemplate</span><span class="pun">.</span><span class="pln">postForObject</span><span class="pun">(</span><span class="pln">uri</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DadosPagamento</span><span class="pun">(</span><span class="pln">carrinho</span><span class="pun">.</span><span class="pln">getTotal</span><span class="pun">()),</span><span class="pln"> </span><span class="typ">String</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">response</span><span class="pun">);</span><span class="pln">
+
+        enviaEmailCompraProduto</span><span class="pun">(</span><span class="pln">usuario</span><span class="pun">);</span><span class="pln">
+
+        model</span><span class="pun">.</span><span class="pln">addFlashAttribute</span><span class="pun">(</span><span class="str">"sucesso"</span><span class="pun">,</span><span class="pln"> response</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"redirect:/produtos"</span><span class="pun">);</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">HttpClientErrorException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+        model</span><span class="pun">.</span><span class="pln">addFlashAttribute</span><span class="pun">(</span><span class="str">"falha"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Valor maior que o permitido"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"redirect:/produtos"</span><span class="pun">);</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">};</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+
+  </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> enviaEmailCompraProduto</span><span class="pun">(</span><span class="typ">Usuario</span><span class="pln"> usuario</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">SimpleMailMessage</span><span class="pln"> email </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleMailMessage</span><span class="pun">();</span><span class="pln">
+
+    email</span><span class="pun">.</span><span class="pln">setSubject</span><span class="pun">(</span><span class="str">"Compra finalizada com sucesso"</span><span class="pun">);</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setTo</span><span class="pun">(</span><span class="pln">usuario</span><span class="pun">.</span><span class="pln">getEmail</span><span class="pun">());</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setText</span><span class="pun">(</span><span class="str">"Compra aprovada com sucesso no valor de "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> carrinho</span><span class="pun">.</span><span class="pln">getTotal</span><span class="pun">());</span><span class="pln">
+    email</span><span class="pun">.</span><span class="pln">setFrom</span><span class="pun">(</span><span class="str">"compras@casadocodigo.com.br"</span><span class="pun">);</span><span class="pln">
+
+    sender</span><span class="pun">.</span><span class="pln">send</span><span class="pun">(</span><span class="pln">email</span><span class="pun">);</span><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Tudo configurado! Vamos ver se realmente funciona. O servidor deve inicializar normalmente, mas ao tentar acessar alguma página um erro no console do <em>Eclipse</em> é exibido.</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-nobean-mailsender.PNG" alt="bean de email sender nao encontrado"></p>
+<p>O erro notifica que o <em>Spring</em> não conseguiu encontrar um objeto <em>MailSender</em>. Já passamos por erros parecidos, lembra? Geralmente, este tipo de erro acontece por que não configuramos o que estavamos querendo usar. Vamos configurar o <em>MailSender</em>!</p>
+<p>Na classe <code>AppWebConfiguration</code>, criaremos um novo método anotado com <code>@Bean</code> que retorna um objeto do tipo <code>MailSender</code>. A classe que implementa esta interface é a <code>JavaMailSenderImpl</code> e será através do objeto desta classe que iremos configurar todo o acesso ao servidor de emails.</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">MailSender</span><span class="pln"> mailSender</span><span class="pun">(){</span><span class="pln">
+    </span><span class="typ">JavaMailSenderImpl</span><span class="pln"> mailSender </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">JavaMailSenderImpl</span><span class="pun">();</span><span class="pln">
+
+    mailSender</span><span class="pun">.</span><span class="pln">setHost</span><span class="pun">(</span><span class="str">"smtp.gmail.com"</span><span class="pun">);</span><span class="pln">
+    mailSender</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"alura.springmvc@gmail.com"</span><span class="pun">);</span><span class="pln">
+    mailSender</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">"alura2015"</span><span class="pun">);</span><span class="pln">
+    mailSender</span><span class="pun">.</span><span class="pln">setPort</span><span class="pun">(</span><span class="lit">587</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">Properties</span><span class="pln"> mailProperties </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+    mailProperties</span><span class="pun">.</span><span class="pln">put</span><span class="pun">(</span><span class="str">"mail.smtp.auth"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+    mailProperties</span><span class="pun">.</span><span class="pln">put</span><span class="pun">(</span><span class="str">"mail.smpt.starttls.enable"</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+
+    mailSender</span><span class="pun">.</span><span class="pln">setJavaMailProperties</span><span class="pun">(</span><span class="pln">mailProperties</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> mailSender</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>O uso do objeto <code>mailProperties</code> é feito para que configurações adicionais sobre como a comunicação com o servidor <strong>SMTP</strong> irá acontecer.</p>
+<p>Nestas configurações, estamos definindo o endereço do servidor, o <code>host</code>. O usuário e senha usados para a autenticação e a porta de comunicação. Além disso estamos habilitando a autenticação <em>SMTP</em> e também usando o tipo de conexão segura por meio de <strong>TLS</strong>.</p>
+<hr>
+<p><strong>Considerações Importantes</strong>: Apesar de disponibilizarmos estes dados para testes rápidos não é recomendado o uso em aplicações em produção. Para questões de testes, use seus próprios dados para verificar que a aplicação se comporta como esperado.</p>
+<p>Usar o servidor do <strong>GMail</strong> para envio de emails através de aplicações deste tipo em produção também não é recomendado. Lembre-se de trocar as configurações para utilizar o servidor de emails da sua empresa quando publicar a aplicação online.</p>
+<p>É provavel que estas configurações não funcionem quando forem executadas, pois o servidor do <strong>GMail</strong> pode bloquear a conexão por questões de segurança. Experimente! Caso não funcione, tente trocar as informações para usar seus próprios dados e se ainda não funcionar, procure rever as configurações de segurança da sua conta no <strong>GMail</strong> a fim de possibilitar o envio de email por aplicações externas.</p>
+<hr>
+<p>Por último, precisaremos adicionar como dependência do nosso projeto a biblioteca do <strong>Java Mail</strong>, pois sem esta, o envio de email simplesmente não irá funcionar. No <code>pom.xml</code> adicionaremos o seguinte:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">javax.mail</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">mail</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">1.4.7</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span></code></pre>
+<hr>
+<p><strong>Observação</strong>: Ao tentar executar a operação de compra, na finalização da mesma, seremos levados ao formulário de login. É o normal que se espera nestas aplicações, porém, por questões de teste, podemos liberar o acesso ao caminho <code>/pagamento/</code> na classe <code>SecurityConfiguration</code>.</p>
+<pre class="prettyprint"><code><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/pagamento/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span></code></pre>
+<p>Lembre-se de trocar o email de destinatário para seu email na classe <code>PagamentosController</code> caso faça esta configuração. Caso não troque, poderá ter problemas. No mínimo não terá certeza de que o email está sendo enviado corretamente.</p>
+<hr>
+<p>Agora ao executar o teste de operação de uma compra. Ao finalizar o carrinho, o email deve ser enviado sem problemas.</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-email-enviado.PNG" alt="email enviado com sucesso"></p>
+<h2>Melhorando a listagem de produtos</h2>
+<p>Uma funcionalidade interessante para os gestores da aplicação é que ao entrar na listagem dos produtos, seja possível verificar os preços de cada produto sem a necessidade de ir até a página de detalhes do produto. No painel administrativo, veja como nossa listagem se encontra no momento. Perceba que ela está sem as informações de preço.</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-listagem-sem-precos.PNG" alt="listagem de produtos sem preço"></p>
+<p>Para a exibição dos preços dos produtos, precisaremos acessar o atributo <code>precos</code> no objeto <code>produto</code> da <code>lista.jsp</code>. Na tabela da listagem de produtos será adicionada mais uma coluna.</p>
+<pre class="prettyprint"><code><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"table table-bordered table-striped table-hover"</span><span class="tag">&gt;</span><span class="pln">
+    </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+      </span><span class="tag">&lt;th&gt;</span><span class="pln">Título</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+      </span><span class="tag">&lt;th&gt;</span><span class="pln">Descrição</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+
+      </span><span class="tag">&lt;th&gt;</span><span class="pln">Preços</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+
+      </span><span class="tag">&lt;th&gt;</span><span class="pln">Páginas</span><span class="tag">&lt;/th&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+    </span><span class="tag">&lt;c:forEach</span><span class="pln"> </span><span class="atn">items</span><span class="pun">=</span><span class="atv">"${produtos }"</span><span class="pln"> </span><span class="atn">var</span><span class="pun">=</span><span class="atv">"produto"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;tr&gt;</span><span class="pln">
+        </span><span class="tag">&lt;td&gt;</span><span class="pln">
+          </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"${s:mvcUrl('PC#detalhe').arg(0,produto.id).build() }"</span><span class="tag">&gt;</span><span class="pln">${produto.titulo }</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/td&gt;</span><span class="pln">
+        </span><span class="tag">&lt;td&gt;</span><span class="pln">${produto.descricao }</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+
+        </span><span class="tag">&lt;td&gt;</span><span class="pln">${produto.precos }</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+
+        </span><span class="tag">&lt;td&gt;</span><span class="pln">${produto.paginas }</span><span class="tag">&lt;/td&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/tr&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/c:forEach&gt;</span><span class="pln">
+</span><span class="tag">&lt;/table&gt;</span></code></pre>
+<p>Neste ponto, uma observação válida a ser feita é que o atributo <code>precos</code> no objeto <code>produto</code> trata-se de um vetor, um <em>array</em>. Ao tentar imprimir um objeto deste tipo de forma direta como estamos fazendo, o método <code>toString</code> de cada um dos objetos dentro do vetor será chamado. </p>
+<p>É muito comum que o método <code>toString</code> seja sobrescrito em casos como este. Caso não, um código estranho de identificação do objeto será exibido na página. Por isso, definiremos o método <code>toString</code> na classe <code>Preco</code> que irá compor um texto com o tipo do preço e seu valor. </p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> toString</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">tipo</span><span class="pun">.</span><span class="pln">name</span><span class="pun">()</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="str">" - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">valor</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Agora que tudo está de acordo com o que queremos fazer (<em>exibir os preços na listagem dos produtos</em>) podemos testar a visualização da listagem de produtos. Mas ao tentarmos abrir a página, temos um erro:</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-nosession-hibernate.PNG" alt="lazy initialization error"></p>
+<p>O erro acontece por que ao tentar carregar os preços dos produtos, a conexão com o banco de dados já foi encerrada e com isto os preços não podem ser buscados. Os preços só estão sendo buscados em um segundo momento, quando estes realmente são necessários. Este é o padrão <strong>Lazy Initialization</strong> usado pelo <em>Hibernate</em> para carregamento de coleções.</p>
+<p>Para resolvermos o problema, precisamos apenas alterar a consulta no banco de dados que carrega os produtos, para que também carregue junto com estes, seus preços. Isso é possível através do <code>join fetch</code>. No método <code>lista</code> da classe <code>ProdutoDAO</code> teremos:</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Produto</span><span class="pun">&gt;</span><span class="pln"> listar</span><span class="pun">(){</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> manager</span><span class="pun">.</span><span class="pln">createQuery</span><span class="pun">(</span><span class="str">"select distinct(p) from Produto p join fetch p.precos"</span><span class="pun">).</span><span class="pln">getResultList</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>O uso do <code>distinct</code> é feito para que os produtos sejam distintos, pois ao realizar o <code>join</code> com a tabela de preços, o resultado dos produtos pode ser multiplicado para cada tipo de preço relacionado a um produto. Isso já resolve, mas vamos pensar um pouco mais no problema que estamos enfrentando.</p>
+<p>O problema do <em>Lazy Initialization</em> acontece por que ao tentar carregar os preços dos produtos, a sessão com o banco de dados já tem sido encerrada. Ter que lembrar sempre de realizar o <code>join</code> não parece ser uma boa alternativa, é passivo de erro, podemos esquecer a qualquer momento deste detalhe. O que poderíamos fazer pra resolver isso de outra forma? Vejamos primeiro o processo.</p>
+<p>O <em>Spring</em> carregará o <code>ProdutoDAO</code> e após isso iniciar uma sessão com o banco de dados. Carregará os produtos e depois encerrará a sessão. O passo seguinte é passar os dados para a <code>lista.jsp</code> e ai é que o problema acontece. Os preços não podem ser carregados depois da sesão finalizada. Este é o comportamento padrão.</p>
+<p>Uma solução é manter a sessão com o banco de dados até que a visualização da página seja carregada. Assim o carregamento dos preços serão feitos sem nenhum problema. Um recurso que perpassa todo este processo são os <em>Filtros</em>. Há um filtro pronto especifico para a solução deste problema chamado <code>OpenEntityManagerInViewFilter</code>.</p>
+<p>Adicionaremos este filtro na cadeia de filtros carregados no método <code>getServletFilters</code> da classe <code>ServletSpringMVC</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">protected</span><span class="pln"> </span><span class="typ">Filter</span><span class="pun">[]</span><span class="pln"> getServletFilters</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">CharacterEncodingFilter</span><span class="pln"> encodingFilter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">CharacterEncodingFilter</span><span class="pun">();</span><span class="pln">
+    encodingFilter</span><span class="pun">.</span><span class="pln">setEncoding</span><span class="pun">(</span><span class="str">"UTF-8"</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Filter</span><span class="pun">[]</span><span class="pln"> </span><span class="pun">{</span><span class="pln">encodingFilter</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">OpenEntityManagerInViewFilter</span><span class="pun">()};</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Com este filtro configurado, podemos remover o <code>join</code> adicionado anteriormente e ver que a listagem continua funcionado. Mas cuidado, o uso do <em>Lazy Inicialization</em> que faz esse carregamento tardio dos recursos pode nos trazer problemas. Vejamos.</p>
+<p>Ao carregar a listagem dos produtos, verifique o resultado da consulta executata pelo <em>Hibernate</em> no terminal. Conte quantas consultas foram executadas para uma listagem de apenas 3 produtos:</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-queries-n-mais-1.PNG" alt="muitas queries - uma por preco"></p>
+<p>Perceba que uma consulta carrega os produtos e após isso, para cada produto é realizada uma nova consulta para o carregamento de seus preços. Este problema é muito comum nas aplicações web (também conhecido como <strong>N+1</strong> onde para cada registro, uma nova consulta precisa ser feita).</p>
+<p>Este resultado é alcançado quando não usamos a estratégia de <em>join</em> nas tabelas do banco de dados. Mas e quando usamos o <em>join</em>? O que acontece? Vejamos:</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-queries-n-mais-1-resolvida.PNG" alt="n+1 resolvido com join"></p>
+<p>Apenas uma consulta é feita! O <em>join</em> já faz o carregamento dos preços ao buscas os produtos e por isso, não será mais necessário buscá-los quando a listagem for ser exibida. </p>
+<p>Sempre que possível, use o <em>join</em> nestes casos. Esta estratégia evita a sobrecarga do acesso ao banco de dados. Em nossa aplicação, deixaremos as duas configurações do jeito que estão, com o <em>join</em> e o <em>OpenEntityManagerInViewFilter</em>. O primeiro para que o número de consultas seja o menor possível e o segundo para que o erro de carregamento de dados no banco não seja apresentado caso esqueçamos de realizar o <em>join</em> em outra parte da aplicação.</p>
+<h2>Tratando Exceções</h2>
+<p>Um comportamento que fizemos anteriormente foi permitir que a url da página de detalhes ficasse mais amigável. Isso foi possível usando um padrão diferente no endereço dos produtos que deixaram de exibir o identificador do produto de forma parametrizada (<code>produto?id=1</code>) para um novo formato (<code>produto/detalhe/1</code>).</p>
+<p>Mas o que acontece se o usuário editar manualmente o endereço da página e por um identificador que não existe? Algo como 150 ou 300. Ao acessar <code>produto/detalhe/150</code> por exemplo, teremos um erro.</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-no-entity-found.PNG" alt="no result exception"></p>
+<p>O que acontece é que ao buscar o produto no banco de dados, o método <code>getSingleResult</code> ao perceber que o resultado não existe, lança uma exceção do tipo <code>NoResultException</code>. </p>
+<p>Para a solução deste tipo de problema, podemos criar um novo método na classe <code>ProdutosController</code> para que ao lançamento deste tipo de erro, este seja executado, fazendo com que ao invés de apresentar este erro para o usuário, simplesmente redirecione-o para uma página de erro mais amigável. </p>
+<p>O método se chamará <code>trataDetalheNaoEncontrado</code> e retornará apenas uma <em>String</em> informando qual página deverá ser mostrada ao usuário. Este método precisa ser anotado com <code>@ExceptionHandler</code> para que ao lançamento da excessão, o <em>Spring</em> repasse a mesma para este método. Esta anotação precisa do identificador da exceção a ser capturada, sendo este o nome da classe da qual é a excessão, neste caso <code>NoResultException.class</code>. Na classe <code>ProdutosController</code> então teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@ExceptionHandler</span><span class="pun">(</span><span class="typ">NoResultException</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> trataDetalheNaoEcontrado</span><span class="pun">(){</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"error"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>A página <code>error.jsp</code> não existe ainda, mas criaremos a mesma a partir da página <code>home.jsp</code>. Copiaremos todo o código da página <code>home.jsp</code>, criaremos o arquivo <code>error.jsp</code> no mesmo diretório e colaremos todo o código copiado. </p>
+<p>Na página <code>error.jsp</code> removeremos todo o código que exibe produtos e escreveremos apenas uma mensagem envolvida em uma tag de título <code>h2</code> com o texto: <code>O Produto Informado não foi encontrado</code>. Ao final, o arquivo <code>error.jsp</code> terá o seguinte código:</p>
+<pre class="prettyprint"><code><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln"> pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%@</span><span class="pln"> taglib tagdir</span><span class="pun">=</span><span class="str">"/WEB-INF/tags"</span><span class="pln"> prefix</span><span class="pun">=</span><span class="str">"tags"</span><span class="pln"> %&gt;
+
+</span><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"Produto não encontrado"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"index-section"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container middle"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h2&gt;</span><span class="pln">O produto informado não foi encontrado</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>Note que o título da página também foi alterado para <code>Produto não encontrado</code>. Agora ao tentarmos acessar a página de detalhes de um produto que não existe, teremos nossa página de erro exibida em vez da mensagem de erro do próprio <em>Java</em>.</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-no-entity-found-resolvido.PNG" alt="no result found resolvido"></p>
+<p>O erro do tipo <code>NoResultFound</code> foi resolvido. Mas e se acontecer algum outro erro aleatório? O que acontece? Por questões de teste, no método <code>detalhe</code> da classe <code>ProdutosController</code> lançaremos um erro proposital para verificar o comportamento da aplicação nestes casos. O erro será do tipo <code>RuntimeException</code>. </p>
+<pre class="prettyprint"><code><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="str">"/detalhe/{id}"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pln"> detalhe</span><span class="pun">(</span><span class="lit">@PathVariable</span><span class="pun">(</span><span class="str">"id"</span><span class="pun">)</span><span class="pln"> </span><span class="typ">Integer</span><span class="pln"> id</span><span class="pun">){</span><span class="pln">
+    </span><span class="typ">ModelAndView</span><span class="pln"> modelAndView </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"produtos/detalhe"</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Produto</span><span class="pln"> produto </span><span class="pun">=</span><span class="pln"> produtoDao</span><span class="pun">.</span><span class="pln">find</span><span class="pun">(</span><span class="pln">id</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">if</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RuntimeException</span><span class="pun">(</span><span class="str">"Excessão Geneérica Acontecendo!!!!"</span><span class="pun">);</span><span class="pln">
+
+    modelAndView</span><span class="pun">.</span><span class="pln">addObject</span><span class="pun">(</span><span class="str">"produto"</span><span class="pun">,</span><span class="pln"> produto</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> modelAndView</span><span class="pun">;</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>A página de erro do <em>Java</em> volta a ser exibida:</p>
+<p><img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-exception-aleatoria.PNG" alt="excessão generica"></p>
+<p>Podemos resolver este problema simplesmente mudando o tipo de excessão a ser tratada pelo método <code>trataDetalheNaoEncontrado</code>. O tipo mais genérico das exceções é a classe <code>Exception</code>. A anotação <code>@ExceeptionHandler</code> passa agora a tratar qualquer tipo de exceção lançada.</p>
+<pre class="prettyprint"><code><span class="lit">@ExceptionHandler</span><span class="pun">(</span><span class="typ">Exception</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> trataDetalheNaoEcontrado</span><span class="pun">(){</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"error"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Note que agora, existindo ou não o livro, teremos o erro sendo lançado e que qualquer tipo de exceção será tratada pelo método <code>trataDetalheNaoEcontrado</code>. Mas será só isso mesmo? Resolvemos todos os problemas referente a exibição dos erros ao usuário? Vamos adicionar o código que lança o erro para a classe <code>CarrinhoComprasController</code>, no inicío do método <code>itens</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="pln">method</span><span class="pun">=</span><span class="typ">RequestMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pln"> itens</span><span class="pun">(){</span><span class="pln">
+
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RuntimeException</span><span class="pun">(</span><span class="str">"Excessão Geneérica Acontecendo!!!!"</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"/carrinho/itens"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Com esta adição, simplesmente mudamos o problema de lugar. No caso da página de detalhe dos produtos, estamos tratando a ocorrência de qualquer tipo de exceção, mas na página de itens do carrinho não. </p>
+<p>Acontece que o tratamento que estamos fazendo está isolado em um único <em>controller</em>. A solução ideal é que este fosse feito em todos os <em>controllers</em> da aplicação.</p>
+<p>Como solução para o problema, criaremos um novo <em>controller</em> chamado <code>ExceptionHandlerController</code> e colocaremos neste o método que trata as <em>exceptions</em> que está no <code>ProdutosController</code></p>
+<pre class="prettyprint"><code><span class="lit">@Controller</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ExceptionHandlerController</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@ExceptionHandler</span><span class="pun">(</span><span class="typ">Exception</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> trataDetalheNaoEcontrado</span><span class="pun">(){</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"error"</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Este passo ainda não resolve o problema por que este é apenas um <em>controller</em> comum. O que precisamos é este monitore todos os outros <em>controllers</em> da aplicação. Neste caso, a anotação muda de <code>@Controller</code> para <code>@ControllerAdvise</code>.</p>
+<p>Agora, ao invés de simplesmente redirecionar o usuário para uma página de erro, vamos também capturar o objeto gerado com a mensagem de erro. Imprimir sua <em>Stack Trace</em> (Pilha de erros) no console e ainda enviar este objeto para a página, onde nos comentários do <em>HTML</em> imprimiremos toda a mensagem de erro para que possamos ver no <em>HTML</em> o que está acontecendo. Também renomearemos o método <code>trataDetalheNaoEcontrado</code> para <code>trataExceptionGenerica</code>. Assim teremos na classe <code>ExceptionHandlerController</code>:</p>
+<pre class="prettyprint"><code><span class="lit">@ControllerAdvice</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ExceptionHandlerController</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@ExceptionHandler</span><span class="pun">(</span><span class="typ">Exception</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">)</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pln"> trataExceptionGenerica</span><span class="pun">(</span><span class="typ">Exception</span><span class="pln"> exception</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Erro genérico acontecendo"</span><span class="pun">);</span><span class="pln">
+        exception</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+
+        </span><span class="typ">ModelAndView</span><span class="pln"> modelAndView </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ModelAndView</span><span class="pun">(</span><span class="str">"error"</span><span class="pun">);</span><span class="pln">
+        modelAndView</span><span class="pun">.</span><span class="pln">addObject</span><span class="pun">(</span><span class="str">"exception"</span><span class="pun">,</span><span class="pln"> exception</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="kwd">return</span><span class="pln"> modelAndView</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E na pagina de erro (<code>error.jps</code>):</p>
+<pre class="prettyprint"><code><span class="tag">&lt;tags:pageTemplate</span><span class="pln"> </span><span class="atn">titulo</span><span class="pun">=</span><span class="atv">"Produto não encontrado"</span><span class="tag">&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"index-section"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container middle"</span><span class="tag">&gt;</span><span class="pln">
+        </span><span class="tag">&lt;h2&gt;</span><span class="pln">Erro genérico acontecedo!!!</span><span class="tag">&lt;/h2&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/section&gt;</span><span class="pln">
+
+    </span><span class="com">&lt;!-- 
+        Mensagem: ${exception.message}
+        &lt;c:forEach items="${exception.stackTrace}" var="stk"&gt;
+            ${stk}
+        &lt;/c:forEach&gt;    
+    --&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;/tags:pageTemplate&gt;</span></code></pre>
+<p>Observe que a mensagem envolvida na tag <code>h2</code> do <em>HTML</em> mudou! E agora como resultado teremos:</p>
+<p>A página de erro HTML sendo exibida normalmente:
+<img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-erro-generico-page.PNG" alt="pagina de erro generico sendo tradado"></p>
+<p>No código fonte da página <em>HTML</em> as mensagens de erro sendo impressas:
+<img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-erro-generico-sourcepage.PNG" alt="codigo da pagina com os erros"></p>
+<p>E esta mesma mensagem impressa no código <em>HTML</em> também aparecendo no console do <em>Eclipse</em>:
+<img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula8-erro-generico-console.PNG" alt="mensagem de erro no console"></p>
+<p>Agora, com todos os cenários cobertos e resolvidos, podemos remover a linha de código que usamos para gerar o erro proposital da classe <code>ProdutosController</code> e também da classe <code>CarrinhoComprasController</code>.</p>
+<pre class="prettyprint"><code><span class="com">// linha a ser removida</span><span class="pln">
+</span><span class="kwd">if</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throw</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">RuntimeException</span><span class="pun">(</span><span class="str">"Excessão Geneérica Acontecendo!!!!"</span><span class="pun">);</span></code></pre>
+<p>Note que estamos capturando qualquer tipo de exceção que aconteça em qualquer <em>controller</em> e por mais que resolva todos os problemas, as vezes é necessário tratar tipos específicos de exceção. Nestes casos ainda pode-se se utilizar da primeira forma que vimos nesta aula, onde definimos o método que trata a exceção no próprio <em>controller</em> ou criar diversos métodos na classe <code>ExceptionHandlerController</code> para tratar as especificidades das exceções.</p>
+<p>Algo comum de se fazer também nos casos de exceções é armazená-las todas em um <strong>Log</strong>, com o  objetivo de que possamos consultá-lo depois e obtermos mais informações. Imprimimos os erros no código <em>HTML</em> por questões didáticas, mas não recomendamos que você faça isso em projetos reais em produção. Utilize <em>logs</em> para isso.</p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-explicacao/19589/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;springmvc-2-integracao-cache-seguranca-e-templates&quot;,&quot;task-id&quot;:&quot;19589&quot;,&quot;task-kind&quot;:&quot;Explicação&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19589/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-15px);">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates" title="Ir para página do curso">
+				<img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/springmvc-2-integracao-cache-seguranca-e-templates.svg" alt="ícone Spring MVC II: Integração, cache, segurança e templates" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Spring MVC II: Integração, cache, segurança e templates</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">80%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 80%, transparent 80%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>08</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Realizando Ajustes Finais no Projeto
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>4 de 11</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15946" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">21min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15947" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">12min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15948" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 3">
+							Vídeo 3
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">19min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19589" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Explicação">
+							Explicação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15950" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Envio de e-mails">
+							Envio de e-mails
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15951" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Usando JavaMail">
+							Usando JavaMail
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15952" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Usando GMail para enviar e-mails">
+							Usando GMail para enviar e-mails
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15953" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="LazyInitializationException">
+							LazyInitializationException
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15954" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Causas do LazyInitializationException">
+							Causas do LazyInitializationException
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15955" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Formas de usar o Lazy Initialization">
+							Formas de usar o Lazy Initialization
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15956" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Tratando erros gerais">
+							Tratando erros gerais
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/springmvc-2-integracao-cache-seguranca-e-templates/section/&#39;+this.value;">
+			
+				<option value="1">01. Melhorando a home </option>
+			
+				<option value="2">02. Retornando no formato JSON</option>
+			
+				<option value="3">03. Usando o Bootstrap</option>
+			
+				<option value="4">04. Personalizando o login e logout</option>
+			
+				<option value="5">05. Trabalhando com Templates</option>
+			
+				<option value="6">06. Mudando o locale dinamicamente</option>
+			
+				<option value="7">07. Testando a aplicação</option>
+			
+				<option value="8" selected="">08. Realizando Ajustes Finais no Projeto</option>
+			
+				<option value="9">09. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/846d7bad034e3c292bc8e433e11b4683.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						42.3k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.download"></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.download"></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/markdownEditor.f940de44.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/classPage.85152a83.js.download"></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/aria.a0feb01e.js.download"></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.download"></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.download"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/partitura.977fb5b2.js.download"></script>
+	<script src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.download"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="./Spring MVC II_ Aula 8 - Atividade 4 Explicação _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.download"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"19589","task-kind":"Explicação"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":47,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
