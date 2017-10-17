@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19595 -->
+<html lang="pt-BR" data-product="alura" class="gr__cursos_alura_com_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Spring MVC II: Aula 9 - Atividade 3 Explicação | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/nr-1059.min.js.download"></script><script type="text/javascript" async="" src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/base.7f0645a5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/alternativeList.8a13652e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body data-gr-c-s-loaded="true">
+
+<section class="task" data-task-type="hqexplanation" data-task-id="19595" data-author-id="75042" data-course-code="springmvc-2-integracao-cache-seguranca-e-templates" data-section-number="9" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false" data-url-prefix="/">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Explicação">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<small>03</small>
+					<span class="task-body-header-title-text"> Explicação</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19595/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="hqExplanation" id="task-content">
+	<div class="container">
+	
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+				
+					<li class="settings-box-item settings-box-item-player"><a class="settings-box-item-player--disabled" onclick="event.preventDefault();">Mudar o Player</a></li>
+					
+						<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/springmvc-2-integracao-cache-seguranca-e-templates/19595/question">Sugerir Melhoria</a></li>
+					
+				
+			
+			
+		</ul>
+	</div>
+</div>
+		<div class="formattedText">
+			<p>A nossa aplicação já conta com diversos recursos interessantes. Já temos o cadastro de produtos, as páginas de listagem e de detalhes de um produto. Já se pode efetuar compras adicionando os produtos ao carrinho e enviamos até emails através da aplicação.</p>
+<p>É chegado o momento em que podemos por a aplicação online para que nossos usuários possam acessa-la e efetuar suas compras na mesma. Para isso usaremos o <a href="http://www.heroku.com/" rel="nofollow">Heroku</a>, um servidor de aplicações que usa <em>Git</em> como base para publicação e gerenciamento das aplicações.</p>
+<p>Para conseguirmos interagir com o <a href="http://www.heroku.com/" rel="nofollow">Heroku</a> precisamos instalar uma ferramenta chamada <a href="https://devcenter.heroku.com/articles/heroku-command-line#download-and-install" rel="nofollow">Heroku Toolbelt</a> que é a ferramenta de linha de comando do <a href="http://www.heroku.com/" rel="nofollow">Heroku</a>. Lembre-se de se cadastrar no <a href="http://www.heroku.com/" rel="nofollow">Heroku</a> para poder completar este passo do curso. Você pode fazer seu cadastro aqui: <a href="https://signup.heroku.com/dc" rel="nofollow">signup.heroku.com/dc</a></p>
+<p>Com o terminal aberto e após fazer o cadastro e instalação do <em>Toolbelt</em>. Navegaremos até a pasta do projeto com o comando <code>cd</code>. Como por exemplo: <code>cd workspace/pasta_do_projeto</code>. Onde neste caso a pasta do projeto se chama <code>casadocodigo</code> e após isso executaremos o comando <code>git init</code>. O qual cria um repositório <em>Git</em>.</p>
+<p><strong>Observação</strong>: Caso não esteja familiarizado com o <em>Git</em>, recomendamos que faça o curso do mesmo que está disponível aqui na Alura. <a href="https://cursos.alura.com.br/course/git" rel="nofollow">Clique aqui para ver o curso de Git</a></p>
+<p>Os próximos passos são: Adicionar todos os arquivos ao repositório <em>git</em> e fazer <em>commit</em> destas alterações no repositório. Os comandos respectivos as tarefas são: <code>git add -A</code> e <code>git commit -m "initial commit"</code>. Neste último caso estamos adicionando uma mensagem ao <em>commit</em> através da opção <code>-m</code>. Veja os passos feitos até aqui na imagem abaixo:</p>
+<p><img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-initial-commit.png" alt="inicializando o git no projeto"></p>
+<p>Pronto! Nosso projeto agora está incluso dentro de um repositório <em>git</em>, o qual será reconhecido posteriormente pelo <em>Heroku</em>. O que precisamos fazer agora é criar a aplicação dentro do <em>Heroku</em>. Veja o comando abaixo:</p>
+<pre class="prettyprint"><code><span class="pln">heroku apps</span><span class="pun">:</span><span class="pln">create cdcspringmvc</span><span class="pun">-</span><span class="pln">alura</span></code></pre>
+<hr>
+<p><strong>Observação</strong>: Não utilize o mesmo nome para a aplicação. Procure fazer uma variação utilizando outro nome ao invés de <code>-alura</code>. Como este nome é publico, pode-se ter problemas com aplicações com o mesmo nome.  </p>
+<p>Ao executar o comando anterior, caso não tenha se autenticado ainda, o <em>Heroku</em> irá solicitar usuário e senha. </p>
+<hr>
+<p>O comando anterior irá criar a aplicação dentro do servidor do <em>Heroku</em> e relacionará esta aplicação criada com o nosso repositório local e após isso irá exibir uma mensagem de sucesso. </p>
+<p><img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-project-added.png" alt="aplicação criada com sucesso"></p>
+<p>Com esta etapa pronta, precisaremos fazer alguns ajustes em nossa aplicação para que esta possa ser executada corretamente dentro do <em>Heroku</em>. A primeira delas é a adição de um plugin de um projeto <em>Maven</em> configurado que irá fazer com que a nossa aplicação seja executada como um <em>jar</em>. Diferente do que acontece quando a aplicação é executada dentro do <em>Tomcat</em>.</p>
+<p>Na sessão de <code>plugins</code> no arquivo <code>pom.xml</code> adicione o plugin <em>WebApp Runner</em>:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;plugin&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.apache.maven.plugins</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">maven-dependency-plugin</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">2.3</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+    </span><span class="tag">&lt;executions&gt;</span><span class="pln">
+        </span><span class="tag">&lt;execution&gt;</span><span class="pln">
+            </span><span class="tag">&lt;phase&gt;</span><span class="pln">package</span><span class="tag">&lt;/phase&gt;</span><span class="pln">
+            </span><span class="tag">&lt;goals&gt;&lt;goal&gt;</span><span class="pln">copy</span><span class="tag">&lt;/goal&gt;&lt;/goals&gt;</span><span class="pln">
+            </span><span class="tag">&lt;configuration&gt;</span><span class="pln">
+                </span><span class="tag">&lt;artifactItems&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;artifactItem&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;groupId&gt;</span><span class="pln">com.github.jsimone</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">webapp-runner</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;version&gt;</span><span class="pln">7.0.57.2</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+                        </span><span class="tag">&lt;destFileName&gt;</span><span class="pln">webapp-runner.jar</span><span class="tag">&lt;/destFileName&gt;</span><span class="pln">
+                    </span><span class="tag">&lt;/artifactItem&gt;</span><span class="pln">
+                </span><span class="tag">&lt;/artifactItems&gt;</span><span class="pln">
+            </span><span class="tag">&lt;/configuration&gt;</span><span class="pln">
+        </span><span class="tag">&lt;/execution&gt;</span><span class="pln">
+    </span><span class="tag">&lt;/executions&gt;</span><span class="pln">
+</span><span class="tag">&lt;/plugin&gt;</span></code></pre>
+<p>A próxima adaptação se trata a respeito do banco de dados. O <em>Heroku</em> não tem o <em>MySQL</em> em suas opções de banco de dados. Porém, este tem o <em>Postgres</em> um outro banco de dados <em>SQL</em> muito conhecido. Por este motivo, adicionaremos como dependência do nosso projeto, a biblioteca do <em>Postgres</em>:</p>
+<pre class="prettyprint"><code><span class="tag">&lt;dependency&gt;</span><span class="pln">
+    </span><span class="tag">&lt;groupId&gt;</span><span class="pln">org.postgresql</span><span class="tag">&lt;/groupId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;artifactId&gt;</span><span class="pln">postgresql</span><span class="tag">&lt;/artifactId&gt;</span><span class="pln">
+    </span><span class="tag">&lt;version&gt;</span><span class="pln">9.4-1201-jdbc41</span><span class="tag">&lt;/version&gt;</span><span class="pln">
+</span><span class="tag">&lt;/dependency&gt;</span></code></pre>
+<p>Mas para que possamos usar o <em>Postgres</em> em nossa aplicação, precisaremos criar um <em>Data Source</em> para este. Atualmente nas configurações de banco de dados, só temos o <em>Data Source</em> para o <em>MySQL</em> configurado. Então faremos um outro para o <em>Postgres</em>.</p>
+<p>O primeiro passo para estas configurações é isolar as definições das propriedades de acesso ao banco de dados em <em>profiles</em> diferentes. Em <code>dev</code> utilizaremos o <em>MySQL</em> e em produção o <em>Postgres</em>. Neste caso, na classe <code>JPAConfiguration</code> faremos as seguintes alterações:</p>
+<ol><li>O método <code>entityManagerFactory</code> precisa receber as propriedades do banco de dados por parametro e não por uma chamada direta de método.</li><li>O método <code>aditionalProperties</code> agora precisa ser anotado com <code>@Bean</code> e configurado com o <code>@Profile("dev")</code>.</li></ol>
+<p>O segundo passo serve apenas para que o próprio <em>Spring</em> configure o objeto <code>additionalProperties</code> recebido pelo método <code>entityManagerFactory</code> de acordo com o <em>Profile</em> determinado. Neste caso teremos:</p>
+<p>O método <code>entityManagerFactory</code> recebendo o <code>additionalProperties</code> por parâmetro:</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> entityManagerFactory</span><span class="pun">(</span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Properties</span><span class="pln"> additionalProperties</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+       </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pln"> factoryBean </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LocalContainerEntityManagerFactoryBean</span><span class="pun">();</span><span class="pln">
+    factoryBean</span><span class="pun">.</span><span class="pln">setPackagesToScan</span><span class="pun">(</span><span class="str">"br.com.casadocodigo.loja.models"</span><span class="pun">);</span><span class="pln">
+    factoryBean</span><span class="pun">.</span><span class="pln">setDataSource</span><span class="pun">(</span><span class="pln">dataSource</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="typ">JpaVendorAdapter</span><span class="pln"> vendorAdapter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">HibernateJpaVendorAdapter</span><span class="pun">();</span><span class="pln">
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaVendorAdapter</span><span class="pun">(</span><span class="pln">vendorAdapter</span><span class="pun">);</span><span class="pln">
+
+    factoryBean</span><span class="pun">.</span><span class="pln">setJpaProperties</span><span class="pun">(</span><span class="pln">additionalProperties</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> factoryBean</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E o método <code>additionalProperties</code> configurado para ser executado automaticamente pelo <em>Spring</em>:</p>
+<pre class="prettyprint"><code><span class="lit">@Bean</span><span class="pln">
+</span><span class="lit">@Profile</span><span class="pun">(</span><span class="str">"dev"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Properties</span><span class="pln"> additionalProperties</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.dialect"</span><span class="pun">,</span><span class="str">"org.hibernate.dialect.MySQL5Dialect"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.show_sql"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">);</span><span class="pln">
+    props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.hbm2ddl.auto"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"update"</span><span class="pun">);</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> props</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Para que as configurações de desenvolvimento e produção da aplicação não fiquem misturadas. Criaremos uma nova classe no pacote de configurações chamada <code>JPAProductionConfiguration</code> e dentro dela copiaremos os métodos <code>dataSource</code> e <code>additionalProperties</code> da classe <code>JPAConfiguration</code>.</p>
+<p>Algumas diferenças são claras:1. Não anotaremos cada um dos método com o <code>Profile("prod")</code> mas sim a classe, pois está se trata de uma classe especifica de produção.
+2. O Dialeto do banco de dados muda de <code>MySQL5Dialect</code> para <code>PostgreSQLDialect.</code>
+3. O <em>driver</em> de conexão também muda de <code>com.mysql.jdbc.Driver</code> para <code>org.postgresql.Driver</code>.</p>
+<p>A classe <code>JPAProductionConfiguration</code> até então deverá estar assim:</p>
+<pre class="prettyprint"><code><span class="lit">@Profile</span><span class="pun">(</span><span class="str">"prod"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JPAProductionConfiguration</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Bean</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"org.postgresql.Driver"</span><span class="pun">);</span><span class="pln">
+
+        dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="str">"root"</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="str">""</span><span class="pun">);</span><span class="pln">
+        dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306/casadocodigo"</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="kwd">return</span><span class="pln"> dataSource</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Bean</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">Properties</span><span class="pln"> aditionalProperties</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">Properties</span><span class="pln"> props </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Properties</span><span class="pun">();</span><span class="pln">
+        props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.dialect"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"org.hibernate.dialect.PostgreSQLDialect"</span><span class="pun">);</span><span class="pln">
+        props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.show_sql"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"true"</span><span class="pun">);</span><span class="pln">
+        props</span><span class="pun">.</span><span class="pln">setProperty</span><span class="pun">(</span><span class="str">"hibernate.hbm2ddl.auto"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"update"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> props</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">}</span></code></pre>
+<p>Uma observação a ser feita é que no <em>Heroku</em> não temos o controle sobre os dados de acesso ao banco de dados. Estes dados são disponibilizados através de variaveis de ambiente. Estas podem ser acessadas através de um atributo inicializado pelo próprio <em>Spring</em>, chamado de <code>Environment</code>.</p>
+<p>Através deste objeto <code>Environment</code> podemos usar o método <code>getProperty</code> que retorna uma propriedade deste objeto. A propriedade que queremos pode ser acessada passando o valor <code>DATABASE_URL</code> para este método. Que retornara uma <em>String</em> no seguinte formato:</p>
+<pre class="prettyprint"><code><span class="pln">usuario</span><span class="pun">:</span><span class="pln">senha@host</span><span class="pun">:</span><span class="pln">port</span><span class="pun">/</span><span class="pln">path</span></code></pre>
+<p>A <em>String</em> retornada segue um padrão bem conhecido chamado de <strong>URI</strong>. Para que não precisemos manipular <em>String</em>s para extrair cada uma das informações requeridas. Criaremos um objeto do tipo <em>URI</em> que já nos fornece método mais fáceis de extrair estes dados a partir da <em>String</em>. Vejamos o código abaixo:</p>
+<pre class="prettyprint"><code><span class="pln">
+</span><span class="lit">@Autowired</span><span class="pln">
+</span><span class="kwd">private</span><span class="pln"> </span><span class="typ">Environment</span><span class="pln"> environment</span><span class="pun">;</span><span class="pln">
+
+</span><span class="lit">@Bean</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DataSource</span><span class="pln"> dataSource</span><span class="pun">()</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">URISyntaxException</span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">DriverManagerDataSource</span><span class="pln"> dataSource </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DriverManagerDataSource</span><span class="pun">();</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setDriverClassName</span><span class="pun">(</span><span class="str">"org.postgresql.Driver"</span><span class="pun">);</span><span class="pln">
+
+    URI dbUrl </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> URI</span><span class="pun">(</span><span class="pln">environment</span><span class="pun">.</span><span class="pln">getProperty</span><span class="pun">(</span><span class="str">"DATABASE_URL"</span><span class="pun">));</span><span class="pln">
+
+    dataSource</span><span class="pun">.</span><span class="pln">setUrl</span><span class="pun">(</span><span class="str">"jdbc:postgresql://"</span><span class="pun">+</span><span class="pln">dbUrl</span><span class="pun">.</span><span class="pln">getHost</span><span class="pun">()+</span><span class="str">":"</span><span class="pun">+</span><span class="pln">dbUrl</span><span class="pun">.</span><span class="pln">getPort</span><span class="pun">()+</span><span class="pln">dbUrl</span><span class="pun">.</span><span class="pln">getPath</span><span class="pun">());</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setUsername</span><span class="pun">(</span><span class="pln">dbUrl</span><span class="pun">.</span><span class="pln">getUserInfo</span><span class="pun">().</span><span class="pln">split</span><span class="pun">(</span><span class="str">":"</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">]);</span><span class="pln">
+    dataSource</span><span class="pun">.</span><span class="pln">setPassword</span><span class="pun">(</span><span class="pln">dbUrl</span><span class="pun">.</span><span class="pln">getUserInfo</span><span class="pun">().</span><span class="pln">split</span><span class="pun">(</span><span class="str">":"</span><span class="pun">)[</span><span class="lit">1</span><span class="pun">]);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> dataSource</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>OBS: Se atente em usar o import que nos é fornecido pelo eclipse</p>
+<blockquote>
+<p>import org.springframework.core.env.Environment;</p>
+</blockquote>
+<p>Os métodos <code>getHost</code>, <code>getPort</code> e <code>getPath</code> retornam o <em>host</em>, a <em>porta</em> e o <em>caminho</em> para o banco de dados. O  <em>getUserInfo</em> retorna o usuário e a senha separados por dois pontos. Para capturar o usuário, quebramos a <em>string</em> em duas partes (quebra feita nos dois pontos) através do método <code>split</code> onde como resultado teremos um <em>array</em> no qual, na primeira posição ([0]) teremos o usuário e na segunda posição ([1]) teremos a senha.</p>
+<p>Com esta classe finalizada, não podemos esquecer de adiciona-la la lista de classes de configurações a serem carregadas pelo <em>Spring</em> na inicialização do projeto no método <code>getRootConfigClasses</code> da classe <code>ServletSpringMVC</code>.</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">protected</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">&lt;?&gt;[]</span><span class="pln"> getRootConfigClasses</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Class</span><span class="pun">[]{</span><span class="typ">SecurityConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">JPAConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">AppWebConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">,</span><span class="pln"> </span><span class="typ">JPAProductionConfiguration</span><span class="pun">.</span><span class="kwd">class</span><span class="pun">};</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E nesta mesma classe, comentar todo o método <code>onStartup</code>. Este sempre será executado e nele está configurado que o <em>Profile</em> de <em>dev</em> está ativo. Não queremos que este <em>profile</em> esteja definido no servidor em produção. Por isso deixaremos este método comentado:</p>
+<pre class="prettyprint"><code><span class="com">//    @Override</span><span class="pln">
+</span><span class="com">//    public void onStartup(ServletContext servletContext) throws ServletException {</span><span class="pln">
+</span><span class="com">//        super.onStartup(servletContext);</span><span class="pln">
+</span><span class="com">//        servletContext.addListener(new RequestContextListener());</span><span class="pln">
+</span><span class="com">//        servletContext.setInitParameter("spring.profiles.active", "dev");</span><span class="pln">
+</span><span class="com">//    }</span></code></pre>
+<p>Como último passo de configuração, precisamos criar um arquivo que é requerido pelo <em>Heroku</em> para indicar como a nossa aplicação será executada quando esta for inicializada no servidor. Este arquivo deve se chamar <code>Procfile</code> e deve conter o seguinte conteúdo:</p>
+<pre class="prettyprint"><code><span class="pln">web</span><span class="pun">:</span><span class="pln"> java $JAVA_OPTS </span><span class="pun">-</span><span class="pln">jar </span><span class="pun">-</span><span class="typ">Dspring</span><span class="pun">.</span><span class="pln">profiles</span><span class="pun">.</span><span class="pln">active</span><span class="pun">=</span><span class="pln">prod target</span><span class="pun">/</span><span class="pln">dependency</span><span class="pun">/</span><span class="pln">webapp</span><span class="pun">-</span><span class="pln">runner</span><span class="pun">.</span><span class="pln">jar </span><span class="pun">--</span><span class="pln">port $PORT target</span><span class="com">/*.war</span></code></pre>
+<p>Neste comando, estamos definindo algumas opções para o <em>Heroku</em> disponibilizar para nossa aplicação os seguintes parametros: O <em>profile</em> ativo será o de <code>prod</code> o alvo de execução será o <code>webapp-runner.jar</code> que configuramos para o nosso projeto. A porta de acesso a aplicação será determinada pelo próprio <em>Heroku</em> e este deve executar qualquer <code>war</code> encontrado no servidor.</p>
+<p>Para finalmente publicarmos a aplicação no servidor, devemos agora, adicionar as modificações feitas no repositório. Comita-las e então fazer o <code>push</code> da mesma para o servidor através dos seguintes comandos.</p>
+<pre class="prettyprint"><code><span class="pln">git add </span><span class="pun">.</span><span class="pln">
+git commit </span><span class="pun">-</span><span class="pln">m </span><span class="str">"configurações de produção"</span><span class="pln">
+git push heroku master</span></code></pre>
+<p>Como resultado, teremos o carregamento de diversas bibliotecas no servidor. O <em>upload</em> da aplicação e também a mensagem de sucesso ao final de tudo com a <em>URL</em> de acesso da mesma.</p>
+<p>Inicializando a compressão e envio da aplicação para o servidor:
+<img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-project-push.png" alt="carregando aplicação para o heroku"></p>
+<p>Mensagem de sucesso com <em>URL</em> de acesso a aplicação:
+<img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-project-builded.png" alt="push da aplicação com sucesso"></p>
+<p>Sucesso! A aplicação pode ser acessada através do endereço <a href="http://cdcspringmvc-alura.herokuapp.com/" rel="nofollow">cdcspringmvc-alura.herokuapp.com</a>. O primeiro carregamento pode demorar bastante, é normal.</p>
+<p>A página da nossa aplicação será exibida sem nenhum produto cadastrado. Podemos cadastrar um novo acessando o caminho <code>/produtos/form</code> mas somos direcionados a página de autenticação. Não temos usuário cadastrado, é um outro banco agora, limpo, sem nenhum registro. </p>
+<p><img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-project-login.png" alt="tela de login"></p>
+<p>Uma solução simples é criar uma <em>URL</em> bem estranha e difícil de acertar aleatóriamente que executará em um <em>controller</em> a ação de adicionar um usuário ao banco de dados. No <code>HomeController</code> por exemplo, podemos fazer o seguinte:</p>
+<pre class="prettyprint"><code><span class="lit">@Transactional</span><span class="pln">
+</span><span class="lit">@ResponseBody</span><span class="pln">
+</span><span class="lit">@RequestMapping</span><span class="pun">(</span><span class="str">"/url-magica-maluca-oajksfbvad6584i57j54f9684nvi658efnoewfmnvowefnoeijn"</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> urlMagicaMaluca</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">Usuario</span><span class="pln"> usuario </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Usuario</span><span class="pun">();</span><span class="pln"> 
+    usuario</span><span class="pun">.</span><span class="pln">setNome</span><span class="pun">(</span><span class="str">"Admin"</span><span class="pun">);</span><span class="pln">
+    usuario</span><span class="pun">.</span><span class="pln">setEmail</span><span class="pun">(</span><span class="str">"admin@casadocodigo.com.br"</span><span class="pun">);</span><span class="pln">
+    usuario</span><span class="pun">.</span><span class="pln">setSenha</span><span class="pun">(</span><span class="str">"$2a$10$lt7pS7Kxxe5JfP.vjLNSyOXP11eHgh7RoPxo5fvvbMCZkCUss2DGu"</span><span class="pun">);</span><span class="pln">
+    usuario</span><span class="pun">.</span><span class="pln">setRoles</span><span class="pun">(</span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">asList</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Role</span><span class="pun">(</span><span class="str">"ROLE_ADMIN"</span><span class="pun">)));</span><span class="pln">
+
+    usuarioDao</span><span class="pun">.</span><span class="pln">gravar</span><span class="pun">(</span><span class="pln">usuario</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"Url Mágica executada"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Perceba que estamos simplesmente um usuário comum e assinando o método como transacional para que este possa gravar o usuário no banco de dados. A anotação <code>@ResponseBody</code> já vimos que esta faz com que a resposta da requisição seja apenas o texto retornado pelo método. </p>
+<p>A senha parece bem maluca, mas é apenas o resultado da criptografia dos digitos de 1 à 6 usando a ferramenta <em>BCrypt</em> que também vimos anteriormente. O objeto <code>usuarioDao</code> precisa ser criado como atributo desta classe e anotado com <code>@Autowired</code> para que o <em>Spring</em> se encarregue de cria-lo. Na classe <code>HomeController</code> então adicionaremos mais um atributo.</p>
+<pre class="prettyprint"><code><span class="lit">@Autowired</span><span class="pln">
+</span><span class="kwd">private</span><span class="pln"> </span><span class="typ">UsuarioDAO</span><span class="pln"> usuarioDao</span><span class="pun">;</span></code></pre>
+<p>A classe <code>Role</code> não tem um construtor que aceite o nome da <em>role</em>. Criaremos o mesmo então e também um outro, sendo padrão, para que não tenhamos problemas em outras partes da aplicação.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="typ">Role</span><span class="pun">(){</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Role</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> nome</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">nome </span><span class="pun">=</span><span class="pln"> nome</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Lembre-se que o <em>Spring Security</em> está ativo e pode bloquear a <em>url</em> que criamos para adicionar nosso usuário padrão. Para evitarmos este problema, adicionaremos esta <em>url</em> nas regras de permissão do <em>Spring Security</em>. No método <code>configure</code> da classe <code>SecurityConfiguration</code> teremos:</p>
+<pre class="prettyprint"><code><span class="lit">@Override</span><span class="pln">
+</span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> configure</span><span class="pun">(</span><span class="typ">HttpSecurity</span><span class="pln"> http</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">Exception</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    http</span><span class="pun">.</span><span class="pln">authorizeRequests</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/form"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/carrinho/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/pagamento/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">GET</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="typ">HttpMethod</span><span class="pun">.</span><span class="pln">POST</span><span class="pun">,</span><span class="pln"> </span><span class="str">"/produtos"</span><span class="pun">).</span><span class="pln">hasRole</span><span class="pun">(</span><span class="str">"ADMIN"</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/produtos/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/resources/**"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+
+    </span><span class="pun">.</span><span class="pln">antMatchers</span><span class="pun">(</span><span class="str">"/url-magica-maluca-oajksfbvad6584i57j54f9684nvi658efnoewfmnvowefnoeijn"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+
+    </span><span class="pun">.</span><span class="pln">anyRequest</span><span class="pun">().</span><span class="pln">authenticated</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">formLogin</span><span class="pun">().</span><span class="pln">loginPage</span><span class="pun">(</span><span class="str">"/login"</span><span class="pun">).</span><span class="pln">permitAll</span><span class="pun">()</span><span class="pln">
+    </span><span class="pun">.</span><span class="kwd">and</span><span class="pun">().</span><span class="pln">logout</span><span class="pun">().</span><span class="pln">logoutRequestMatcher</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">AntPathRequestMatcher</span><span class="pun">(</span><span class="str">"/logout"</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>E por último e não menos importante, criar o método <code>gravar</code> na classe <code>UsuarioDAO</code>. Pois este não existe. O código é bem simples, apenas usar o método <code>persist</code> do objeto <code>manager</code> para salvar o usuário.</p>
+<pre class="prettyprint"><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> gravar</span><span class="pun">(</span><span class="typ">Usuario</span><span class="pln"> usuario</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    manager</span><span class="pun">.</span><span class="pln">persist</span><span class="pun">(</span><span class="pln">usuario</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+<p>Uma alteração e observação a ser feita, é que da forma que estamos salvando o usuário, não temos garantia de que sua <em>role</em> será gravada também junta com este. Para garantirmos isso, precisamos na classe <code>Usuario</code> alterar a anotação <code>OneToMany</code> do atributo <code>roles</code> para que esta persista também os outros objetos relacionados ao usuário, quando este for persistido.</p>
+<pre class="prettyprint"><code><span class="lit">@OneToMany</span><span class="pun">(</span><span class="pln">fetch</span><span class="pun">=</span><span class="typ">FetchType</span><span class="pun">.</span><span class="pln">EAGER</span><span class="pun">,</span><span class="pln"> ascade</span><span class="pun">=</span><span class="typ">CascadeType</span><span class="pun">.</span><span class="pln">PERSIST</span><span class="pun">)</span><span class="pln">
+</span><span class="kwd">private</span><span class="pln"> </span><span class="typ">List</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;</span><span class="pln"> roles </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ArrayList</span><span class="pun">&lt;</span><span class="typ">Role</span><span class="pun">&gt;();</span></code></pre>
+<p>O atributo <code>cascade</code> faz exatamente o que queremos. Neste caso, ao persistir o usuário, garantimos que a <em>role</em> deste também será persistida. E assim, finalizam-se nossas alterações. Precisamos apenas enviar estas adições para o <em>Heroku</em>. Lembra quais são os comandos? São estes:</p>
+<pre class="prettyprint"><code><span class="pln">git add </span><span class="pun">.</span><span class="pln">
+git commit </span><span class="pun">-</span><span class="pln">m </span><span class="str">"configurações de usuário padrão"</span><span class="pln">
+git push heroku master</span></code></pre>
+<p>Após a mensagem de sucesso do <em>Heroku</em>, podemos acessar a aplicação e verificar que está tudo funcionando. Então podemos acessar a nossa <em>url maluca</em> para que o usuário <em>admin</em> seja adicionado ao banco de dados e como resposta a este acesso temos a página de sucesso.</p>
+<p><img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-url-maluca-executada.png" alt="url maluca sendo acessada"></p>
+<p>E ao tentar fazer o login com os dados do <em>admin</em>, conseguimos acessar a página de cadastro de produtos. Indicando que tudo funcionou perfeitamente.</p>
+<p><img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-admin.png" alt="cadastro de produtos funcionando no servidor"></p>
+<p>Os cadastros dos produtos também funcionam perfeitamente.
+<img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/spring-mvc-II-aula9-listagem.png" alt="cadastro de produtos no servidor real"></p>
+<hr>
+<p><strong>Obsevação</strong>: Você poderá encontrar diversos problemas ao enviar sua aplicação para o <em>Heroku</em>. Como este visivelmente na imagem acima, o <code>encoding</code> aparementemente está errado. O upload de arquivos dos sumários dos livros pode não funcionar por que o <em>Heroku</em> usa uma estratégia diferente para o armazenamento de arquivos. </p>
+<p>O Envio de emails também pode não funcionar, porém para isto o <em>Heroku</em> disponibiliza ferramentas para configurar estas tarefas de forma simples e fácil de se fazer.</p>
+<p>Nestes casos, você pode melhorar a aplicação e continuar a desenvolve-la afim de descobrir mais a respeito do <em>Spring</em> e também do <em>Heroku</em>. Fica o desafio para que encontre os problemas e soluções para o mesmo. Vale apena o desafio, aprenderá bastante no processo.</p>
+<hr>
+<p>Com isto, chegamos ao final deste segundo módulo do curso de <em>Spring MVC</em>. Esperamos que tenha gostado e que você também não pare por aqui. Há muito ainda a se aprender, existem diversos blogs que falam sobre o <em>Spring</em> e você também sempre pode consultar a documentação oficial do mesmo.</p>
+<p>Parabenizamos você por ter chegado até aqui e como sempre desejamos: <strong>Bons estudos!</strong></p>
+
+		</div>
+	</div>
+</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/exercicio-explicacao/19595/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;springmvc-2-integracao-cache-seguranca-e-templates&quot;,&quot;task-id&quot;:&quot;19595&quot;,&quot;task-kind&quot;:&quot;Explicação&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19595/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed;">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates" title="Ir para página do curso">
+				<img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/springmvc-2-integracao-cache-seguranca-e-templates.svg" alt="ícone Spring MVC II: Integração, cache, segurança e templates" class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Spring MVC II: Integração, cache, segurança e templates</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">89%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 89%, transparent 89%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>09</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Publicando o projeto
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>3 de 11</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15957" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 1">
+							Vídeo 1
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">24min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15958" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Vídeo 2">
+							Vídeo 2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">17min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/19595" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Explicação concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Explicação">
+							Explicação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15960" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade sem Resposta do Aluno não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Criando conta no Heroku">
+							Criando conta no Heroku
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15961" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Heroku Toolbelt">
+							Heroku Toolbelt
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15962" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Adicionando webapp-runner para o Heroku">
+							Adicionando webapp-runner para o Heroku
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15963" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Adicionando suporte a PostgreSQL">
+							Adicionando suporte a PostgreSQL
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15964" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Conectando ao PostegreSQL do Heroku">
+							Conectando ao PostegreSQL do Heroku
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15965" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade sem Resposta do Aluno não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Criando Procfile">
+							Criando Procfile
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15966" class="task-menu-nav-item-link task-menu-nav-item-link-OPEN_QUESTION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Exercício Aberto não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#OPEN_QUESTION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Acessando o Admin">
+							Acessando o Admin
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/springmvc-2-integracao-cache-seguranca-e-templates/task/15967" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade sem Resposta do Aluno não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Projeto do curso">
+							Projeto do curso
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/springmvc-2-integracao-cache-seguranca-e-templates/section/&#39;+this.value;">
+			
+				<option value="1">01. Melhorando a home </option>
+			
+				<option value="2">02. Retornando no formato JSON</option>
+			
+				<option value="3">03. Usando o Bootstrap</option>
+			
+				<option value="4">04. Personalizando o login e logout</option>
+			
+				<option value="5">05. Trabalhando com Templates</option>
+			
+				<option value="6">06. Mudando o locale dinamicamente</option>
+			
+				<option value="7">07. Testando a aplicação</option>
+			
+				<option value="8">08. Realizando Ajustes Finais no Projeto</option>
+			
+				<option value="9" selected="">09. Publicando o projeto</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-springmvc-2-integracao-cache-seguranca-e-templates/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/846d7bad034e3c292bc8e433e11b4683.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						43.0k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.download"></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.download"></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/markdownEditor.f940de44.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.download" async=""></script>
+
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.download" async=""></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/classPage.85152a83.js.download"></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/aria.a0feb01e.js.download"></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.download"></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.download"></script>
+	
+	
+
+	
+	
+	
+	
+
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/partitura.977fb5b2.js.download"></script>
+	<script src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.download"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="./Spring MVC II_ Aula 9 - Atividade 3 Explicação _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.download"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"springmvc-2-integracao-cache-seguranca-e-templates","task-id":"19595","task-kind":"Explicação"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":44,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+</body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
